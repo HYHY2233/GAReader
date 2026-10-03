@@ -1,0 +1,10 @@
+{% load static %}<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}论文库{% endblock %}</title><link rel="stylesheet" href="{% static 'site.css' %}">
+<script src="{% static 'site.js' %}" defer></script>{% block head %}{% endblock %}</head>
+<body>{% block header %}<header class="sitebar"><a class="brand" href="/">▤ <span>论文库</span></a>
+{% if user.is_authenticated %}<form class="global-search" action="/"><input name="q" aria-label="搜索论文" placeholder="搜索中英文题名、作者…" value="{{ query }}"><button>搜索</button></form>
+<a class="button primary" href="{% url 'upload' %}">上传论文</a><details class="account"><summary title="{{ user.first_name|default:user.username }}">{{ user.first_name|default:user.username }}</summary><div class="account-menu">{% if anonymous_reader %}<a href="{% url 'login' %}#anonymous-login">匿名身份</a><a href="{% url 'login' %}">账户登录</a><a href="{% url 'register' %}">注册账户</a>{% else %}<a href="{% url 'password' %}">修改密码</a>{% endif %}{% if user.is_staff %}<a href="/admin/">管理</a>{% endif %}<form method="post" action="{% url 'logout' %}">{% csrf_token %}<button>退出登录</button></form></div></details>{% endif %}</header>{% endblock %}
+{% if messages %}<div role="status" class="messages">{% for message in messages %}<p>{{ message }}</p>{% endfor %}</div>{% endif %}
+{% block content %}{% endblock %}
+<div id="toast" role="status" aria-live="polite"></div></body></html>

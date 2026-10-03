@@ -1,0 +1,10 @@
+{% extends 'registration/entry.html' %}
+{% block title %}登录 · 论文库{% endblock %}
+{% block account_form %}
+<nav class="auth-tabs" aria-label="账户入口"><a class="selected" href="{% url 'login' %}?next={{ next|urlencode }}" aria-current="page">登录</a><a href="{% url 'register' %}?next={{ next|urlencode }}">注册</a></nav>
+<h1>登录论文库</h1>
+<form method="post" class="credential-form" action="{% url 'login' %}">{% csrf_token %}
+{% include 'registration/fields.html' %}
+<input type="hidden" name="next" value="{{ next }}"><button class="primary">登录</button>
+</form>
+{% endblock %}

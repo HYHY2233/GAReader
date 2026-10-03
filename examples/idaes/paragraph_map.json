@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "article-type",
+    "kind": "heading",
+    "source": [
+      "PDF 2，题名前"
+    ],
+    "en": "RESEARCH ARTICLE",
+    "zh": "研究论文"
+  },
+  {
+    "id": "aff-1",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "1. National Energy Technology Laboratory, Pittsburgh, Pennsylvania, USA",
+    "zh": "1. 美国宾夕法尼亚州匹兹堡，国家能源技术实验室"
+  },
+  {
+    "id": "aff-2",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "2. NETL Support Contractor, Pittsburgh, Pennsylvania, USA",
+    "zh": "2. 美国宾夕法尼亚州匹兹堡，NETL 支持服务承包商"
+  },
+  {
+    "id": "aff-3",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "3. Sandia National Laboratories, Albuquerque, New Mexico, USA",
+    "zh": "3. 美国新墨西哥州阿尔伯克基，桑迪亚国家实验室"
+  },
+  {
+    "id": "aff-4",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "4. Lawrence Berkeley National Laboratory, Berkeley, California, USA",
+    "zh": "4. 美国加利福尼亚州伯克利，劳伦斯伯克利国家实验室"
+  },
+  {
+    "id": "aff-5",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "5. University of Notre Dame, Notre Dame, Indiana, USA",
+    "zh": "5. 美国印第安纳州 Notre Dame，圣母大学"
+  },
+  {
+    "id": "aff-6",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "6. Department of Chemical and Biomedical Engineering, West Virginia University, Morgantown, West Virginia, USA",
+    "zh": "6. 美国西弗吉尼亚州摩根敦，西弗吉尼亚大学化学与生物医学工程系"
+  },
+  {
+    "id": "aff-7",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "7. Department of Chemical Engineering, Carnegie Mellon University, Pittsburgh, Pennsylvania, USA",
+    "zh": "7. 美国宾夕法尼亚州匹兹堡，卡内基梅隆大学化学工程系"
+  },
+  {
+    "id": "correspondence",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "Correspondence: Andrew Lee, National Energy Technology Laboratory, 626 Cochrans Mill Road, Pittsburgh, PA 15236, USA. Email: andrew.lee@netl.doe.gov",
+    "zh": "通讯作者：Andrew Lee，美国国家能源技术实验室，626 Cochrans Mill Road, Pittsburgh, PA 15236, USA。邮箱：andrew.lee@netl.doe.gov"
+  },
+  {
+    "id": "funding",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左侧作者信息"
+    ],
+    "en": "Funding information: U.S. Department of Energy, Grant/Award Numbers: DE-FE0025912, DE-NA0003525, DEAC02-05CH11231",
+    "zh": "资助信息：美国能源部；资助／奖项编号：DE-FE0025912、DE-NA0003525、DEAC02-05CH11231。"
+  },
+  {
+    "id": "dates",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，页首"
+    ],
+    "en": "Received: 26 October 2020 · Revised: 22 April 2021 · Accepted: 24 April 2021",
+    "zh": "收稿：2020 年 10 月 26 日；修订：2021 年 4 月 22 日；接受：2021 年 4 月 24 日。"
+  },
+  {
+    "id": "abstract-head",
+    "kind": "heading",
+    "source": [
+      "PDF 2，摘要区"
+    ],
+    "en": "Abstract",
+    "zh": "摘要"
+  },
+  {
+    "id": "abstract",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，摘要区"
+    ],
+    "en": "Energy systems and manufacturing processes of the 21st century are becoming increasingly dynamic and interconnected, which require new capabilities to effectively model and optimize their design and operations. Such next generation computational tools must leverage state-of-the-art techniques in optimization and be able to rapidly incorporate new advances. To address these requirements, we have developed the Institute for the Design of Advanced Energy Systems (IDAES) Integrated Platform, which builds on the strengths of both process simulators (model libraries) and algebraic modeling languages (advanced solvers). This paper specifically presents the IDAES Core Modeling Framework (IDAES-CMF), along with a case study demonstrating the application of the framework to solve process optimization problems. Capabilities provided by this framework include a flexible, modifiable, open-source platform for optimization of process flowsheets utilizing state-of-the-art solvers and solution techniques, fully open and extensible libraries of dynamic unit operations models and thermophysical property models, and integrated support for superstructure-based conceptual design and optimization under uncertainty.",
+    "zh": "21 世纪的能源系统与制造过程正变得日益动态且相互连接，因此需要新的能力，才能有效建模并优化其设计和运行。这样的新一代计算工具必须采用最先进的优化技术，并能够快速吸收新的进展。为满足这些要求，我们开发了先进能源系统设计研究所（Institute for the Design of Advanced Energy Systems，IDAES）集成平台，它结合了过程模拟器的优势，即模型库，以及代数建模语言的优势，即先进求解器。本文具体介绍 IDAES 核心建模框架（IDAES-CMF），并通过一个案例研究展示如何应用该框架解决过程优化问题。该框架提供的能力包括：一个灵活、可修改的开源平台，利用最先进的求解器与求解技术优化过程流程；完全开放且可扩展的动态单元操作模型和热物性模型库；以及对基于超结构的概念设计和不确定性下优化的集成支持。"
+  },
+  {
+    "id": "keywords",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，关键词区"
+    ],
+    "en": "KEYWORDS: optimization, process modeling, Pyomo, simulation",
+    "zh": "关键词：优化；过程建模；Pyomo；仿真。"
+  },
+  {
+    "id": "copyright-note",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，页脚注释"
+    ],
+    "en": "[The copyright line for this article was changed on 04 May 2021, after original online publication.]",
+    "zh": "［本文在最初在线发表后，于 2021 年 5 月 4 日更改了版权说明。］"
+  },
+  {
+    "id": "license",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，页脚"
+    ],
+    "en": "This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+    "zh": "本文为根据知识共享署名许可条款发表的开放获取文章；在正确引用原作的前提下，允许以任何媒介使用、传播和复制。"
+  },
+  {
+    "id": "copyright",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，页脚"
+    ],
+    "en": "© 2021 The Authors. Journal of Advanced Manufacturing and Processing published by Wiley Periodicals LLC on behalf of American Institute of Chemical Engineers.",
+    "zh": "© 2021 作者。《Journal of Advanced Manufacturing and Processing》由 Wiley Periodicals LLC 代表美国化学工程师学会出版。"
+  },
+  {
+    "id": "journal-source",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，页脚"
+    ],
+    "en": "J Adv Manuf Process. 2021;3:e10095. wileyonlinelibrary.com/journal/amp2 · https://doi.org/10.1002/amp2.10095",
+    "zh": "刊载信息：J Adv Manuf Process. 2021;3:e10095。期刊网址：wileyonlinelibrary.com/journal/amp2；DOI：https://doi.org/10.1002/amp2.10095。"
+  },
+  {
+    "id": "intro",
+    "kind": "heading",
+    "source": [
+      "PDF 2，左栏"
+    ],
+    "en": "1 | INTRODUCTION AND MOTIVATION",
+    "zh": "1 | 引言与研究动机"
+  },
+  {
+    "id": "u001",
+    "kind": "paragraph",
+    "source": [
+      "PDF 2，左栏",
+      "PDF 2，右栏",
+      "PDF 3，左栏"
+    ],
+    "en": "Over the next decade, hundreds of billions of dollars will be invested in next generation energy systems and industrial processes that will be more efficient, dynamically agile and interconnected. Shifts to more integrated production facilities will need to balance feedstock volatility, market pricing, and environmental impacts to support an increasingly circular economy. To address emerging opportunities and challenges, energy systems and industrial processes need to support greater innovation, including process intensification, hybrid systems concepts, and plant modularization. These new systems must have greater agility to dynamically respond to changing economic conditions, which may vary on an hourly or even sub-hourly basis. For example, electricity prices can vary widely due to mismatches in supply and demand, and industries that can shift production have a substantial incentive to coordinate with energy markets. Hybrid systems provide a broader opportunity to provide electricity during periods of high demand and shift production to other products when energy prices are low.",
+    "zh": "未来十年，数千亿美元将投入新一代能源系统和工业过程，使其具有更高的效率、更灵活的动态响应能力和更强的互联性。向一体化程度更高的生产设施转型，需要在原料波动、市场定价和环境影响之间取得平衡，以支撑日益发展的循环经济。为应对新出现的机遇与挑战，能源系统和工业过程需要支持更大程度的创新，包括过程强化、混合系统概念和工厂模块化。这些新系统必须具有更高的灵活性，才能动态响应不断变化的经济条件；这种变化可能每小时发生，甚至发生得更频繁。例如，供需不匹配可能导致电价大幅波动，而能够调整生产安排的行业具有很强的动力与能源市场协调运行。混合系统提供了更广泛的机会，使其能够在需求高峰期供电，并在能源价格较低时转而生产其他产品。"
+  },
+  {
+    "id": "u002",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，左栏"
+    ],
+    "en": "These needs further highlight the complex, dynamic design and operational challenges in the 21st century, which will require modeling and decision-making tools to maximize efficiency and operability over very wide ranges of operating conditions. Models will need to consider multiple temporal and spatial scales that balance short-term profitability with longer-term impacts of equipment wear and degradation, and explore interactions beyond the traditional boundaries of individual plants, including local, regional, and global markets.",
+    "zh": "这些需求进一步凸显了 21 世纪复杂、动态的设计与运行挑战。要应对这些挑战，就需要建模和决策工具，以便在非常宽的操作条件范围内最大限度地提高效率与可操作性。模型需要考虑多个时间和空间尺度，在短期盈利能力与设备磨损、性能退化的长期影响之间取得平衡，并探索超出单个工厂传统边界的相互作用，包括与地方、区域和全球市场的相互作用。"
+  },
+  {
+    "id": "u003",
+    "kind": "heading",
+    "source": [
+      "PDF 3，左栏"
+    ],
+    "en": "1.1 | Modeling and optimization needs",
+    "zh": "1.1 | 建模与优化需求"
+  },
+  {
+    "id": "u004",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，左栏"
+    ],
+    "en": "To meet the requirements for designing the next generation of energy and industrial systems, process modeling and optimization tools for decision-making need to extend beyond traditional plant boundaries and consider interactions with the broader supply chain,[1] including the electricity grid. Large-scale optimization strategies are essential to design new processes incorporating multiple operating scenarios and dynamic response to changing conditions, which are defined through multi-scale linkages with models of the broader energy and supply chain systems.",
+    "zh": "为满足新一代能源与工业系统的设计要求，用于决策的过程建模与优化工具需要超越传统工厂边界，考虑与更广泛供应链的相互作用，[1] 其中也包括电网。设计新过程时，必须采用大规模优化策略，将多种操作情景以及对条件变化的动态响应纳入考虑；这些情景和变化条件通过与更广泛的能源系统及供应链系统模型之间的多尺度联系来定义。"
+  },
+  {
+    "id": "u005",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，左栏"
+    ],
+    "en": "Anticipating the development of new technologies and processes, the modeling framework must enable uncertainty quantification (UQ) in order to ensure robust designs and enable the reduction of technical risk through targeted experiments. Such capabilities will ultimately enable the technical performance guarantees essential for commercial deployment. Finally, since many of the characteristics of 21st century processes and energy systems will extend beyond current experience, new process synthesis strategies will be required to explore large design spaces that include novel technologies and phenomena as well as new configurations and operating paradigms.",
+    "zh": "考虑到新技术和新过程的发展，建模框架必须支持不确定性量化（UQ），以确保设计的鲁棒性，并通过有针对性的实验降低技术风险。这些能力最终将使商业化部署所必需的技术性能保证成为可能。最后，由于 21 世纪过程与能源系统的许多特征将超出现有经验，因此需要新的过程综合策略，探索包含新技术、新现象以及新配置和新运行模式的广阔设计空间。"
+  },
+  {
+    "id": "u006",
+    "kind": "heading",
+    "source": [
+      "PDF 3，左栏"
+    ],
+    "en": "2 | CURRENT PRACTICE AND ENABLING TOOLS",
+    "zh": "2 | 当前实践与支撑工具"
+  },
+  {
+    "id": "u007",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，左栏",
+      "PDF 3，右栏"
+    ],
+    "en": "Current practice in computer-aided process engineering (CAPE) relies on a tool-chain that has been developed over the last 50 years. Early efforts in process simulation for CAPE began in the late 50s with the simple concept of connecting purpose-built unit models to form a flowsheet model. This led to the familiar sequential-modular (SM) simulation strategy where information flow of the unit calculations was sequenced based on the flowsheet structure, and common “utility models” (e.g., physical property calculations) could be called by the unit models. Early flowsheeting packages were first developed in-house at major chemical and petroleum companies followed by platforms by commercial vendors (e.g., DESIGN II,[2] HYSYS,[3] CHEMCAD,[4] PRO/II,[5] PROSIM[6]). The late 70s saw the development of the ASPEN simulator[7] which included more flexible data handling, improved phase separation routines and unit operations for solids handling. Nevertheless, the SM mode consists of procedural models where the model equations and solution strategy were strongly linked, leading to rigid calculation sequences. This can lead to time-consuming solution strategies with poor convergence behavior. These SM platforms have been steadily upgraded over the last four decades to accommodate advances in software engineering, such as objected-oriented architectures and graphical user interfaces, and they still remain the dominant mode for process simulation, design and analysis in engineering practice. However, formal optimization methods and advanced algorithms (i.e., for nonlinear programming (NLP) and mixed integer nonlinear programming (MINLP)) are rarely part of this workflow.",
+    "zh": "当前，计算机辅助过程工程（CAPE）的实践依赖于过去 50 年发展起来的一套工具链。用于 CAPE 的早期过程仿真工作始于 20 世纪 50 年代末，其基本概念很简单：将专门构建的单元模型连接起来，形成流程模型。这催生了人们熟悉的序贯模块法（SM）仿真策略：依据流程结构安排单元计算的信息传递顺序，单元模型可以调用通用的“公用模型”（例如物性计算）。早期流程模拟软件首先由大型化工和石油公司内部开发，随后商业供应商推出了相应平台（例如 DESIGN II、[2] HYSYS、[3] CHEMCAD、[4] PRO/II、[5] PROSIM[6]）。20 世纪 70 年代末开发的 ASPEN 模拟器[7] 引入了更灵活的数据处理方式、改进的相分离程序以及处理固体的单元操作。不过，SM 模式由程序式模型构成，模型方程与求解策略紧密耦合，导致计算顺序缺乏灵活性。这可能使求解耗时较长，且收敛表现不佳。过去四十年间，这些 SM 平台持续升级，吸收了面向对象架构和图形用户界面等软件工程进展，至今仍是工程实践中过程仿真、设计和分析的主流方式。然而，正规的优化方法和先进算法，即用于非线性规划（NLP）和混合整数非线性规划（MINLP）的方法与算法，很少成为这一工作流程的组成部分。"
+  },
+  {
+    "id": "u008",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，右栏"
+    ],
+    "en": "In parallel to the development of the modular mode, research in the 60s and 70s led to the equation-oriented (EO) simulation strategy, with academic packages such as SPEEDUP,[8] ASCEND[9] and QUASILIN.[10] Here the process model equations (describing the unit and utility models) are constructed independently of the solution procedure. Because of this, EO-based solution strategies allow for greater flexibility in design studies, and also in the creation and maintenance of specialized process models.",
+    "zh": "与模块式方法的发展并行，20 世纪 60 年代和 70 年代的研究形成了面向方程（EO）的仿真策略，并出现了 SPEEDUP、[8] ASCEND[9] 和 QUASILIN[10] 等学术软件。在这种策略中，用于描述单元模型和公用模型的过程模型方程独立于求解过程构建。因此，基于 EO 的求解策略在设计研究，以及专用过程模型的创建和维护方面，具有更大的灵活性。"
+  },
+  {
+    "id": "u009",
+    "kind": "paragraph",
+    "source": [
+      "PDF 3，右栏",
+      "PDF 4，左栏"
+    ],
+    "en": "In contrast to modular simulators, EO methods are especially well suited for the construction of specialized process simulation models, especially with nonlinear (and possibly stiff) Differential Algebraic Equations (DAE).[11] These are needed because stiff DAE solvers (e.g., BDF) must often be applied, and these require Jacobian information from the DAE. The EO mode has been the main paradigm for more recent commercial simulators gPROMS[10,12,13] and Aspen Custom Modeler,[7] which have strong capabilities for modeling dynamic and distributed systems. Moreover, advanced DAE modeling platforms, such as DAEPACK[14] and ABACUSS[15] have been extended to deal with hybrid discrete/continuous dynamic simulation[16] and event location of state discontinuities. In addition, EO platforms are well-suited for gradient-based optimization because of the ready availability of exact first and second derivatives and they can integrate directly with advanced mathematical programming tools.",
+    "zh": "与模块式模拟器相比，EO 方法尤其适用于构建专用过程仿真模型，特别是包含非线性且可能具有刚性的微分代数方程（DAE）的模型。[11] 之所以需要这类模型，是因为常常必须采用刚性 DAE 求解器（例如 BDF），而这些求解器需要 DAE 的雅可比信息。EO 模式已成为较新的商业模拟器 gPROMS[10,12,13] 和 Aspen Custom Modeler[7] 的主要建模范式；这些软件在动态系统和分布参数系统建模方面具有很强的能力。此外，DAEPACK[14] 和 ABACUSS[15] 等先进 DAE 建模平台已得到扩展，可处理离散／连续混合动态仿真[16] 以及状态不连续的事件定位。另外，EO 平台能够方便地获得精确的一阶和二阶导数，因此非常适合基于梯度的优化，并可直接与先进的数学规划工具集成。"
+  },
+  {
+    "id": "u010",
+    "kind": "paragraph",
+    "source": [
+      "PDF 4，左栏"
+    ],
+    "en": "On the other hand, EO methods require more expertise to solve large models, because a general-purpose Newton-based solver is typically used and complex initializations[17,18] must be supplied. For instance, Aspen Plus has been extended to deal with EO features in Aspen-EO where initialization is handled through partial solves within the SM mode. Nevertheless, due to the required expertise for EO modeling these approaches are not widely used for off-line modeling and design, where the modular approach provides an easier construction framework, especially for casual users. Instead EO modeling is widely used for specialized DAE and PDAE models, and purpose-built optimization models, for example, for real-time optimization.",
+    "zh": "另一方面，EO 方法求解大型模型时需要更高的专业水平，因为这类方法通常采用基于牛顿法的通用求解器，并且必须提供复杂的初始化方案。[17,18] 例如，Aspen Plus 已通过 Aspen-EO 扩展来处理 EO 功能，其中的初始化通过 SM 模式下的局部求解完成。不过，由于 EO 建模对专业能力的要求较高，这些方法并未广泛用于离线建模和设计；在这些任务中，模块式方法提供了更易于构建模型的框架，对偶尔使用软件的用户尤其如此。EO 建模反而广泛用于专用 DAE 和 PDAE 模型，以及为特定目的构建的优化模型，例如实时优化模型。"
+  },
+  {
+    "id": "u011",
+    "kind": "paragraph",
+    "source": [
+      "PDF 4，左栏"
+    ],
+    "en": "On the other hand, the past two decades have seen significant progress in both computational power and large-scale numerical optimization algorithms, which greatly expand the types of problems which can be solved. Due to synergistic advances in computational algorithms, hardware and software, and automatic differentiation for EO models, advanced solution and optimization strategies can solve a wide range of challenging problems relevant to advanced process systems engineering including: model predictive control that involves dynamic nonlinear optimization,[19] superstructure-based conceptual design problems with integer variables,[20–22] and two-stage stochastic optimization problems involving uncertainty.[23] However, application of these strategies and tools has been largely limited to a few platforms (such as gPROMS[12] and Aspen Custom Modeler[7]), because many advanced algorithms developed by the optimization community are hard to integrate, and they perform less well with commercial simulation tools, particularly those in the SM mode.",
+    "zh": "另一方面，过去二十年中，计算能力和大规模数值优化算法均取得了显著进展，极大地扩展了可求解问题的类型。得益于计算算法、硬件与软件，以及 EO 模型自动微分技术的协同发展，先进求解与优化策略已能够解决与先进过程系统工程相关的多种挑战性问题，包括涉及动态非线性优化的模型预测控制、[19] 带有整数变量且基于超结构的概念设计问题，[20–22] 以及涉及不确定性的两阶段随机优化问题。[23] 然而，这些策略和工具的应用大体上仍局限于少数平台，例如 gPROMS[12] 和 Aspen Custom Modeler[7]，因为优化领域开发的许多先进算法难以集成到商业仿真工具中，而且与这些工具配合时表现较差，尤其是在 SM 模式下。"
+  },
+  {
+    "id": "u012",
+    "kind": "paragraph",
+    "source": [
+      "PDF 4，左栏",
+      "PDF 4，右栏"
+    ],
+    "en": "To allow the realization of the full potential of state-of-the-art optimization algorithms, Algebraic Modeling Languages (AMLs) have been developed that can solve large-scale linear and nonlinear mathematical optimization problems with both continuous and discrete variables. Examples include AMPL,[24] GAMS,[25] AIMMS,[26] Pyomo,[27] and JuMP.[28,29] These modeling platforms require users to construct their own mathematical models for the systems they wish to study, and their open structure provides nearly limitless freedom in model construction and formulation, seamless calculation of exact first and second derivatives, and the integration of dozens of advanced optimization solvers. Nevertheless, for CAPE problems, AML platforms lack the specialized infrastructure and model libraries typically available in process simulators, and they often require models to be built from the ground up. This limitation becomes especially challenging for thermodynamic and physical property models. Additionally, most AMLs lack the modular and hierarchical structure generally expected by process engineers, which limits the reuse of models. In addition, they require advanced skills to build interconnected system models. Finally, the performance and reliability of the resulting model are heavily dependent on the engineer's expertise to avoid coding errors and properly formulate the optimization model. Taken together, these add a significant amount of time to the modeling process and require specialized knowledge that precludes widespread application.",
+    "zh": "为充分发挥最先进优化算法的潜力，人们开发了代数建模语言（AML），用于求解同时包含连续变量和离散变量的大规模线性与非线性数学优化问题。相关实例包括 AMPL、[24] GAMS、[25] AIMMS、[26] Pyomo[27] 和 JuMP。[28,29] 这些建模平台要求用户为所研究的系统自行构建数学模型；其开放结构在模型构建与数学表达方面提供了几乎不受限制的自由度，可无缝计算精确的一阶和二阶导数，并能集成数十种先进优化求解器。然而，对于 CAPE 问题，AML 平台缺少过程模拟器通常具备的专用基础设施与模型库，往往需要从头建立模型。这一局限在热力学和物性模型方面尤为突出。此外，大多数 AML 缺少过程工程师通常期望的模块化、层次化结构，从而限制了模型的复用。同时，要构建相互连接的系统模型，还需要较高的专业技能。最后，所得模型的性能和可靠性很大程度上取决于工程师能否凭借专业能力避免编码错误，并正确建立优化模型。综合来看，这些因素显著增加了建模时间，而且所要求的专业知识也妨碍了广泛应用。"
+  },
+  {
+    "id": "u013",
+    "kind": "paragraph",
+    "source": [
+      "PDF 4，右栏"
+    ],
+    "en": "As a result of these developments, there is currently no single platform which combines the infrastructure and modeling libraries required to address complex energy and chemical processes with integrated support for advanced optimization-based decision-making, that is, for (i) optimal steady-state and dynamic design and operations, including superstructure based conceptual design, and (ii) data reconciliation, parameter estimation, uncertainty quantification and optimization under uncertainty. This deficiency leads to greatly increased user effort and severely limits the effectiveness of process modeling and optimization workflows, as potential users must have access to and knowledge of multiple tools to handle each task.",
+    "zh": "上述发展所形成的现状是：目前尚无单一平台能够把处理复杂能源和化工过程所需的基础设施与模型库，同对先进优化决策的集成支持结合起来，即同时支持：（i）最优稳态与动态设计和运行，包括基于超结构的概念设计；以及（ii）数据协调、参数估计、不确定性量化和不确定性下优化。这一缺陷显著增加了用户的工作量，并严重限制了过程建模与优化工作流程的有效性，因为潜在用户必须能够获取并掌握多种工具，才能完成各项任务。"
+  },
+  {
+    "id": "u014",
+    "kind": "heading",
+    "source": [
+      "PDF 4，右栏"
+    ],
+    "en": "2.1 | The IDAES integrated platform",
+    "zh": "2.1 | IDAES 集成平台"
+  },
+  {
+    "id": "u015",
+    "kind": "paragraph",
+    "source": [
+      "PDF 4，右栏",
+      "PDF 5，左栏"
+    ],
+    "en": "The open-source Institute for the Design of Advanced Energy Systems (IDAES) Integrated Platform was developed to address these challenges and overcome the limitations of current process tools and enable next-generation process systems engineering applications.[30] This platform supports the full process modeling lifecycle from conceptual design to dynamic optimization and control within a single modeling environment. At the center of this platform is the Core Modeling Framework (IDAES-CMF) which leverages the open-source, extensible algebraic modeling environment, Pyomo.[27] Pyomo is written in the Python programming language, and it allows modelers to formulate, initialize, solve, and manipulate large-scale optimization problems with concise notation all within the Python ecosystem. Pyomo provides interfaces to dozens of optimization solvers, both open-source and commercial, and it supports executing solvers both locally and in distributed environments. Most importantly, Pyomo has the advanced modeling capabilities needed. Pyomo provides extensions for block-oriented modeling and Generalized Disjunctive Programming, explicit representation of network models, stochastic programming, and dynamic systems containing (partial) differential-algebraic equations. This enables modeling flexibility and the consideration of constraints and objective functions in non-standard forms not easily handled by other modeling frameworks. New, custom algorithms and solution processes can be combined with these extensions to enable complex analyses. A diagram of the major elements of the IDAES Integrated Platform is shown in Figure 1.",
+    "zh": "为应对这些挑战、克服现有过程工具的局限，并支持新一代过程系统工程应用，开发了开源的先进能源系统设计研究所（Institute for the Design of Advanced Energy Systems，IDAES）集成平台。[30] 该平台在单一建模环境中支持从概念设计到动态优化与控制的完整过程建模生命周期。平台的中心是核心建模框架（IDAES-CMF），它采用了开源、可扩展的代数建模环境 Pyomo。[27] Pyomo 使用 Python 编程语言编写，使建模人员能够完全在 Python 生态中，以简洁的表示方式建立、初始化、求解和操作大规模优化问题。Pyomo 提供了数十种开源及商业优化求解器的接口，并支持在本地和分布式环境中运行求解器。最重要的是，Pyomo 具备所需的先进建模能力。它为面向块的建模、广义析取规划、网络模型的显式表示、随机规划以及含有（偏）微分代数方程的动态系统提供扩展。这使建模具有灵活性，并能考虑其他建模框架难以处理的非标准形式约束和目标函数。新的定制算法与求解过程可以同这些扩展结合，以支持复杂分析。图 1 展示了 IDAES 集成平台的主要组成部分。"
+  },
+  {
+    "id": "u016",
+    "kind": "paragraph",
+    "source": [
+      "PDF 5，左栏"
+    ],
+    "en": "This paper describes the IDAES-CMF and model libraries, demonstrating its capabilities for solving complex chemical engineering flowsheets through a case study. The IDAES-CMF reduces the overhead associated with building and customizing models by automating much of the workflow and providing several libraries of open, modifiable and flexible sub-models. Section 2 describes the IDAES-CMF along with its EO modeling structure, process model libraries and strategies for process flowsheet construction and initialization. Section 3 presents a case study on the modeling and optimization of the hydrodealkylation process, in order to describe the workflow and demonstrate the capabilities of the IDAES-CMF. Finally, Section 4 concludes the paper and summarizes the characteristics of the IDAES Integrated Platform and IDAES-CMF.",
+    "zh": "本文介绍 IDAES-CMF 及其模型库，并通过一个案例研究展示其求解复杂化工流程的能力。IDAES-CMF 通过自动完成大量工作流程，并提供若干开放、可修改且灵活的子模型库，降低了模型构建与定制的额外工作量。第 2 节介绍 IDAES-CMF，以及其 EO 建模结构、过程模型库、流程构建和初始化策略。第 3 节给出加氢脱烷基过程建模与优化的案例研究，用以说明工作流程并展示 IDAES-CMF 的能力。最后，第 4 节对全文进行总结，概括 IDAES 集成平台和 IDAES-CMF 的特点。"
+  },
+  {
+    "id": "u017",
+    "kind": "heading",
+    "source": [
+      "PDF 5，左栏"
+    ],
+    "en": "3 | THE IDAES CORE MODELING FRAMEWORK",
+    "zh": "3 | IDAES 核心建模框架"
+  },
+  {
+    "id": "u018",
+    "kind": "paragraph",
+    "source": [
+      "PDF 5，左栏",
+      "PDF 5，右栏"
+    ],
+    "en": "As discussed above, two of the most significant limitations to the wide-spread adoption of EO approaches have been the significant amount of effort required in formulating models due to a lack of general-purpose model libraries, and the challenges initializing the overall model. With commercial process simulation tools including pre-built libraries of reliable models for most common unit operations, these tools have easily become the go-to solution for process modelers, with EO approaches limited to niche applications that process simulators cannot solve efficiently. The IDAES-CMF seeks to make EO approaches more accessible by addressing these concerns through providing a library of modular EO modeling elements which can be used to rapidly assemble complex process flowsheets.",
+    "zh": "如前所述，EO 方法难以广泛应用的两个最重要限制是：由于缺少通用模型库，建立模型需要投入大量工作；以及整体模型初始化困难。商业过程仿真工具为大多数常见单元操作提供了预先构建的可靠模型库，因此很容易成为过程建模人员的首选，而 EO 方法则局限于过程模拟器无法高效求解的特定应用。IDAES-CMF 通过提供模块化的 EO 建模组件库来解决这些问题，旨在使 EO 方法更易于使用；这些组件可用于快速组装复杂过程流程。"
+  },
+  {
+    "id": "u019",
+    "kind": "paragraph",
+    "source": [
+      "PDF 5，右栏"
+    ],
+    "en": "The IDAES-CMF contains a library of models for common process unit operations and thermophysical properties which can be used to rapidly create process flowsheets. These models are internally consistent and interoperable and support different levels of complexity and accuracy for both steady-state and dynamic analysis, along with pre-built, generally applicable initialization routines. Additionally, the IDAES-CMF includes a library of customizable building blocks for constructing models of novel unit operations. These building blocks can be further combined with existing models to support multi-scale modeling. All of these building blocks also contain modular initialization routines that can be combined hierarchically to build reliable initialization schemes.",
+    "zh": "IDAES-CMF 包含常见过程单元操作和热物性模型库，可用于快速建立过程流程。这些模型内部一致且能够相互配合，支持稳态和动态分析所需的不同复杂程度和精度水平，并提供预先构建、具有普遍适用性的初始化程序。此外，IDAES-CMF 还包含可定制的基础构件库，用于构建新型单元操作模型。这些构件还可与现有模型进一步组合，支持多尺度建模。所有这些构件也都包含模块化初始化程序，可以按层次组合，形成可靠的初始化方案。"
+  },
+  {
+    "id": "u020",
+    "kind": "paragraph",
+    "source": [
+      "PDF 5，右栏"
+    ],
+    "en": "An important aspect of the entire IDAES-CMF is that every model and equation is completely open and extensible. Not only can a modeler see exactly what variables and constraints make up the model, but they also have complete freedom to modify these models by adding and removing variables and constraints, or even modifying those constraints which already exist within the model. This level of flexibility allows modelers to fully customize the model library to their needs, giving them full control of the rigor, complexity and tractability of the final model. This in turn allows the IDAES-CMF model libraries to be applied to a wide range of different problems, from conceptual design where complexity often needs to take second place to tractability, to dynamic control studies where complex non-linear performance curves must be considered.",
+    "zh": "整个 IDAES-CMF 的一个重要特点是，每个模型和方程都完全开放且可扩展。建模人员不仅能清楚看到模型由哪些变量和约束构成，还能完全自由地通过增加或删除变量和约束，甚至修改模型中已有的约束，对模型进行调整。这种灵活性使建模人员能够根据自身需求全面定制模型库，完全掌控最终模型的严谨程度、复杂程度和可求解性。这又使 IDAES-CMF 模型库能够用于多种不同问题：既可用于往往需要优先保证可求解性、其次才考虑复杂程度的概念设计，也可用于必须考虑复杂非线性性能曲线的动态控制研究。"
+  },
+  {
+    "id": "u021",
+    "kind": "heading",
+    "source": [
+      "PDF 5，右栏"
+    ],
+    "en": "3.1 | IDAES model libraries",
+    "zh": "3.1 | IDAES 模型库"
+  },
+  {
+    "id": "u022",
+    "kind": "paragraph",
+    "source": [
+      "PDF 5，右栏",
+      "PDF 6，左栏"
+    ],
+    "en": "The IDAES-Core model library includes common unit operations and thermophysical property models that were formulated for optimization of both steady-state and dynamic processes. Table 1 shows the unit operation and property models currently available in the core model libraries.",
+    "zh": "IDAES-Core 模型库包括常见的单元操作和热物性模型，这些模型的建立面向稳态和动态过程优化。表 1 列出了核心模型库当前提供的单元操作模型与物性模型。"
+  },
+  {
+    "id": "u023",
+    "kind": "paragraph",
+    "source": [
+      "PDF 6，左栏"
+    ],
+    "en": "These model libraries are constructed using the modular building blocks in the core modeling libraries (discussed below) in the same way user-defined models would be. These models are fully open and modifiable and are intended to provide a set of equations required to describe a generic version of a given unit operations. Modelers are fully encouraged to build upon these models by adding additional levels of detail such as efficiency and performance correlations to suit the needs of their application. Each model also incorporates a dedicated initialization routine.",
+    "zh": "这些模型库使用核心建模库中的模块化基础构件构建，其方式与用户自定义模型相同；下文将讨论这些构件。这些模型完全开放、可以修改，旨在提供描述某一单元操作通用形式所需的一组方程。鼓励建模人员充分利用这些模型作为基础，加入效率关系式、性能关联式等额外细节层次，以满足具体应用需求。每个模型也都包含专用的初始化程序。"
+  },
+  {
+    "id": "u024",
+    "kind": "heading",
+    "source": [
+      "PDF 6，左栏"
+    ],
+    "en": "3.2 | IDAES building blocks",
+    "zh": "3.2 | IDAES 基础构件"
+  },
+  {
+    "id": "u025",
+    "kind": "paragraph",
+    "source": [
+      "PDF 6，左栏"
+    ],
+    "en": "One of the greatest strengths of EO modeling tools is the ability for users to create custom models for novel applications; however, the effort required to first build a tractable model and then find a feasible initial solution has generally limited the application of custom models to academic and dedicated research applications. To address this limitation, the IDAES-CMF provides a suite of modular building blocks that utilize the hierarchical structure shown in Figure 2.",
+    "zh": "EO 建模工具最大的优势之一，是用户能够针对新应用创建定制模型；然而，首先构建一个可求解的模型，再找到可行初始解，所需的工作量通常使定制模型仅限于学术和专门研究应用。为解决这一局限，IDAES-CMF 提供了一套模块化基础构件，采用图 2 所示的层次结构。"
+  },
+  {
+    "id": "u026",
+    "kind": "paragraph",
+    "source": [
+      "PDF 6，左栏"
+    ],
+    "en": "A process is considered to be a network of material “states,” representing both the extensive and intensive properties of a material within the process at a given point in space and time. A unit model (i.e., model of a specific piece of equipment) consists of two or more material states that are linked together by sets of material, energy and momentum balances which describe how the material transitions from one state to another, including phenomena such as bulk flow, chemical reactions, phase equilibria, and heat and mass transfer. The unit model also contains performance equations which describe the behavior of these interaction phenomena, plus a number of Ports representing material flows into and out of the equipment. Finally, a flowsheet model describes an entire process (or sub-process) consisting of multiple unit models connected using Arcs, which are Pyomo components that link pairs of Ports using a set of equality constraints.",
+    "zh": "一个过程被视为由物料“状态”构成的网络，这些状态表示过程中某一时空位置处物料的广延性质与强度性质。单元模型，即某一具体设备的模型，由两个或多个物料状态构成。这些状态通过若干组物料、能量和动量衡算相连接，用以描述物料如何从一个状态转变为另一个状态，其中包括整体流动、化学反应、相平衡以及传热和传质等现象。单元模型还包含描述这些相互作用现象行为的性能方程，以及若干表示物料进出设备的端口（Port）。最后，流程模型描述由多个单元模型组成的整个过程或子过程；单元模型通过弧（Arc）相连接。Arc 是 Pyomo 组件，它使用一组等式约束连接成对的 Port。"
+  },
+  {
+    "id": "u027",
+    "kind": "paragraph",
+    "source": [
+      "PDF 6，左栏",
+      "PDF 6，右栏",
+      "PDF 7，左栏"
+    ],
+    "en": "For each part of the modeling hierarchy, new types of modeling components have been developed to automate many of the common tasks associated with creating process models and to provide tools to perform common activities. These components are based on Pyomo Blocks and each will be described briefly in the following sections. Further details and examples may be found in the Supplemental Material and in the IDAES documentation (https://idaes-pse.readthedocs.io/en/stable/). Due to the hierarchical nature of the modeling framework, higher level components depend on concepts introduced in lower level components; thus, these modeling components will be described from the bottom up.",
+    "zh": "针对建模层次结构的各个部分，开发了新型建模组件，以自动完成创建过程模型时的许多常见任务，并提供执行常规操作的工具。这些组件以 Pyomo Block 为基础，下文将分别作简要介绍。更多细节与示例可参见补充材料及 IDAES 文档（https://idaes-pse.readthedocs.io/en/stable/）。由于建模框架具有层次性，高层组件依赖于低层组件所引入的概念，因此下面将自底向上介绍这些建模组件。"
+  },
+  {
+    "id": "u028",
+    "kind": "heading",
+    "source": [
+      "PDF 7，左栏"
+    ],
+    "en": "3.3 | State and physical parameter blocks",
+    "zh": "3.3 | 状态块与物性参数块"
+  },
+  {
+    "id": "u029",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，左栏"
+    ],
+    "en": "The core of any process model is the set of calculations for determining the thermophysical properties of the material within the system. Accurate and efficient calculation of these properties is critical to being able to develop and solve a model for any process, and the formulation of these calculations has a significant impact on the overall tractability of the problem.",
+    "zh": "任何过程模型的核心，都是确定系统内物料热物性的一组计算。能否准确、高效地计算这些性质，对于开发和求解任何过程的模型都至关重要，而这些计算的数学表达方式也会显著影响问题的整体可求解性。"
+  },
+  {
+    "id": "u030",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，左栏"
+    ],
+    "en": "A large number of software packages exist which offer calculations of a wide range of thermophysical properties with access to large databanks or parameters regressed from experimental data. However, most of these packages are procedural in nature and operate as black-box models, which limits their integration within an EO environment. While Pyomo provides an interface for including such external function calls within models, this interface requires the black-box model to provide full first and second partial derivative information which is often not available, and not all solvers support the use of external functions. Future work will look at expanding the capabilities of the external function interface and interfacing with existing thermophysical property packages.",
+    "zh": "已有大量软件包可以计算多种热物性，并可访问大型数据库，或使用根据实验数据回归得到的参数。然而，大多数软件包本质上是程序式的，并以黑箱模型运行，这限制了它们与 EO 环境的集成。虽然 Pyomo 提供了在模型中包含这类外部函数调用的接口，但该接口要求黑箱模型提供完整的一阶和二阶偏导数信息，而这些信息往往无法获得，并且并非所有求解器都支持外部函数。未来工作将探索扩展外部函数接口的能力，以及与现有热物性软件包的对接。"
+  },
+  {
+    "id": "u031",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，左栏"
+    ],
+    "en": "To provide calculation of thermophysical property within the IDAES-CMF, the state variables and constraints required to calculate the necessary thermophysical properties are implemented directly within the overall model through two modeling components: State Blocks and Physical Parameter Blocks.",
+    "zh": "为在 IDAES-CMF 内提供热物性计算，计算所需热物性涉及的状态变量与约束，通过状态块（State Block）和物性参数块（Physical Parameter Block）这两种建模组件，直接在整体模型中实现。"
+  },
+  {
+    "id": "u032",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，左栏",
+      "PDF 7，右栏"
+    ],
+    "en": "State Blocks are the most commonly used component in the framework and are used where thermophysical property calculations are required. Each State Block is a self-contained sub-model representing the state of a given material at a point in space and time containing a set of variables describing the material state, plus additional variables, expressions, and constraints describing each property of interest at that point. As such, these represent the “states” shown in Figure 2. The thermophysical property calculations within these State Blocks depend on a set of parameters or physical constants which are constant for a given material. Duplicating these constants in each State Block would be inefficient and make it difficult to include these in a parameter estimation study. Thus, all constants for a given material are collected in a Physical Parameter Block which acts as a central repository of information for that material.",
+    "zh": "状态块是框架中最常使用的组件，用于需要热物性计算的场合。每个状态块都是一个自包含的子模型，表示给定物料在某一时空位置处的状态；其中包含一组描述物料状态的变量，以及描述该位置各项关注性质的附加变量、表达式和约束。因此，这些状态块对应图 2 中的“状态”。状态块中的热物性计算依赖于一组参数或物理常数，对于给定物料，这些量是固定的。若在每个状态块中重复定义这些常数，效率会很低，也难以将它们纳入参数估计研究。因此，给定物料的全部常数都集中在一个物性参数块中，该块作为这一物料信息的集中存储库。"
+  },
+  {
+    "id": "u033",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，右栏"
+    ],
+    "en": "Given the highly non-linear nature of typical correlations for thermophysical properties, it can often be beneficial for convergence to represent the material state in different forms. For example, sometimes total flows and mole fractions will prove to be more reliable, while in other applications component flowrates may prove to be a better choice. The IDAES-CMF provides the flexibility to choose between any set of state variables, rather than enforcing a standard form, allowing for the most tractable set of state variables to be chosen for a given set of thermophysical property correlations. Each set of thermophysical property calculations is contained within a separate State Block, enabling the use of different sets of state variables in different parts of the flowsheet. Additionally, rather than requiring all possible thermophysical properties to be defined within a model, the IDAES-CMF requires only those properties used within a particular flowsheet to be defined. This greatly simplifies the construction of new thermophysical property models by reducing the number of properties that need to be defined before the model can be used in a flowsheet.",
+    "zh": "典型热物性关联式具有高度非线性，因此采用不同形式表示物料状态，通常有利于收敛。例如，有时总流量和摩尔分数更可靠，而在其他应用中，组分流量可能是更好的选择。IDAES-CMF 允许灵活选择任意一组状态变量，而不强制采用标准形式，从而针对给定的一组热物性关联式，选择最容易求解的状态变量组合。每组热物性计算均包含在一个独立的状态块中，因此流程的不同部分可以使用不同的状态变量组。此外，IDAES-CMF 只要求定义某个具体流程实际使用的物性，而不是要求在模型中定义所有可能的热物性。这样一来，新热物性模型在用于流程之前所需定义的性质数量得以减少，从而大大简化了模型构建。"
+  },
+  {
+    "id": "u034",
+    "kind": "paragraph",
+    "source": [
+      "PDF 7，右栏"
+    ],
+    "en": "Examples of a Physical Parameter Block and a State Block definition can be found in the Supplementary Material.",
+    "zh": "物性参数块和状态块定义的示例可参见补充材料。"
+  },
+  {
+    "id": "u035",
+    "kind": "heading",
+    "source": [
+      "PDF 8，左栏"
+    ],
+    "en": "3.4 | Reaction and reaction parameter blocks",
+    "zh": "3.4 | 反应块与反应参数块"
+  },
+  {
+    "id": "u036",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，左栏"
+    ],
+    "en": "Many processes also involve chemical reactions; however, these tend to be isolated to specific unit operations within the process, unlike thermophysical properties which are required in all unit operations. Thus, chemical reactions are treated separately from thermophysical properties, which allows reactions to be defined only for those unit operations where they are important and to allow different sets of reactions in different unit operations. In the same way that thermodynamic property calculations are modeled using State Blocks and Physical Parameter Block components, chemical reactions are modeled using Reaction Block and Reaction Parameter Block components. For the purposes of the modeling framework, two types of chemical reactions are considered; equilibrium reactions which depend solely on the material state, and rate- (kinetic) or yield-based reactions which also depend on the unit operation (e.g. reactor volume or a fixed conversion).",
+    "zh": "许多过程还涉及化学反应；然而，与所有单元操作都需要的热物性不同，化学反应通常仅发生在过程中的特定单元操作内。因此，将化学反应与热物性分开处理，可以只在反应起重要作用的单元操作中定义反应，并允许不同单元操作使用不同的反应组。正如热力学物性计算采用状态块和物性参数块组件建模，化学反应采用反应块（Reaction Block）和反应参数块（Reaction Parameter Block）组件建模。在本建模框架中，考虑两类化学反应：一类是仅依赖物料状态的平衡反应；另一类是基于速率（动力学）或收率的反应，后者还依赖于单元操作，例如反应器体积或固定转化率。"
+  },
+  {
+    "id": "u038",
+    "kind": "heading",
+    "source": [
+      "PDF 8，左栏"
+    ],
+    "en": "3.5 | Homogenous control volumes",
+    "zh": "3.5 | 均匀控制体"
+  },
+  {
+    "id": "u039",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，左栏"
+    ],
+    "en": "While every process unit operation is different, they all share several common components, that is, material states which are linked together by a system of material, energy and momentum balances. The IDAES-CMF automates the creation of these common components, ultimately speeding up the model development process compared to process modeling in other AMLs while also eliminating one of the most common sources of modeling errors.",
+    "zh": "尽管每一种过程单元操作都不同，但它们都有若干共同的组成部分，即由物料、能量和动量衡算系统连接起来的物料状态。IDAES-CMF 自动创建这些共同组成部分，因此与其他 AML 中的过程建模相比，能够加快模型开发过程，同时消除最常见的建模错误来源之一。"
+  },
+  {
+    "id": "u041",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，左栏",
+      "PDF 8，右栏"
+    ],
+    "en": "To do this, the IDAES-CMF uses control volumes which represent distinct volumes of material over which designated state transformations will occur. In the simplest form, a control volume has two material states representing the state of material entering and leaving the control volume, which are linked by a set of material, energy and momentum balances. To accelerate the development of new unit models, the IDEAS-CMF contains Control Volume components which contain a library of methods to automate common activities, such as the creation of State Blocks and writing material, energy and momentum equations.",
+    "zh": "为此，IDAES-CMF 采用控制体来表示其中会发生指定状态转变的独立物料体积。在最简单的形式下，一个控制体具有两个物料状态，分别表示进入和离开控制体的物料状态，二者由一组物料、能量和动量衡算联系起来。为加快新单元模型的开发，IDEAS-CMF 包含控制体（Control Volume）组件，其中提供了一套方法库，用于自动完成常见操作，例如创建状态块以及编写物料、能量和动量方程。"
+  },
+  {
+    "id": "u042",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，右栏"
+    ],
+    "en": "Homogeneous Control Volumes support several different forms for the material (Equations (1)–(3)), energy (Equation (4)) and momentum balances (Equation (5)), since one form may be more tractable than others for a given application. More forms will be added in the future.",
+    "zh": "均匀控制体支持物料衡算（式（1）—（3））、能量衡算（式（4））和动量衡算（式（5））的多种不同形式，因为对于某个具体应用，其中某种形式可能比其他形式更易求解。未来还将增加更多形式。"
+  },
+  {
+    "id": "u043",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，右栏"
+    ],
+    "en": "Here $V$ is the volume of the control volume, $\\phi_p$ is the volume fraction of phase $p$, $I$ is the set of components, $P$ is the set of thermodynamic phases of interest, $E$ is the set of elements, $R$ is the set of all reactions of interest (including rate-based, chemical equilibrium and phase equilibrium reactions), $C_{p,i}$ is the concentration of component $i$ in phase $p$ within the control volume, $F_{p,i,in}$ and $F_{p,i,out}$ are the flow of component $i$ in phase $p$ into and out of the control volume, $\\nu_{e,i}$ is the moles of element $e$ per mole of component $i$, $\\alpha_{p,i,r}$ is the stoichiometric coefficient for component $i$ in phase $p$ in reaction $r$, $X_r$ is the extent of reaction $r$ and $M$ is a generic term for other mass transfer phenomena crossing the control volume boundary. The component and phase-component forms support both mass and mole bases, with appropriate conversions where required (only molar basis is supported for element balances).",
+    "zh": "其中，$V$ 为控制体体积，$\\phi_p$ 为相 $p$ 的体积分数，$I$ 为组分集合，$P$ 为所关注热力学相的集合，$E$ 为元素集合，$R$ 为所有关注反应的集合（包括基于速率的反应、化学平衡反应和相平衡反应），$C_{p,i}$ 为控制体内相 $p$ 中组分 $i$ 的浓度，$F_{p,i,in}$ 与 $F_{p,i,out}$ 分别为相 $p$ 中组分 $i$ 进入和离开控制体的流量，$\\nu_{e,i}$ 为每摩尔组分 $i$ 中元素 $e$ 的摩尔数，$\\alpha_{p,i,r}$ 为反应 $r$ 中相 $p$ 内组分 $i$ 的化学计量系数，$X_r$ 为反应 $r$ 的反应进度，$M$ 为穿过控制体边界的其他传质现象的通用项。组分形式和相—组分形式均支持质量基准与摩尔基准，并在需要时进行适当换算；元素衡算仅支持摩尔基准。"
+  },
+  {
+    "id": "u046",
+    "kind": "paragraph",
+    "source": [
+      "PDF 8，右栏",
+      "PDF 9，左栏"
+    ],
+    "en": "Here $\\hat E_p$ is the volume-specific internal energy of the material in phase $p$ (i.e., the internal energy density), $H_{in}$ and $H_{out}$ are the enthalpy flow into and out of the control volume respectively, $Q$ and $W$ are heat and work transfer terms respectively, $\\Delta H_{MT}$ is the energy change due to mass transfer, and $\\Delta H_{rxn,r}$ is the molar heat of reaction for reaction $r$. The $\\Delta H_{rxn,r}$ term is included as an optional term to allow for short-cut approaches where heats of reaction are included explicitly in the energy balance equation rather than through heats of formation included in the enthalpy flow terms. Note that this is an either-or decision, and that defining enthalpy without the inclusion of heats of formation precludes the calculation of quantities such as Gibbs energy and thus the use of the Gibbs reactor model.",
+    "zh": "其中，$\\hat E_p$ 为相 $p$ 中物料的单位体积内能，即内能密度；$H_{in}$ 与 $H_{out}$ 分别为进入和离开控制体的焓流；$Q$ 与 $W$ 分别为传热项和功传递项；$\\Delta H_{MT}$ 为传质引起的能量变化；$\\Delta H_{rxn,r}$ 为反应 $r$ 的摩尔反应热。$\\Delta H_{rxn,r}$ 作为可选项，用于支持简化处理方式：将反应热显式写入能量衡算方程，而不是通过焓流项中所包含的生成热来体现。需要注意，两种方式只能选择其一；如果定义焓时不包含生成热，就无法计算吉布斯能等量，因此也无法使用吉布斯反应器模型。"
+  },
+  {
+    "id": "u047",
+    "kind": "paragraph",
+    "source": [
+      "PDF 9，左栏"
+    ],
+    "en": "Here $P_{in}$ and $P_{out}$ are the pressure at the inlet and outlet of the control volume, and $\\Delta P$ is the pressure change between inlet and outlet.",
+    "zh": "其中，$P_{in}$ 与 $P_{out}$ 分别为控制体入口和出口的压力，$\\Delta P$ 为入口至出口的压力变化。"
+  },
+  {
+    "id": "u048",
+    "kind": "paragraph",
+    "source": [
+      "PDF 9，左栏",
+      "PDF 9，右栏"
+    ],
+    "en": "These balance equations are all written in a general form and include terms for the common interactions that may occur; however, most applications will not require all of these terms. For example, a heating unit operation generally does not involve work transfer, thus this term is not required. Rather than including all terms within the balance equations and requiring values to be assigned to all of these, the IDAES-CMF allows for only those terms which are required in a given unit model to be identified and included in the constraints. Table 2 provides a list of all the optional terms for the different balance types; modelers are free to choose which terms from this list should be included in the balance equations of their models.",
+    "zh": "这些衡算方程均以通用形式编写，并包含可能发生的常见相互作用项；然而，大多数应用并不需要全部这些项。例如，加热单元操作通常不涉及功传递，因此不需要这一项。IDAES-CMF 允许只确定并在约束中包含某个单元模型所需的项，而不是将全部项纳入衡算方程，并要求为每一项赋值。表 2 列出了不同衡算类型的全部可选项；建模人员可以自由选择其中哪些项应当纳入其模型的衡算方程。"
+  },
+  {
+    "id": "u049",
+    "kind": "paragraph",
+    "source": [
+      "PDF 9，右栏"
+    ],
+    "en": "By providing a range of options with a simple interface, Control Volumes make it easy to study alternative formulations and find the most tractable form. Rather than having to edit or replace several complex constraints in the model, the form of the balance equations can be quickly changed by modifying one line of code, greatly reducing the time required to study different formulations and reducing the possibility of introducing errors. Additionally, optional terms can be readily added or removed to the balance equations allowing changes to add or remove complexity. This also supports the seamless transition between dynamic and steady-state models, as the time-dependent terms can be easily added or removed as required.",
+    "zh": "控制体通过简单接口提供多种选项，使研究不同数学表达形式、寻找最易求解形式的工作更加容易。只需修改一行代码，就能快速改变衡算方程的形式，无需编辑或替换模型中多个复杂约束。这大幅缩短了研究不同表达形式所需的时间，并降低了引入错误的可能性。此外，可以方便地在衡算方程中增加或删除可选项，从而调整模型的复杂程度。这也支持动态模型与稳态模型之间的无缝转换，因为可按需要方便地增加或删除时间相关项。"
+  },
+  {
+    "id": "u050",
+    "kind": "paragraph",
+    "source": [
+      "PDF 9，右栏"
+    ],
+    "en": "An example of the application of a homogeneous control volume to facilitate the construction of a model for a reactor can be found in the Supplementary Material.",
+    "zh": "补充材料给出了应用均匀控制体来辅助构建反应器模型的示例。"
+  },
+  {
+    "id": "u051",
+    "kind": "heading",
+    "source": [
+      "PDF 9，右栏"
+    ],
+    "en": "3.6 | One-dimensional control volumes",
+    "zh": "3.6 | 一维控制体"
+  },
+  {
+    "id": "u052",
+    "kind": "paragraph",
+    "source": [
+      "PDF 9，右栏"
+    ],
+    "en": "While the simple inlet–outlet form described above is sufficient for many process applications, more complex unit operations may require consideration of spatial variances within the control volume. The IDAES-CMF provides support for control volumes with spatial variation in one dimension, and Equations (6) through (10) show the different forms available—note that due to spatial variations all transfer terms are defined in terms of transfer per unit length. Though standard control volumes do not yet exist for higher-dimensional systems, the IDAES-CMF has the necessary features to support any number of dimensions.",
+    "zh": "虽然上述简单的入口—出口形式足以满足许多过程应用，但较复杂的单元操作可能需要考虑控制体内部的空间变化。IDAES-CMF 支持在一个维度上存在空间变化的控制体，式（6）至式（10）给出了可用的不同形式。需要注意，由于存在空间变化，所有传递项均按单位长度的传递量定义。虽然目前尚无适用于更高维系统的标准控制体，但 IDAES-CMF 已具备支持任意维数所需的功能。"
+  },
+  {
+    "id": "u053",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，左栏"
+    ],
+    "en": "Here x is the normalized spatial domain, γ is a flow-direction term equal to −1 for flow from x = 0 to x = 1, L is the length of the spatial domain and A is the cross-sectional area of the control volume. For systems with pressure driven flow, additional constraints describing the  $\\Delta P_x$ term in Equation (10) as a function of velocity may be added, which can be calculated from the total material flowrate and density. Boundary conditions are specified by defining the state variables at the inlet to the control volume. The DAE toolbox in Pyomo[31] allows these equations to be written in their natural PDAE form and to be automatically discretized using several in-built schemes, which provides the ability to easily test different discretization schemes in order to determine the one most suitable for a given application without the need for modifying the model code.",
+    "zh": "其中，$x$ 为归一化空间域；$\\gamma$ 为流向项，当流动方向从 $x=0$ 指向 $x=1$ 时，其值为 −1；$L$ 为该空间域的长度；$A$ 为控制体横截面积。对于压力驱动流动的系统，可增加约束，将式（10）中的 $\\Delta P_x$ 项描述为速度的函数；速度可根据物料总流量和密度计算。边界条件通过定义控制体入口处的状态变量来指定。Pyomo 中的 DAE 工具箱[31] 允许以自然的 PDAE 形式编写这些方程，并通过多种内置方案自动进行离散化。因此，无需修改模型代码，就能方便地测试不同离散化方案，以确定最适合特定应用的方案。"
+  },
+  {
+    "id": "u054",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，左栏"
+    ],
+    "en": "One-dimensional Control Volumes support the same set of optional terms as homogeneous control volumes, allowing for simple addition and removal of terms as required. There are plans to include support for diffusion terms in future versions of the IDAES-CMF. For systems requiring models with more than one spatial dimension, the modeling framework supports higher-order derivatives however these would need to be custom coded. The IDAES-CMF also supports direct inclusion of surrogate or reduced-order models within the IDAES Integrated Platform.",
+    "zh": "一维控制体支持与均匀控制体相同的一组可选项，可按需要方便地增加或删除各项。计划在未来版本的 IDAES-CMF 中加入对扩散项的支持。对于需要一个以上空间维度模型的系统，建模框架支持高阶导数，但需要自行编写相应代码。IDAES-CMF 也支持在 IDAES 集成平台内直接纳入代理模型或降阶模型。"
+  },
+  {
+    "id": "u055",
+    "kind": "heading",
+    "source": [
+      "PDF 10，左栏"
+    ],
+    "en": "3.7 | Unit model blocks",
+    "zh": "3.7 | 单元模型块"
+  },
+  {
+    "id": "u056",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，左栏"
+    ],
+    "en": "The components mentioned above provide the necessary building blocks for constructing unit operations models, which are described using Unit Model blocks. Each Unit Model block generally contains one or more Control Volumes describing the flow of material through the unit (however these can be written without control volumes), a set of performance constraints describing any undefined terms within the control volume balance equations (e.g. mass, heat and work transfer terms), and Ports describing the inlets and outlets from the unit.",
+    "zh": "上述组件提供了构建单元操作模型所需的基础构件，单元操作模型用单元模型（Unit Model）块描述。每个单元模型块通常包含一个或多个控制体，用以描述物料流经该单元的过程，但单元模型也可以不使用控制体编写；此外还包含一组性能约束，用于描述控制体衡算方程中尚未定义的项，例如传质、传热和功传递项，以及描述单元入口和出口的端口。"
+  },
+  {
+    "id": "u057",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，左栏",
+      "PDF 10，右栏"
+    ],
+    "en": "Most of the complexity in a unit operation lies in defining the material, energy and momentum balances which are handled by the control volume(s). The unit model only needs to determine which forms to use for the balance equations and which terms should be included before calling the appropriate methods from the control volume, thus reducing the effort of writing these equations to three lines of code. Unit models may in turn include support for different forms through optional inputs during construction. As the Unit Model is “aware” of which terms will be included in the balance equations, it also needs to construct any performance constraints necessary to define these as appropriate (or leaving these as degrees of freedom to be defined when specifying design conditions).",
+    "zh": "单元操作中的大部分复杂性来自物料、能量和动量衡算的定义，而这些工作由控制体处理。单元模型只需确定衡算方程采用哪些形式、包含哪些项，然后调用控制体中的相应方法，从而将编写这些方程的工作量缩减为三行代码。单元模型还可以通过构建时的可选输入，支持不同的形式。由于单元模型“知道”衡算方程将包含哪些项，因此也需要构建必要的性能约束，对这些项作出恰当定义；或者将它们保留为自由度，在指定设计条件时再定义。"
+  },
+  {
+    "id": "u058",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "Finally, unit models define the Ports which provide the connectivity between models within a flowsheet. The only information that needs to be passed between Unit Models is the state of the material at the inlet or outlet, which is fully described by the state variables in the associated State Block. Due to this, Unit Models can automate the construction of Ports, removing the need for them to be manually defined.",
+    "zh": "最后，单元模型定义端口，为流程内各模型之间提供连接。单元模型之间唯一需要传递的信息，是入口或出口处的物料状态，而关联状态块中的状态变量可以完整描述该状态。因此，单元模型能够自动构建端口，无需手动定义。"
+  },
+  {
+    "id": "u059",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "An example of defining a custom model for a reactor unit operation can be found in the Supplementary Material.",
+    "zh": "补充材料给出了为反应器单元操作定义定制模型的示例。"
+  },
+  {
+    "id": "u060",
+    "kind": "heading",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "3.8 | Flowsheet blocks",
+    "zh": "3.8 | 流程块"
+  },
+  {
+    "id": "u061",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "The final component type provided by the IDAES-CMF is the Flowsheet Block, which serve as the canvas for constructing a process. Beginning with a Flowsheet Block, other types of IDAES modeling components are added to represent unit operations and thermophysical property calculations. The IDAES-CMF allows for Flowsheet Blocks to contain multiple Physical Property Blocks which can be used to represent streams of different materials, or to allow different methods of calculating properties for the same stream in different parts of the flowsheet. This feature can be used to help balance the need for accuracy versus tractability by limiting detailed but hard to solve property calculations to only those units where the accuracy has a significant impact on the model results.",
+    "zh": "IDAES-CMF 提供的最后一种组件类型是流程块（Flowsheet Block），它作为构建过程的载体。以一个流程块为起点，加入其他类型的 IDAES 建模组件，以表示单元操作和热物性计算。IDAES-CMF 允许一个流程块包含多个物性块，可用于表示不同物料的物流，或使同一物流在流程的不同部分采用不同的物性计算方法。这一功能可将详细但难以求解的物性计算限制在那些精度会显著影响模型结果的单元中，从而有助于平衡精度与可求解性的需求。"
+  },
+  {
+    "id": "u062",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "Flowsheet Blocks also serve to organize and maintain representations of global phenomena, the most significant of which is the time domain for the process. To allow seamless transition between steady-state and dynamic modeling, all models in the IDAES-CMF contain a time domain which is used to index any property or variable which may vary with time. This is true even for steady-state cases where temporal variations are not of interest and the time domain consists of a single point. This is done to avoid structural differences (i.e. different indexing of variables and constraints) between dynamic and steady-state models so that the same general model can be applied to either application, allowing a seamless transition between steady-state and dynamic simulations.",
+    "zh": "流程块还用于组织和维护全局现象的表示，其中最重要的是过程的时间域。为支持稳态建模与动态建模之间的无缝转换，IDAES-CMF 中的所有模型都包含时间域，用以索引任何可能随时间变化的性质或变量。即使在不关注时间变化、时间域只包含一个点的稳态情形下，也采用这种方式。这样做是为了避免动态模型与稳态模型之间的结构差异，即变量和约束的索引方式不同，使同一个通用模型可用于任一种应用，从而实现稳态仿真与动态仿真之间的无缝转换。"
+  },
+  {
+    "id": "u063",
+    "kind": "paragraph",
+    "source": [
+      "PDF 10，右栏"
+    ],
+    "en": "An example of creating a flowsheet for a process will be demonstrated in the following case study.",
+    "zh": "下文的案例研究将展示如何为一个过程创建流程模型。"
+  },
+  {
+    "id": "u064",
+    "kind": "heading",
+    "source": [
+      "PDF 11，左栏"
+    ],
+    "en": "3.9 | Initialization",
+    "zh": "3.9 | 初始化"
+  },
+  {
+    "id": "u065",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，左栏"
+    ],
+    "en": "When dealing with large-scale nonlinear systems, providing a good set of initial values for the variables in the model is often as important as constructing the model and choosing the right formulation. Any tool with a modular framework for assembling models of complex processes must also provide methods for these sub-models to reliably take them from an uninitialized state to one which can be solved for the conditions of interest. Commercial vendors have dedicated significant resources to this problem, and each has developed their own methods for doing this, which are generally proprietary.",
+    "zh": "处理大规模非线性系统时，为模型中的变量提供一组良好的初始值，往往与构建模型和选择合适的数学表达形式同样重要。任何采用模块化框架来组装复杂过程模型的工具，都必须提供方法，使这些子模型能够可靠地从未初始化状态转变为可在目标条件下求解的状态。商业供应商为解决这一问题投入了大量资源，并各自开发了相应方法，这些方法通常是专有的。"
+  },
+  {
+    "id": "u066",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，左栏"
+    ],
+    "en": "While the IDAES-CMF is built around an EO paradigm, where the entire flowsheet is solved simultaneously, each unit operation is a self-contained model that can be solved in isolation from the flowsheet. This in-built hierarchical nature is a significant advantage over other AMLs, which generally view the model as a single set of constraints, because it allows easy identification of sub-models that can be solved in isolation in order to initialize the model. The IDAES-CMF takes a set of initial guesses for the state variables as inputs to automate initialization based on equation tearing and partitioning strategies for structured sub-models. All IDAES-CMF components (such as State Blocks, Control Volumes and Unit Models) are constructed with such “initialize” methods, which screen for inconsistent initial conditions and develop conditions that are well-posed for the system model. These “initialize” methods may call the “initialize” methods of other sub-models, providing a sequenced, hierarchical approach to develop a set of initial conditions.",
+    "zh": "尽管 IDAES-CMF 围绕 EO 范式构建，即同时求解整个流程，但每个单元操作本身都是一个自包含模型，可以脱离流程单独求解。与通常将模型视为单一约束集的其他 AML 相比，这种内在层次性具有显著优势，因为它使人们能够轻松识别可单独求解的子模型，从而初始化整体模型。IDAES-CMF 以一组状态变量初始猜测值为输入，基于针对结构化子模型的方程撕裂与分块策略实现自动初始化。IDAES-CMF 的所有组件，例如状态块、控制体和单元模型，都配有这样的 `initialize` 方法，用以检查不一致的初始条件，并为系统模型形成适定的条件。这些 `initialize` 方法可以调用其他子模型的 `initialize` 方法，从而以有序、分层的方式得到一组初始条件。"
+  },
+  {
+    "id": "u067",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，左栏"
+    ],
+    "en": "To assist with development of initialization routines, Pyomo and IDAES have a number of supporting tools for initializing models, such as automated sequential decomposition routines, methods for easily copying state information between State Blocks, and integrators for dynamic problems.",
+    "zh": "为辅助开发初始化程序，Pyomo 和 IDAES 提供了若干初始化模型的支持工具，例如自动序贯分解程序、在状态块之间方便地复制状态信息的方法，以及动态问题的积分器。"
+  },
+  {
+    "id": "u068",
+    "kind": "heading",
+    "source": [
+      "PDF 11，左栏"
+    ],
+    "en": "4 | CASE STUDY—HDA PROCESS",
+    "zh": "4 | 案例研究——HDA 过程"
+  },
+  {
+    "id": "u069",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，左栏",
+      "PDF 11，右栏"
+    ],
+    "en": "To demonstrate the application of the IDAES-CMF, a case study is presented which shows how the tools can be used to build a flowsheet, which is then solved as a simulation. This is followed by an example of deterministic optimization to minimize total annualized cost. Finally, stochastic optimization under uncertainty is demonstrated on the same problem. A simplified flowsheet for the hydrodealkylation (HDA) of toluene to form benzene will be used for this case study based on the 1967 AIChE Student Contest problem as presented by Douglas,[32] which is available as an example in the IDAES software release.<sup>1</sup>",
+    "zh": "为展示 IDAES-CMF 的应用，本节给出一个案例研究，说明如何利用这些工具构建流程，并将其作为仿真问题求解。随后给出一个使总年化成本最小化的确定性优化示例。最后，在同一问题上展示不确定性下的随机优化。本案例采用一个将甲苯加氢脱烷基（HDA）生成苯的简化流程，基于 Douglas[32] 所介绍的 1967 年 AIChE 学生竞赛问题；IDAES 软件发布版本中提供了该流程的示例。<sup>1</sup>"
+  },
+  {
+    "id": "u070",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，右栏"
+    ],
+    "en": "Hydrodealkylation is a chemical reaction that involves reacting an aromatic hydrocarbon in the presence of hydrogen gas to form a simpler aromatic hydrocarbon devoid of functional groups. In this example, toluene is reacted with hydrogen gas at high temperatures to form benzene via the following reaction: [[EQ11]] This reaction is often accompanied by an equilibrium side reaction which forms diphenyl, which is neglected for this example.",
+    "zh": "加氢脱烷基是一种化学反应，芳香烃在氢气存在下反应，生成不带官能团、结构更简单的芳香烃。在本例中，甲苯在高温下与氢气反应，通过下式生成苯： [[EQ11]] 该反应通常伴随生成联苯的平衡副反应，本例忽略这一副反应。"
+  },
+  {
+    "id": "u073",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，右栏"
+    ],
+    "en": "Figure 3 shows the process flow diagram for this case study, where 99.5 kg/hr (0.3 mol/s) of pure toluene is mixed with an equimolar flow of hydrogen with a ~ 6.7% methane impurity at 350 kPa and 303.15 K along with a recycle stream from the reactor (M101). The mixed stream is then fed to a pre-heater (H101) where it is heated to 600 K before passing to the reactor (R101). The reactor products are then fed to a flash unit (F101) where the stream is cooled to 325 K to separate the light gases (hydrogen and methane) from the benzene and toluene. The vapor stream is then sent to a separator (S101) where 20% of the light gases, along with any uncondensed benzene and toluene, are purged to remove CH₄ from the system, and the remainder recycled to the feed mixer via compressor P101. The liquid product stream from the flash separator is sent to a pre-heater unit (H102) before entering a distillation column (C101) to separate the benzene product from the remaining toluene.",
+    "zh": "图 3 给出了本案例的工艺流程图：99.5 kg/hr（0.3 mol/s）的纯甲苯，与等摩尔流量、含约 6.7% 甲烷杂质的氢气，在 350 kPa 和 303.15 K 下，同来自反应器的循环物流一起混合（M101）。混合物流随后进入预热器（H101），加热至 600 K 后进入反应器（R101）。反应器产物随后进入闪蒸单元（F101），在其中冷却至 325 K，以将轻气体（氢气和甲烷）与苯、甲苯分离。气相物流接着进入分流器（S101），其中 20% 的轻气体连同伴随的未冷凝苯和甲苯一起作为排放气排出，以从系统中脱除 CH₄；其余部分经压缩机 P101 返回进料混合器。闪蒸分离器的液体产物流先进入预热器（H102），然后进入精馏塔（C101），将苯产品与剩余甲苯分离。"
+  },
+  {
+    "id": "u074",
+    "kind": "heading",
+    "source": [
+      "PDF 11，右栏"
+    ],
+    "en": "4.1 | Step 1: Create the flowsheet",
+    "zh": "4.1 | 步骤 1：创建流程"
+  },
+  {
+    "id": "u075",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，右栏"
+    ],
+    "en": "The first step in setting up the problem is to import Pyomo and the Flowsheet Block object, and to create a flowsheet as shown in Figure 4. To provide a basis for the problem and provide access to Pyomo's libraries and tools, a Pyomo model must first be created (line 8), to which the Flowsheet Block is attached (line 11).",
+    "zh": "建立问题的第一步，是导入 Pyomo 和流程块对象，并按图 4 创建流程。为给问题提供基础并能够使用 Pyomo 的库和工具，首先必须创建一个 Pyomo 模型（第 8 行），再将流程块附加到该模型上（第 11 行）。"
+  },
+  {
+    "id": "u076",
+    "kind": "heading",
+    "source": [
+      "PDF 11，右栏"
+    ],
+    "en": "4.2 | Step 2: Define the thermophysical and reaction properties",
+    "zh": "4.2 | 步骤 2：定义热物性与反应性质"
+  },
+  {
+    "id": "u077",
+    "kind": "paragraph",
+    "source": [
+      "PDF 11，右栏",
+      "PDF 12，左栏"
+    ],
+    "en": "The next step is to add the required thermophysical and reaction property packages. For this case study, thermophysical properties for benzene, toluene, hydrogen and methane are required, along with a calculation of the rate of the hydrodealkylation reaction. Calculations for specific enthalpy (required for energy balances) and phase equilibrium are used in all of the unit operations. For the purposes of this case study, the following assumptions were made:",
+    "zh": "下一步是添加所需的热物性包与反应性质包。本案例需要苯、甲苯、氢气和甲烷的热物性，以及加氢脱烷基反应速率的计算。所有单元操作均使用比焓计算（能量衡算所需）和相平衡计算。为开展本案例研究，作出以下假设："
+  },
+  {
+    "id": "u078-1",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Ideal gas behavior",
+    "zh": "理想气体行为。"
+  },
+  {
+    "id": "u078-2",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Reference state is 101 325 Pa and 298.15 K",
+    "zh": "参考状态为 101 325 Pa 和 298.15 K。"
+  },
+  {
+    "id": "u078-3",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Phase equilibrium of all components follows Raoult's Law",
+    "zh": "所有组分的相平衡均遵循拉乌尔定律。"
+  },
+  {
+    "id": "u078-4",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Smooth vapor–liquid equilibrium formulation[33]",
+    "zh": "采用平滑的气液平衡数学表达形式。[33]"
+  },
+  {
+    "id": "u078-5",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Gas phase molar enthalpies, heats of vaporization, and saturation pressures are from Reid et al.[34]",
+    "zh": "气相摩尔焓、汽化热和饱和蒸气压取自 Reid 等人。[34]"
+  },
+  {
+    "id": "u078-6",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Saturation pressures calculated using Antoine equation with parameters regressed from data in Reid et al.[34]",
+    "zh": "使用 Antoine 方程计算饱和蒸气压，参数根据 Reid 等人的数据回归得到。[34]"
+  },
+  {
+    "id": "u078-7",
+    "kind": "item",
+    "source": [
+      "PDF 12，左栏",
+      "PDF 12，右栏"
+    ],
+    "en": "Liquid phase molar densities and enthalpies as reported by Perry et al.,[35] 7th Edition, pages 2–94 and 2–170",
+    "zh": "液相摩尔密度和焓采用 Perry 等人[35] 第 7 版第 2–94 页和第 2–170 页所报告的数值。"
+  },
+  {
+    "id": "u079",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，左栏"
+    ],
+    "en": "Since benzene and toluene are separated by distillation, the HDA process inherently involves phase equilibrium and two-phase flow conditions. However, this is complicated by the presence of hydrogen and methane in much of the process, which under the conditions of interest are essentially non-condensable; that is, a vapor phase will be present under all conditions of interest and the bubble point of the mixture is extremely low. To simplify the phase-equilibrium calculations for this problem, hydrogen and methane will be considered completely non-condensable and insoluble in the liquid phase. Thus, no phase equilibrium constraint will be written for these species and their liquid phase compositions and flow rates will be set to a very small positive number (to avoid potential numerical issues with zero flows). EO solvers have numerous ways to handle small values and poorly conditioned systems, such as through scaling and regularization, which allow them to deal with these situations, whereas zero flows may cause singularities which result in failures when evaluating the model constraints.",
+    "zh": "由于苯与甲苯通过精馏分离，HDA 过程本身就涉及相平衡与两相流动条件。然而，过程的大部分区域都存在氢气和甲烷，使问题更加复杂；在所关注的条件下，它们基本上不可冷凝，也就是说，在所有关注条件下均存在气相，且混合物的泡点极低。为简化本问题的相平衡计算，假定氢气和甲烷完全不可冷凝，且不溶于液相。因此，不为这两种物质编写相平衡约束，并将其液相组成和流量设为很小的正数，以避免零流量可能引起的数值问题。EO 求解器有多种处理小数值和病态系统的方法，例如缩放和正则化，因此能够应对这些情况；相比之下，零流量可能造成奇异性，从而导致模型约束求值失败。"
+  },
+  {
+    "id": "u080",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，左栏"
+    ],
+    "en": "Due to these assumptions the liquid stream leaving the flash separator (S101), and the distillation column and its pre-heater, will be completely free of hydrogen and methane. Since no hydrogen and methane will be present in these unit operations, a different component list can be used to simplify property calculations. The IDAES-CMF supports this by allowing the definition of multiple property packages within a single flowsheet and the use of “Translator” blocks to convert between different property calculations, component lists, and equations of state to provide full control over the formulation and rigor of different parts of the flowsheet.",
+    "zh": "基于这些假设，离开闪蒸分离器（S101）的液体物流，以及精馏塔及其预热器中，将完全不含氢气和甲烷。由于这些单元操作中不存在氢气和甲烷，可以使用不同的组分列表来简化物性计算。IDAES-CMF 允许在同一流程中定义多个物性包，并使用转换块（Translator）在不同物性计算、组分列表和状态方程之间进行转换，从而支持这一做法，并使用户能够全面控制流程不同部分的数学表达形式与严谨程度。"
+  },
+  {
+    "id": "u081",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，左栏"
+    ],
+    "en": "To demonstrate this, two separate property packages will be used in the flowsheet; one for the reactor loop which contains all four species, and a second simpler set of calculations for only benzene and toluene following the flash separator. Additionally, the four-component property package uses molar flow indexed by phase and components (e.g., the molar flow of hydrogen in the vapor phase), temperature and pressure, while the two-component property package uses total flow and overall mole fractions in order to demonstrate the ability to change state variables as well.",
+    "zh": "为展示这一点，流程中将使用两个独立的物性包：一个用于反应器循环回路，包含全部四种物质；另一个用于闪蒸分离器之后的部分，只针对苯和甲苯，采用较简单的一组计算。此外，为展示改变状态变量的能力，四组分物性包采用按相和组分索引的摩尔流量，例如气相中氢气的摩尔流量，以及温度和压力；两组分物性包则采用总流量和总摩尔分数。"
+  },
+  {
+    "id": "u082",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，左栏",
+      "PDF 13，右栏"
+    ],
+    "en": "For the reaction kinetics, a simplified rate expression based on that proposed by Douglas[32] will be used as shown in Equation (12), where $r$ is the rate of reaction expressed in units of mol/m³·s, $A=6.3\\times10^{10}$ mol/m³·s·Pa is the Arrhenius pre-exponential factor, $E_A=217.6$ kJ/mol·K is the activation energy for the reaction and $p_T$ is the partial pressure of toluene. [[EQ12]] Additionally, the reaction package needs to define the stoichiometry of the HDA reaction and the associated heat of reaction (as heat of formations are not included in the calculation of specific enthalpy for this example).",
+    "zh": "反应动力学采用基于 Douglas[32] 所提出表达式的简化速率表达式，如式（12）所示。其中，$r$ 为反应速率，单位为 mol/m³·s；$A=6.3\\times10^{10}$ mol/m³·s·Pa 为阿伦尼乌斯指前因子；$E_A=217.6$ kJ/mol·K 为反应活化能；$p_T$ 为甲苯分压。 [[EQ12]] 此外，反应性质包还需定义 HDA 反应的化学计量关系和相应反应热，因为本例的比焓计算不包含生成热。"
+  },
+  {
+    "id": "u083",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，右栏"
+    ],
+    "en": "Due to space constraints, the full code of the property packages will not be shown here. A simple example of a physical property package (a physical parameter block and state block) is shown in the Supplementary Material, and full examples of the property packages can be found in the IDAES public release.<sup>1</sup> The full set of thermophysical property constraints, including those for phase equilibrium, are implemented directly within the problem structure (rather than as black-box external function calls). Thus, the numerical solver is provided with exact first and second partial derivatives for all the property calculations. This allows for much greater solution efficiency without requiring multiple solver calls to approximate the gradient using finite difference-based approaches.",
+    "zh": "由于篇幅限制，本文不展示物性包的完整代码。补充材料给出了一个物性包的简单示例，包括物性参数块和状态块；完整物性包示例可在 IDAES 公开发布版本中找到。<sup>1</sup> 包括相平衡约束在内的整套热物性约束，都直接在问题结构中实现，而不是通过黑箱外部函数调用实现。因此，数值求解器能够获得所有物性计算精确的一阶和二阶偏导数。这使求解效率显著提高，无需通过多次调用求解器，以基于有限差分的方法近似计算梯度。"
+  },
+  {
+    "id": "u084",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，右栏"
+    ],
+    "en": "Line 20 in Figure 4 shows how the four-component property package is added to the flowsheet (named bthm_params), followed by the two-component property package (bt_params) on Lines 21 and 22. Finally, the reaction package is added to the flowsheet on Lines 23 and 24, including linking it with the four-component property package used in the reactor unit.",
+    "zh": "图 4 第 20 行展示了如何将四组分物性包添加到流程中，命名为 `bthm_params`；随后，第 21 和 22 行添加两组分物性包 `bt_params`。最后，第 23 和 24 行将反应性质包添加到流程中，并将其与反应器单元使用的四组分物性包关联。"
+  },
+  {
+    "id": "u085",
+    "kind": "heading",
+    "source": [
+      "PDF 13，右栏"
+    ],
+    "en": "4.3 | Step 3: Define the unit operations",
+    "zh": "4.3 | 步骤 3：定义单元操作"
+  },
+  {
+    "id": "u086",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，右栏"
+    ],
+    "en": "Import Unit Operations from the IDAES Model Library: For this case study, the IDAES model libraries contain all the necessary unit operations which must be imported as shown in Figure 5—an example of creating a custom unit model can be found in the Supplementary Material. As the IDAES unit model library provides a set of generic unit operation models that cover a wide range of needs, most unit models support a number of options, such as the number and names of inlets, or whether to include a pressure drop across a unit. For some options, there is a set of predefined choices which are implemented as enumerated objects, which must also be imported. Examples of these can be seen on lines 33 to 36 of Figure 5.",
+    "zh": "从 IDAES 模型库导入单元操作：本案例所需的全部单元操作均已包含在 IDAES 模型库中，必须按图 5 所示导入；创建定制单元模型的示例可参见补充材料。由于 IDAES 单元模型库提供了一组满足广泛需求的通用单元操作模型，大多数单元模型支持若干选项，例如入口的数量和名称，或者是否考虑单元内的压降。某些选项具有一组预定义选择，并以枚举对象实现，因此这些枚举对象也必须导入。图 5 第 33 至 36 行给出了相关示例。"
+  },
+  {
+    "id": "u087",
+    "kind": "paragraph",
+    "source": [
+      "PDF 13，右栏",
+      "PDF 14，左栏"
+    ],
+    "en": "Defining the Feed Objects: The first stage in any flowsheet is to define the feed streams entering the process using IDAES Feed blocks. This process has two feed streams, one for hydrogen and one for toluene, and lines 39 to 43 of Figure 5 show how these are defined in the flowsheet. Each unit model in the flowsheet must be linked to one or more property packages which will be used in the unit operation. This is done by providing a pointer to the instance of the Physical Parameter Block previously attached to the flowsheet as shown in lines 40 and 43.",
+    "zh": "定义进料对象：任何流程的第一步，都是使用 IDAES 进料块（Feed）定义进入过程的进料物流。本过程有两股进料，一股为氢气，一股为甲苯；图 5 第 39 至 43 行展示了它们在流程中的定义方法。流程中的每个单元模型都必须关联到该单元操作将使用的一个或多个物性包。为此，需要提供一个指向此前已附加到流程中的物性参数块实例的指针，如第 40 和 43 行所示。"
+  },
+  {
+    "id": "u088",
+    "kind": "paragraph",
+    "source": [
+      "PDF 14，左栏"
+    ],
+    "en": "Defining the Feed Mixer (M101): The first unit operation in the HDA process is the feed mixer (M101) which combines the two feed streams plus the recycle stream, which can be modeled using the default Mixer unit model from the IDAES model library. In this case, two options are required which are shown in Figure 5, lines 46 to 49; in addition to the pointer to the appropriate property package, the inlets required for the mixer need to be defined, which is done using the “inlet_list” option (lines 48 and 49).",
+    "zh": "定义进料混合器（M101）：HDA 过程的第一个单元操作是进料混合器（M101），它将两股进料和循环物流混合，可使用 IDAES 模型库中的默认 Mixer 单元模型建模。在本例中，需要设置图 5 第 46 至 49 行所示的两个选项：除指向相应物性包的指针外，还需定义混合器所需的入口，通过 `inlet_list` 选项完成（第 48 和 49 行）。"
+  },
+  {
+    "id": "u089",
+    "kind": "paragraph",
+    "source": [
+      "PDF 14，左栏",
+      "PDF 14，右栏"
+    ],
+    "en": "Defining the Feed Pre-Heater (H101): The next unit operation in the process is the reactor pre-heater. For this example, pressure drop across the unit will be neglected (and thus excluded from the momentum balance calculations). However, the mixture may form two phases under some circumstances, thus phase equilibrium must be considered in the heater. Lines 52 to 55 in Figure 5 show the code for adding the pre-heater to the flowsheet with the required options.",
+    "zh": "定义进料预热器（H101）：过程中的下一个单元操作是反应器预热器。本例忽略单元内的压降，因此动量衡算计算中不包含压降。然而，混合物在某些情况下可能形成两相，因此加热器中必须考虑相平衡。图 5 第 52 至 55 行给出了将预热器添加到流程并设置所需选项的代码。"
+  },
+  {
+    "id": "u090",
+    "kind": "paragraph",
+    "source": [
+      "PDF 14，右栏",
+      "PDF 15，左栏"
+    ],
+    "en": "Defining the Reactor (R101): In this demonstration, the reactor will be modeled as a CSTR (lines 58 to 63 in Figure 5). In addition to a thermodynamic property package, reactors require a reaction property package to specify properties related to reactions such as stoichiometry and heats of reaction (line 60). Whether heat of reaction needs to be explicitly included in the energy balances needs to be specified (line 61, it can also be implicitly included via the component specific enthalpies defined in the thermodynamic property package by including heats of formation), as well as whether the reactor should incorporate a heat duty term (line 62).",
+    "zh": "定义反应器（R101）：本示例将反应器建模为 CSTR（图 5 第 58 至 63 行）。除热力学物性包外，反应器还需要反应性质包，以指定化学计量关系、反应热等与反应相关的性质（第 60 行）。需要指定是否在能量衡算中显式包含反应热（第 61 行；也可以在热力学物性包所定义的组分比焓中包含生成热，从而隐式计入反应热），以及反应器是否包含热负荷项（第 62 行）。"
+  },
+  {
+    "id": "u091",
+    "kind": "paragraph",
+    "source": [
+      "PDF 15，左栏"
+    ],
+    "en": "Defining the Flash Drum (F101), Purge Splitter (S101), and Recycle Compressor (P101): Figure 6 shows how to add the next set of unit operations for light gas separation and to set up the recycle loop in the flowsheet. In the case of the recycle compressor (P101), it is necessary to define whether the unit is a compressor or expander (“compressor” option, line 79) (which determines how efficiency should be included in determining the mechanical work for the unit), and what thermodynamic assumption should be used when calculating work (lines 80 and 81). For this case study, the compressor work is not important (the compressor work will not be considered in the objective function) and a trivial isothermal pressure change will be used to minimize the complexity of the resulting equations (as a result, efficiency is not considered either).",
+    "zh": "定义闪蒸罐（F101）、排放分流器（S101）和循环压缩机（P101）：图 6 展示了如何添加下一组用于轻气体分离的单元操作，并在流程中建立循环回路。对于循环压缩机（P101），需要定义该单元是压缩机还是膨胀机（第 79 行的 `compressor` 选项），这决定了计算单元机械功时应如何计入效率；还需定义计算功时采用的热力学假设（第 80 和 81 行）。在本案例中，压缩机功并不重要，目标函数中也不考虑压缩机功，因此采用简单的等温变压过程，以尽可能降低所得方程的复杂程度，相应地也不考虑效率。"
+  },
+  {
+    "id": "u092",
+    "kind": "paragraph",
+    "source": [
+      "PDF 15，左栏",
+      "PDF 15，右栏"
+    ],
+    "en": "Adding the Translator Block: As discussed in Step 2, a Translator block is required after the flash separator to switch from the four-component property package to the two-component property package, and lines 83 to 85 in Figure 7 show how to add a Translator block to the flowsheet. In this case, it is necessary to link two property packages to the Translator block—the source property package and the package that it is to be translated to. Additionally, the Translator block needs to know how to translate between the two property packages; due to the generality of the IDAES-CMF this must be custom coded for each application. In this case, five constraints are required based on the state variables used in the outgoing property package:",
+    "zh": "添加转换块：如步骤 2 所述，闪蒸分离器之后需要一个转换块，以从四组分物性包切换至两组分物性包；图 7 第 83 至 85 行展示了如何将转换块添加到流程中。这里需要将两个物性包关联到转换块，即源物性包与转换后的目标物性包。此外，转换块需要知道如何在两个物性包之间进行转换；由于 IDAES-CMF 具有通用性，每个应用都必须自行编写这部分代码。在本例中，根据出口物性包所用的状态变量，需要以下五个约束："
+  },
+  {
+    "id": "u093",
+    "kind": "item",
+    "source": [
+      "PDF 15，右栏"
+    ],
+    "en": "1. Total molar flowrate (lines 89 to 94): in this case, it is assumed that only liquid benzene and toluene will actually be present in the stream, thus the total component flowrate is the sum of the liquid phase flowrates of benzene and toluene in the incoming stream.",
+    "zh": "1. 总摩尔流量（第 89 至 94 行）：本例假定物流中实际仅存在液态苯和甲苯，因此总组分流量等于入口物流中苯和甲苯的液相流量之和。"
+  },
+  {
+    "id": "u099",
+    "kind": "item",
+    "source": [
+      "PDF 15，右栏"
+    ],
+    "en": "2. Temperature equality (lines 97 to 99): while an energy balance might seem like a better choice here, enthalpy (or internal energy) is a relative quantity and is dependent on the reference state and correlations used in each property package. Thus, enthalpy cannot (in general) be directly equated between different property packages. Temperature is an absolute quantity however, and thus independent of the reference state or property correlations and can therefore be directly equated when translating between any two property packages.",
+    "zh": "2. 温度相等（第 97 至 99 行）：虽然在这里采用能量衡算似乎更合适，但焓或内能是相对量，取决于各个物性包使用的参考状态和关联式。因此，一般不能直接令不同物性包中的焓相等。温度则是绝对量，不依赖参考状态或物性关联式，所以在任意两个物性包之间转换时，可以直接令温度相等。"
+  },
+  {
+    "id": "u111",
+    "kind": "item",
+    "source": [
+      "PDF 15，右栏"
+    ],
+    "en": "3. Pressure equality (lines 102 to 104)",
+    "zh": "3. 压力相等（第 102 至 104 行）。"
+  },
+  {
+    "id": "u112",
+    "kind": "item",
+    "source": [
+      "PDF 15，右栏"
+    ],
+    "en": "4. Overall mole fraction of benzene (lines 107 to 115): the overall mole fraction of benzene in the outgoing stream will be equal to the incoming flowrate of liquid benzene divided by the sum of the incoming flowrates of liquid benzene and toluene.",
+    "zh": "4. 苯的总摩尔分数（第 107 至 115 行）：出口物流中苯的总摩尔分数，等于入口液态苯流量除以入口液态苯与液态甲苯流量之和。"
+  },
+  {
+    "id": "u117",
+    "kind": "item",
+    "source": [
+      "PDF 15，右栏"
+    ],
+    "en": "5. Overall mole fraction of toluene (lines 117 to 125): similar to the above constraint for benzene.",
+    "zh": "5. 甲苯的总摩尔分数（第 117 至 125 行）：与上述苯的约束类似。"
+  },
+  {
+    "id": "u119",
+    "kind": "paragraph",
+    "source": [
+      "PDF 15，右栏",
+      "PDF 16，左栏"
+    ],
+    "en": "Defining the final pre-heater (H102) and distillation column (C101): The remaining units in the flowsheet are the second pre-heater and the distillation column. Figure 8 shows how these are added to the flowsheet. Note that both of these units use the two-component property package (lines 128 and 140) rather than the four-component property packages used by the other unit models. In the case of the distillation column, there are a number of options which need to be defined, such as number of trays and location of the feed tray (lines 134 and 135), the condenser type and specification (lines 136 to 139) and whether the column will be isobaric (line 142).",
+    "zh": "定义最后一个预热器（H102）和精馏塔（C101）：流程中剩余的单元是第二个预热器和精馏塔。图 8 展示了如何将二者添加到流程中。注意，这两个单元均采用两组分物性包（第 128 和 140 行），而不是其他单元模型使用的四组分物性包。对于精馏塔，需要定义若干选项，例如塔板数和进料板位置（第 134 和 135 行）、冷凝器类型及其规定条件（第 136 至 139 行），以及塔是否等压（第 142 行）。"
+  },
+  {
+    "id": "u120",
+    "kind": "heading",
+    "source": [
+      "PDF 16，右栏"
+    ],
+    "en": "4.4 | Step 4: Define the flowsheet connectivity",
+    "zh": "4.4 | 步骤 4：定义流程连接关系"
+  },
+  {
+    "id": "u121",
+    "kind": "paragraph",
+    "source": [
+      "PDF 16，右栏",
+      "PDF 17，左栏"
+    ],
+    "en": "Once all the unit operations have been added to the flowsheet, the next step is to define connectivity between the units. This is done using the Arc component from the pyomo.network toolbox which is imported as shown in Figure 9, line 144; the Sequential Decomposition tool will be utilized later. Arcs represent the streams within the process and are defined by linking the outlet Port of one unit model to the inlet Port of the next, as shown in Figure 9. Once all Arcs in the flowsheet have been defined, the Pyomo Transformation Factory is used, as shown in line 171 of Figure 9, to automatically expand the Arcs into sets of equality constraints linking the variables in the inlet and outlet ports of connected units.",
+    "zh": "将全部单元操作添加到流程后，下一步是定义单元之间的连接关系。这通过 `pyomo.network` 工具箱中的 Arc 组件完成，其导入方式见图 9 第 144 行；序贯分解工具将在后面使用。Arc 表示过程中的物流，通过将一个单元模型的出口 Port 与下一个单元模型的入口 Port 相连来定义，如图 9 所示。定义流程中的全部 Arc 后，按图 9 第 171 行所示使用 Pyomo Transformation Factory，自动将 Arc 展开为若干组等式约束，用以连接相邻单元入口和出口端口中的变量。"
+  },
+  {
+    "id": "u122",
+    "kind": "heading",
+    "source": [
+      "PDF 17，右栏"
+    ],
+    "en": "4.5 | Step 5: Define custom calculations",
+    "zh": "4.5 | 步骤 5：定义自定义计算"
+  },
+  {
+    "id": "u123",
+    "kind": "paragraph",
+    "source": [
+      "PDF 17，右栏",
+      "PDF 18，左栏"
+    ],
+    "en": "In many cases, there may be some additional quantities of interest which may need to be defined. For example, the conversion in the reactor is often of interest when examining a flowsheet; however, this is not defined as part of the core CSTR model as it is difficult to determine which is the key component that conversion should be based on without user input. Thus, it is necessary to define a variable and constraint as shown in Figure 10, lines 173 to 180.",
+    "zh": "在许多情况下，还可能需要定义一些额外关注的量。例如，研究流程时往往关注反应器中的转化率；然而，核心 CSTR 模型并未定义该量，因为在没有用户输入的情况下，难以确定应以哪个关键组分为基准计算转化率。因此，需要按图 10 第 173 至 180 行所示，定义一个变量和一个约束。"
+  },
+  {
+    "id": "u124",
+    "kind": "paragraph",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "For the optimization problem, expressions to compute operating costs due to heating and cooling utilities as well as the capital cost of the reactor unit will be added to the flowsheet. For this case study, the following costs are assumed:",
+    "zh": "对于优化问题，将在流程中加入用于计算加热和冷却公用工程运行成本，以及反应器单元资本成本的表达式。本案例假定以下成本："
+  },
+  {
+    "id": "u125-1",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$0.25e−7/J for the cooling utility in the flash separator (F101)",
+    "zh": "闪蒸分离器（F101）冷却公用工程：$0.25e−7/J。"
+  },
+  {
+    "id": "u125-2",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$0.2e−7/J for the cooling utility in the distillation condenser",
+    "zh": "精馏冷凝器冷却公用工程：$0.2e−7/J。"
+  },
+  {
+    "id": "u125-3",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$2.2e−7/J for the heating utility in the reactor preheater (H101)",
+    "zh": "反应器预热器（H101）加热公用工程：$2.2e−7/J。"
+  },
+  {
+    "id": "u125-4",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$1.2e−7/J for the heating utility in the distillation preheater (H102)",
+    "zh": "精馏预热器（H102）加热公用工程：$1.2e−7/J。"
+  },
+  {
+    "id": "u125-5",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$1.9e−7/J for heating utility in the distillation reboiler",
+    "zh": "精馏再沸器加热公用工程：$1.9e−7/J。"
+  },
+  {
+    "id": "u125-6",
+    "kind": "item",
+    "source": [
+      "PDF 18，左栏"
+    ],
+    "en": "$1e5/m³·yr. for the capital cost of the reactor (R101), amortized over the lifetime of the process.",
+    "zh": "反应器（R101）资本成本：$1e5/m³·yr.，在过程寿命期内摊销。"
+  },
+  {
+    "id": "u126",
+    "kind": "paragraph",
+    "source": [
+      "PDF 18，左栏",
+      "PDF 18，右栏"
+    ],
+    "en": "The different heating utility costs are based on the pressure/temperature of the steam used for each unit operation. Lines 183 to 186 of Figure 10 show the addition of an expression for the cost of cooling utilities, lines 187 to 189 show an expression for the heating utilities and lines 190 to 191 an expression for the overall utility cost for the process. Line 194 shows the addition of an expression for the amortized capital cost of the reactor.",
+    "zh": "不同加热公用工程的成本依据各单元操作所用蒸汽的压力和温度确定。图 10 第 183 至 186 行展示了冷却公用工程成本表达式的添加，第 187 至 189 行展示了加热公用工程成本表达式，第 190 至 191 行展示了过程总公用工程成本表达式。第 194 行展示了反应器摊销资本成本表达式的添加。"
+  },
+  {
+    "id": "u127",
+    "kind": "heading",
+    "source": [
+      "PDF 18，右栏"
+    ],
+    "en": "4.6 | Step 6: Specify design conditions and verify the degrees of freedom",
+    "zh": "4.6 | 步骤 6：指定设计条件并核验自由度"
+  },
+  {
+    "id": "u128",
+    "kind": "paragraph",
+    "source": [
+      "PDF 18，右栏"
+    ],
+    "en": "Now that the unit operations and connectivity of the flowsheet have been defined, the next step is to set the design and operating conditions of the process; that is, satisfying the degrees of freedom of the problem. The IDAES-CMF includes a degrees of freedom tool, which can be used as shown in lines 196 and 199 of Figure 11 to determine how many degrees of freedom the problem has. As can be seen, the current flowsheet has 29 degrees of freedom (line 200) which need to be specified.",
+    "zh": "现在已经定义了流程的单元操作和连接关系，下一步是设定过程的设计与操作条件，也就是消去问题的自由度。IDAES-CMF 提供了自由度工具，可按图 11 第 196 和 199 行所示使用，以确定问题具有多少自由度。可以看到，当前流程有 29 个自由度（第 200 行），需要加以指定。"
+  },
+  {
+    "id": "u129",
+    "kind": "paragraph",
+    "source": [
+      "PDF 18，右栏"
+    ],
+    "en": "The first 20 degrees of freedom that need to be specified are the feed conditions for the toluene and hydrogen streams (10 variables each). The feed conditions can be set through the Feed blocks as shown in Figure 11. Some important things to note when setting the feed conditions:",
+    "zh": "首先需要指定的 20 个自由度，是甲苯和氢气物流的进料条件，每股物流各有 10 个变量。如图 11 所示，可通过 Feed 块设定进料条件。设定进料条件时，有以下几点需要注意："
+  },
+  {
+    "id": "u130-1",
+    "kind": "item",
+    "source": [
+      "PDF 18，右栏",
+      "PDF 19，左栏"
+    ],
+    "en": "A time index must be specified when fixing each variable. For dynamic simulations, Pyomo supports setting all time points simultaneously using slicer notation.",
+    "zh": "固定每个变量时，必须指定时间索引。对于动态仿真，Pyomo 支持使用切片记法同时设定所有时间点。"
+  },
+  {
+    "id": "u130-2",
+    "kind": "item",
+    "source": [
+      "PDF 18，右栏",
+      "PDF 19，左栏"
+    ],
+    "en": "To avoid convergence issues (e.g., singularities and degeneracy) associated with values of 0 for variables in EO models, all zero flows in this example will be fixed to a small positive value (i.e. 1e−8). This assumption was chosen specifically for this case and is not appropriate or necessary for all cases, e.g., systems with trace elements or a different formulation for phase equilibrium. The value of 1e−8 was chosen because it is equal to the solver tolerance used (both absolute and relative) and is significantly smaller than the real flows in the system.",
+    "zh": "为避免 EO 模型中变量取 0 时引起的收敛问题，例如奇异性和退化，本例将所有零流量固定为一个很小的正值，即 1e−8。这一假设专门针对本案例选取，并非适用于所有情况，也并非在所有情况下都必需，例如包含痕量元素的系统，或采用不同相平衡数学表达形式的系统。选用 1e−8，是因为它与所采用求解器的绝对容差和相对容差均相等，而且显著小于系统中的实际流量。"
+  },
+  {
+    "id": "u131",
+    "kind": "paragraph",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "The remaining 12 degrees of freedom are the operating conditions for the unit operations, and the most appropriate design conditions for the application can be selected. For example, in a CSTR it is possible to specify the reactor volume and to solve for conversion, or to specify conversion and solve for the reactor volume required to achieve that conversion. The IDAES-CMF documentation provides users with some guidance on typical degrees of freedom to consider fixing, and future work is planned to develop tools for automatically identifying potential degrees of freedom to fix as well as degeneracies caused by poor selection of degrees of freedom. A summary of the design conditions that will be specified for each unit operation is given below:",
+    "zh": "剩余 12 个自由度是各单元操作的操作条件，可以选择最适合该应用的设计条件。例如，对于 CSTR，可以指定反应器体积并求解转化率，也可以指定转化率并求解达到该转化率所需的反应器体积。IDAES-CMF 文档为用户提供了关于通常应考虑固定哪些自由度的指导；未来计划开发工具，自动识别可固定的潜在自由度，以及由于自由度选择不当造成的退化。各单元操作将指定的设计条件汇总如下："
+  },
+  {
+    "id": "u131-1",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Reactor pre-heater (H101)—outlet temperature = 600 K",
+    "zh": "反应器预热器（H101）——出口温度 = 600 K。"
+  },
+  {
+    "id": "u131-2",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Reactor (R101)—conversion = 75%, heat duty = 0 J/s",
+    "zh": "反应器（R101）——转化率 = 75%，热负荷 = 0 J/s。"
+  },
+  {
+    "id": "u131-3",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Flash separator (F101)—vapor outlet temperature = 325 K, pressure change = 0 Pa",
+    "zh": "闪蒸分离器（F101）——气相出口温度 = 325 K，压力变化 = 0 Pa。"
+  },
+  {
+    "id": "u131-4",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Splitter (S101)—purge split fraction = 20%",
+    "zh": "分流器（S101）——排放分率 = 20%。"
+  },
+  {
+    "id": "u131-5",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Recycle compressor (P101)—outlet pressure = 350 000 Pa (equal to feed pressures)",
+    "zh": "循环压缩机（P101）——出口压力 = 350 000 Pa，与进料压力相等。"
+  },
+  {
+    "id": "u131-6",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Distillation pre-heater (H102)—outlet temperature = 375 K, pressure drop = 200 000 Pa",
+    "zh": "精馏预热器（H102）——出口温度 = 375 K，压降 = 200 000 Pa。"
+  },
+  {
+    "id": "u131-7",
+    "kind": "item",
+    "source": [
+      "PDF 19，左栏",
+      "PDF 19，右栏"
+    ],
+    "en": "Distillation column (C101)—reflux ratio = 0.5, condenser pressure = 150 000 Pa, boilup ratio = 0.5",
+    "zh": "精馏塔（C101）——回流比 = 0.5，冷凝器压力 = 150 000 Pa，再沸比 = 0.5。"
+  },
+  {
+    "id": "u132",
+    "kind": "paragraph",
+    "source": [
+      "PDF 19，右栏"
+    ],
+    "en": "Figure 12 shows how to set the design conditions for all units in the flowsheet.",
+    "zh": "图 12 展示了如何设定流程中所有单元的设计条件。"
+  },
+  {
+    "id": "u133",
+    "kind": "heading",
+    "source": [
+      "PDF 19，右栏"
+    ],
+    "en": "4.7 | Step 7: Initialize the flowsheet using sequential decomposition",
+    "zh": "4.7 | 步骤 7：使用序贯分解初始化流程"
+  },
+  {
+    "id": "u134",
+    "kind": "paragraph",
+    "source": [
+      "PDF 19，右栏",
+      "PDF 20，左栏"
+    ],
+    "en": "Once the degrees of freedom have been satisfied (the degrees of freedom tool can be called again to confirm), the model is ready to be initialized. As discussed previously, the IDAES-CMF supports a Sequential Decomposition (SD) approach when initializing a model, where each unit is initialized separately, propagating the outlet conditions from one unit to the inlet of the next. This process has a recycle stream, which requires tearing to determine where to start the SD initialization process. The pyomo.network toolbox contains an automated Sequential Decomposition tool[36] (imported earlier in Figure 9, line 144) which can both automatically determine tear streams and automate the SD initialization process. Note that the SD tool is only used for initialization and does not need to converge to the final solution for the overall model; it is only necessary to develop a sufficiently good initial guess for the EO solver to find the actual solution to the model.",
+    "zh": "一旦自由度已满足要求，可以再次调用自由度工具加以确认，模型就可以进行初始化。如前所述，IDAES-CMF 支持在模型初始化时采用序贯分解（SD）方法，即分别初始化每个单元，并将一个单元的出口条件传递给下一个单元的入口。本过程包含一股循环物流，需要通过撕裂来确定 SD 初始化从何处开始。`pyomo.network` 工具箱包含自动序贯分解工具[36]，此前已在图 9 第 144 行导入；它既可自动确定撕裂物流，也可自动执行 SD 初始化。注意，SD 工具仅用于初始化，并不需要收敛到整体模型的最终解；只需得到足够好的初始猜测值，使 EO 求解器能够找到模型的实际解。"
+  },
+  {
+    "id": "u135",
+    "kind": "paragraph",
+    "source": [
+      "PDF 20，左栏",
+      "PDF 20，右栏"
+    ],
+    "en": "Identifying the Tear Stream(s): Figure 13 shows how to set up the Sequential Decomposition tool and apply it to the flowsheet. First, a Sequential Decomposition object is created and the method to use for determining tear streams selected (lines 251–253). The Sequential Decomposition tool supports both heuristic based methods (method=“heuristic,” used here) and solving a mixed integer problem for finding tear streams (method=“mip,” which requires access to an appropriate mixed-integer solver). Additionally, a limit on the number of iterations when trying to converge tear streams while initializing the flowsheet can be set (line 256). As the flowsheet will later be solved in its entirety, the Sequential Decomposition tool does not need to fully converge the tear stream; hence, only 3 iterations will be used to sufficiently converge the tear stream for the EO solver to take over.",
+    "zh": "识别撕裂物流：图 13 展示了如何设置序贯分解工具并将其应用于流程。首先创建一个序贯分解对象，并选择确定撕裂物流所用的方法（第 251 至 253 行）。序贯分解工具既支持基于启发式的方法，本例使用 `method=\"heuristic\"`，也支持通过求解混合整数问题寻找撕裂物流，即 `method=\"mip\"`，后者需要能够使用合适的混合整数求解器。此外，还可设定初始化流程时，为使撕裂物流收敛而进行迭代的次数上限（第 256 行）。由于后续将对整个流程进行整体求解，序贯分解工具不需要使撕裂物流完全收敛；因此，仅进行 3 次迭代，使撕裂物流收敛到足以由 EO 求解器接手的程度。"
+  },
+  {
+    "id": "u136",
+    "kind": "paragraph",
+    "source": [
+      "PDF 20，右栏"
+    ],
+    "en": "Once the Sequential Decomposition tool has determined the tears streams and solution order for the flowsheet (line 259 to 261 in Figure 13), these should be verified. An initial guess for the tear streams must be provided, so it is important to confirm the appropriateness of the tear stream(s), and the automated selection can be overridden when necessary. Lines 264 and 265 show how to check the tear streams selected by the Sequential Decomposition tool and the order in which the unit models will be initialized (lines 268 and 269).",
+    "zh": "序贯分解工具确定流程的撕裂物流和求解顺序后，应对其进行核验，相关代码见图 13 第 259 至 261 行。必须为撕裂物流提供初始猜测值，因此确认所选撕裂物流是否合适十分重要；必要时可以覆盖自动选择。第 264 和 265 行展示了如何检查序贯分解工具选出的撕裂物流，第 268 和 269 行展示了如何检查单元模型的初始化顺序。"
+  },
+  {
+    "id": "u137",
+    "kind": "paragraph",
+    "source": [
+      "PDF 20，右栏"
+    ],
+    "en": "Specify Initial Guess Values for the Tear Streams: For this case, the Sequential Decomposition tool identified the stream between the mixer and pre-heater (s03) as the tear stream for the process. Given the information available, it will be assumed that the tear stream consists of only the toluene and hydrogen feeds. Thus, the initial guesses for the tear stream can be calculated as the sum of these; however, to ensure robust solution of the phase-equilibrium constraints, the zero flowrates will be assigned an initial guess of 1e-5 for the SD initialization. The final solve of the flowsheet will use the values defined for the inlets. The initial guesses for the tear stream are set as shown in Figure 14, lines 271 to 282.",
+    "zh": "指定撕裂物流的初始猜测值：在本例中，序贯分解工具将混合器与预热器之间的物流（s03）识别为过程的撕裂物流。根据现有信息，假定该撕裂物流仅由甲苯和氢气进料构成。因此，其初始猜测值可以由这两股进料相加得到；不过，为保证相平衡约束求解的鲁棒性，SD 初始化时对零流量赋予 1e-5 的初始猜测值。流程最终求解时，将使用为入口定义的值。撕裂物流初始猜测值的设置见图 14 第 271 至 282 行。"
+  },
+  {
+    "id": "u138",
+    "kind": "paragraph",
+    "source": [
+      "PDF 20，右栏",
+      "PDF 21，左栏",
+      "PDF 21，右栏",
+      "PDF 22，左栏"
+    ],
+    "en": "Perform Initialization using Sequential Decomposition Approach: Once the initial guesses for the tear stream are set, the next step is to set up instructions for the Sequential Decomposition tool to initialize each unit in the flowsheet. Each IDAES-CMF unit model comes with a pre-defined initialize method, and the Sequential Decomposition tool runs this for each unit in sequence, as shown in lines 288 and 289 in Figure 14. The Sequential Decomposition tool can then run the SD initialization procedure (line 292), which will iterate through the process and attempt to converge the tear stream(s) up to the iteration limit previously specified; it may terminate earlier if the tear streams converge. After the SD initialization is completed, the flowsheet can be solved by calling an EO solver, in this case IPOPT[37] (lines 295 and 296, IPOPT version 3.12.2 with MA27).",
+    "zh": "采用序贯分解方法执行初始化：设定撕裂物流的初始猜测值后，下一步是为序贯分解工具设置指令，以初始化流程中的各个单元。每个 IDAES-CMF 单元模型都带有预定义的 `initialize` 方法，序贯分解工具会依次对每个单元执行该方法，如图 14 第 288 和 289 行所示。随后，序贯分解工具即可运行 SD 初始化过程（第 292 行），遍历流程并尝试使撕裂物流收敛，直到达到此前设定的迭代次数上限；若撕裂物流提前收敛，也可提前终止。SD 初始化完成后，可调用 EO 求解器求解流程，本例采用 IPOPT[37]（第 295 和 296 行；IPOPT 版本为 3.12.2，配合 MA27 使用）。"
+  },
+  {
+    "id": "u139",
+    "kind": "paragraph",
+    "source": [
+      "PDF 22，左栏"
+    ],
+    "en": "The final size of the deterministic flowsheet was 1189 variables and constraints, and required 16.2 s for the SD initialization and 0.50 s (0.03 CPU seconds in IPOPT) for the final solve on a commercial laptop (Intel Core i7-8750H CPU @ 2.20 GHz, 10.4 GB memory).",
+    "zh": "最终确定性流程的规模为 1189 个变量和 1189 个约束。在一台商用笔记本电脑上，SD 初始化耗时 16.2 s，最终求解耗时 0.50 s，其中 IPOPT 的 CPU 时间为 0.03 s；电脑配置为 Intel Core i7-8750H CPU @ 2.20 GHz、10.4 GB 内存。"
+  },
+  {
+    "id": "u140",
+    "kind": "paragraph",
+    "source": [
+      "PDF 22，右栏",
+      "PDF 23，左栏"
+    ],
+    "en": "Inspect the Initial Solution: Table 3 shows the results of the simulation in the form of a stream table. Due to the change of property package at stream 10, the state variables change as reflected on the stream table. The product stream flowrate (stream s12) is 0.162 mol/s with a benzene purity of 89.51%, and the reactor volume required to achieve a conversion of 75% is 0.147 m³. However, stream s06 shows that a significant amount of benzene (0.149 mol/s or approximately 42% of the total benzene produced in the reactor R101) is exiting the flash separator, which suggests that the operating conditions could be changed such that the loss of benzene in the flash separator is minimized.",
+    "zh": "检查初始解：表 3 以物流表形式展示了仿真结果。由于在物流 10 处切换了物性包，状态变量也发生了变化，这一点体现在物流表中。产品物流 s12 的流量为 0.162 mol/s，苯纯度为 89.51%；达到 75% 转化率所需的反应器体积为 0.147 m³。然而，物流 s06 表明，有相当数量的苯离开了闪蒸分离器，流量为 0.149 mol/s，约占反应器 R101 中苯总生成量的 42%。这说明，可以改变操作条件，使闪蒸分离器中的苯损失最小化。"
+  },
+  {
+    "id": "u141",
+    "kind": "paragraph",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "For the simulation case, with the initial operating conditions that were set, the total annual cost (sum of amortized capital and operating cost) is $442 201.",
+    "zh": "对于采用所设初始操作条件的仿真情形，总年成本，即摊销资本成本与运行成本之和，为 $442 201。"
+  },
+  {
+    "id": "u142",
+    "kind": "paragraph",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "The EO approach used by the IDAES-CMF allows for quickly switching from solving a simulation problem to solving an optimization problem. In this case study, the total annual cost of the HDA process will be minimized, while enforcing certain performance constraints (minimum production and purity requirement, and limit product loss), by adjusting the following 7 decision variables:",
+    "zh": "IDAES-CMF 所采用的 EO 方法支持从仿真问题求解快速切换至优化问题求解。在本案例中，通过调整以下 7 个决策变量，在满足一定性能约束，包括最低产量、纯度要求及产品损失限制的同时，使 HDA 过程的总年成本最小化："
+  },
+  {
+    "id": "u143-1",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "Reactor pre-heater (H101) outlet temperature,",
+    "zh": "反应器预热器（H101）出口温度。"
+  },
+  {
+    "id": "u143-2",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "reactor (R101) cooling duty,",
+    "zh": "反应器（R101）冷却负荷。"
+  },
+  {
+    "id": "u143-3",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "light gas separator (F101) outlet temperature,",
+    "zh": "轻气体分离器（F101）出口温度。"
+  },
+  {
+    "id": "u143-4",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "distillation pre-heater (H102) outlet temperature, and",
+    "zh": "精馏预热器（H102）出口温度。"
+  },
+  {
+    "id": "u143-5",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "distillation column (C101) condenser pressure, reflux ratio and boilup ratio.",
+    "zh": "精馏塔（C101）冷凝器压力、回流比和再沸比。"
+  },
+  {
+    "id": "u144",
+    "kind": "heading",
+    "source": [
+      "PDF 23，左栏"
+    ],
+    "en": "4.8 | Step 8: Define objective and remaining constraints",
+    "zh": "4.8 | 步骤 8：定义目标函数与其余约束"
+  },
+  {
+    "id": "u145",
+    "kind": "paragraph",
+    "source": [
+      "PDF 23，左栏",
+      "PDF 23，右栏"
+    ],
+    "en": "In addition to minimizing the total annualized cost, it is necessary to provide constraints on the final product, as well as a limit on the amount of benzene in the light gas stream leaving the flash separator. The following constraints are added to the process:",
+    "zh": "除了使总年化成本最小化，还需要对最终产品施加约束，并限制离开闪蒸分离器的轻气体物流中的苯量。向过程添加以下约束："
+  },
+  {
+    "id": "u145-1",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏",
+      "PDF 23，右栏"
+    ],
+    "en": "produce at least 0.18 mol/s of benzene in C101 distillate outlet (i.e. the benzene product stream s12),",
+    "zh": "C101 馏出液出口，即苯产品物流 s12，至少产出 0.18 mol/s 的苯。"
+  },
+  {
+    "id": "u145-2",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏",
+      "PDF 23，右栏"
+    ],
+    "en": "purity of benzene product is at least 99% in the product stream s12, and",
+    "zh": "产品物流 s12 中苯产品的纯度至少为 99%。"
+  },
+  {
+    "id": "u145-3",
+    "kind": "item",
+    "source": [
+      "PDF 23，左栏",
+      "PDF 23，右栏"
+    ],
+    "en": "no more than 20% of the benzene entering the flash separator (F101) may leave in the light gas stream s06.",
+    "zh": "进入闪蒸分离器（F101）的苯中，随轻气体物流 s06 离开的比例不得超过 20%。"
+  },
+  {
+    "id": "u146",
+    "kind": "paragraph",
+    "source": [
+      "PDF 23，右栏"
+    ],
+    "en": "The first step is to add an objective function to the model using the Pyomo Objective component as shown in Figure 15, Lines 298 and 299. The goal is to minimize the sum of operating and capital costs, which have already been added to the flowsheet as Expressions. Unless otherwise specified, Pyomo assumes the goal is to minimize the objective function. Figure 15 also shows how to add constraints to the model to enforce the product flow rate, purity and benzene loss conditions, which is done using inequality constraints.",
+    "zh": "第一步是使用 Pyomo 的 Objective 组件向模型添加目标函数，如图 15 第 298 和 299 行所示。目标是使运行成本与资本成本之和最小化，这些成本此前已作为 Expression 添加到流程中。除非另作说明，Pyomo 默认对目标函数求最小值。图 15 还展示了如何向模型添加约束，以满足产品流量、纯度和苯损失条件；这些条件通过不等式约束实现。"
+  },
+  {
+    "id": "u147",
+    "kind": "heading",
+    "source": [
+      "PDF 23，右栏"
+    ],
+    "en": "4.9 | Step 9: Unfix the operating conditions to create degrees of freedom for optimization",
+    "zh": "4.9 | 步骤 9：解除操作条件的固定，形成优化自由度"
+  },
+  {
+    "id": "u148",
+    "kind": "paragraph",
+    "source": [
+      "PDF 23，右栏"
+    ],
+    "en": "Next, the operating conditions can be converted to decision variables simply by unfixing their values, as shown in Figure 16 (lines 318 to 324). However, it is also necessary to set bounds on these variables to limit the search space available to the solver (lines 327 to 341). For this case study, the following bounds will be used:",
+    "zh": "接下来，只需解除操作条件数值的固定，就可将其转变为决策变量，如图 16 第 318 至 324 行所示。不过，还需要为这些变量设定边界，以限制求解器可探索的搜索空间（第 327 至 341 行）。本案例使用以下边界："
+  },
+  {
+    "id": "u149-1",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "H101 outlet temperature [500, 600] K",
+    "zh": "H101 出口温度：[500, 600] K。"
+  },
+  {
+    "id": "u149-2",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "R101 outlet temperature [600, 900] K",
+    "zh": "R101 出口温度：[600, 900] K。"
+  },
+  {
+    "id": "u149-3",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "R101 volume lower bound of 0 m³ (no upper bound)",
+    "zh": "R101 体积下界：0 m³，无上界。"
+  },
+  {
+    "id": "u149-4",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "F101 outlet temperature [298, 450] K",
+    "zh": "F101 出口温度：[298, 450] K。"
+  },
+  {
+    "id": "u149-5",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "H102 outlet temperature [350, 400] K",
+    "zh": "H102 出口温度：[350, 400] K。"
+  },
+  {
+    "id": "u149-6",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "C101 condenser pressure [101 325, 150 000] Pa",
+    "zh": "C101 冷凝器压力：[101 325, 150 000] Pa。"
+  },
+  {
+    "id": "u149-7",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "C101 reflux ratio [0.1, 5]",
+    "zh": "C101 回流比：[0.1, 5]。"
+  },
+  {
+    "id": "u149-8",
+    "kind": "item",
+    "source": [
+      "PDF 23，右栏",
+      "PDF 24，左栏"
+    ],
+    "en": "C101 boilup ratio [0.1, 5]",
+    "zh": "C101 再沸比：[0.1, 5]。"
+  },
+  {
+    "id": "u150",
+    "kind": "heading",
+    "source": [
+      "PDF 24，左栏"
+    ],
+    "en": "4.10 | Step 10: Perform optimization and inspect solution",
+    "zh": "4.10 | 步骤 10：执行优化并检查解"
+  },
+  {
+    "id": "u151",
+    "kind": "paragraph",
+    "source": [
+      "PDF 24，左栏",
+      "PDF 24，右栏"
+    ],
+    "en": "Thus, the flowsheet model is readily converted to an optimization problem. Since IPOPT was used to solve the flowsheet previously, the same solver can now be applied to solve the optimization problem as shown in line 344 of Figure 16. The optimization problem contains 1196 variables and 1189 constraints and solved in 42 iterations (0.91 s total, 0.18 s CPU time in IPOPT). Table 4 shows the stream table and results summary for the optimized process. As can be seen, the process met the increased product flowrate and purity demands of 0.18 mol/s at 99% purity. The optimization was also able to reduce the yearly operating cost by 4.5% from $427 511/yr. to $408 260/yr.; however, the amortized capital cost more than doubled from $14 690/yr. to $29 921/yr. due to the need to increase the conversion in the reactor (from 75% to 93%) to meet the increased production and purity constraints. The reactor volume required to achieve this conversion was 0.299 m³.",
+    "zh": "这样，流程模型便可方便地转化为优化问题。此前已使用 IPOPT 求解流程，现在可以使用同一求解器求解优化问题，如图 16 第 344 行所示。该优化问题包含 1196 个变量和 1189 个约束，经 42 次迭代求解完成，总耗时 0.91 s，其中 IPOPT 的 CPU 时间为 0.18 s。表 4 给出了优化后过程的物流表和结果汇总。可以看到，过程满足了提高后的产品流量和纯度要求，即 0.18 mol/s、纯度 99%。优化还使年运行成本降低了 4.5%，由 $427 511/yr. 降至 $408 260/yr.；然而，摊销资本成本增加了一倍以上，由 $14 690/yr. 增至 $29 921/yr.，原因是为了满足提高后的产量与纯度约束，需要将反应器转化率从 75% 提高到 93%。达到这一转化率所需的反应器体积为 0.299 m³。"
+  },
+  {
+    "id": "u152",
+    "kind": "paragraph",
+    "source": [
+      "PDF 24，右栏"
+    ],
+    "en": "Looking further into the results, it can be seen that some of the operating conditions have been pushed to their bounds. The product flow rate and purity are at the minimum values of 0.18 mol benzene/s and 99% which is expected as increasing recovery would require more energy (i.e. cost) to purify the product. The operating temperature of the flash separator (F101) has also been reduced to the lower bound in order to minimize the amount of benzene in the vapor stream, while the operating pressure for the distillation column is also at the lower bound, which will reduce the cooling costs required to achieve the target purity. The optimal reflux and boilup ratios in the distillation column (C101) are 0.801 and 1.135 respectively, which have changed from the initial values of 0.5.",
+    "zh": "进一步分析结果可以发现，某些操作条件已达到其边界。产品流量和纯度分别位于 0.18 mol 苯/s 和 99% 的下限，这符合预期，因为提高回收率需要消耗更多能量，也就是增加成本，以提纯产品。闪蒸分离器（F101）的操作温度也降至下界，以尽可能减少气相物流中的苯量；精馏塔的操作压力同样位于下界，这将降低达到目标纯度所需的冷却成本。精馏塔（C101）的最优回流比和再沸比分别为 0.801 和 1.135，相较于初始值 0.5 均发生了变化。"
+  },
+  {
+    "id": "u153",
+    "kind": "heading",
+    "source": [
+      "PDF 24，右栏"
+    ],
+    "en": "4.11 | Step 11: Optimization under uncertainty",
+    "zh": "4.11 | 步骤 11：不确定性下优化"
+  },
+  {
+    "id": "u154",
+    "kind": "paragraph",
+    "source": [
+      "PDF 24，右栏",
+      "PDF 25，左栏",
+      "PDF 25，右栏",
+      "PDF 26，左栏",
+      "PDF 26，右栏"
+    ],
+    "en": "One of the key advantages of the IDAES-CMF is the ability to leverage the power of EO models along with the many useful libraries available as part of the Python Programming Language to quickly extend the analysis and visualization capabilities. Due to the flexibility and open nature of the framework that allows full access to the underlying equations, the IDAES-CMF is well-suited to extend a deterministic optimization model to related, and more complex, tasks including parameter estimation, optimization under uncertainty, data reconciliation, and conceptual design. To demonstrate this advanced capability, the deterministic optimization of the HDA case study will be extended to incorporate uncertainty in the kinetic parameters (denoted as $\\theta$) by formulating a two-stage stochastic programming problem that minimizes the following objective: [[EQ13]] where $E_\\theta()$ is the expected value over a probability distribution for the uncertain parameters $\\theta$. The purpose here is to demonstrate the ease of setting up a stochastic program (or multi-scenario problem) within IDAES-CMF in Python and is not an extensive demonstration of stochastic programming itself.",
+    "zh": "IDAES-CMF 的一个关键优势，是能够结合 EO 模型的能力与 Python 编程语言生态中众多有用的库，快速扩展分析和可视化能力。该框架灵活、开放，可完整访问底层方程，因此非常适合将确定性优化模型扩展至相关且更复杂的任务，包括参数估计、不确定性下优化、数据协调和概念设计。为展示这一高级能力，将 HDA 案例的确定性优化扩展为包含动力学参数不确定性的情形，这些参数记为 $\\theta$；通过建立两阶段随机规划问题，使以下目标函数最小化： [[EQ13]] 其中，$E_\\theta()$ 为对不确定参数 $\\theta$ 的概率分布取期望。这里的目的是展示在 Python 中通过 IDAES-CMF 建立随机规划或多情景问题的便捷性，而不是对随机规划本身作全面展示。"
+  },
+  {
+    "id": "u155",
+    "kind": "paragraph",
+    "source": [
+      "PDF 26，右栏",
+      "PDF 27，左栏"
+    ],
+    "en": "For this example, a normal distribution will be assumed on the reaction kinetic parameters $\\theta\\sim N(\\mu,\\sigma^2)$, with the Arrhenius constant (μ= 6.3 × 10¹⁰, σ = 9450 × 10⁵) and the activation energy (μ = 217.6 × 10³, σ = 3264). To set up this problem, the rand function from the NumPy Python package can be used to create the normally distributed parameter values and number of scenarios (100 in this example) as shown in lines 2 and 9, respectively, in Figure 17. To create the two-stage stochastic problem, a new ConcreteModel object is created, called “m,” and then the (first-stage) design variable is declared, which is the reactor volume in this case. The second-stage decision variables, which differ in each scenario, are the outlet temperatures for H101, H102, F101 and R101 and the pressure, reflux and boilup ratios for C101. To set up the scenarios, the Python method get_opt_model() is used to return an instance of the deterministic optimization problem which was solved previously in step 10. This method is called for each of the 100 scenarios, and the model instance is attached to the ConcreteModel “m” that was created in line 12 in Figure 17. As each model instance is added, the rand function is used to assign values to the Arrhenius constant and the activation energy, as shown in lines 33 to 44 of Figure 17. A set of non-anticipativity constraints are then added to enforce the reactor volume to be the same across all scenarios (lines 47 and 48). The only remaining step setting up the problem is to deactivate the deterministic objective object (from lines 297–299 of Figure 15) and instead declare the objective expression for the stochastic problem as shown in lines 51–57 of Figure 17.",
+    "zh": "在本例中，假定反应动力学参数服从正态分布 $\\theta\\sim N(\\mu,\\sigma^2)$，其中阿伦尼乌斯常数的参数为 $\\mu=6.3\\times10^{10}$、$\\sigma=9450\\times10^5$，活化能的参数为 $\\mu=217.6\\times10^3$、$\\sigma=3264$。为建立这一问题，可以使用 NumPy Python 包中的 `rand` 函数生成服从正态分布的参数值，并设置情景数量，本例为 100 个；相关内容分别见图 17 第 2 和第 9 行。为创建两阶段随机问题，首先新建名为 `m` 的 ConcreteModel 对象，然后声明第一阶段设计变量，本例为反应器体积。第二阶段决策变量在不同情景下取值不同，包括 H101、H102、F101 和 R101 的出口温度，以及 C101 的压力、回流比和再沸比。为设置各个情景，使用 Python 方法 `get_opt_model()`，返回此前在步骤 10 中已求解的确定性优化问题实例。对 100 个情景分别调用这一方法，并将模型实例附加到图 17 第 12 行创建的 ConcreteModel `m` 上。添加每个模型实例时，使用 `rand` 函数为阿伦尼乌斯常数和活化能赋值，如图 17 第 33 至 44 行所示。随后加入一组非预见性约束，强制所有情景中的反应器体积相同（第 47 和 48 行）。建立问题剩余的唯一步骤，是停用确定性目标对象，即图 15 第 297—299 行中的对象，改为声明随机问题的目标表达式，如图 17 第 51 至 57 行所示。"
+  },
+  {
+    "id": "u156",
+    "kind": "paragraph",
+    "source": [
+      "PDF 27，左栏",
+      "PDF 27，右栏"
+    ],
+    "en": "The resulting 2two-stage stochastic programming problem consists of 100 scenarios, 119 601 variables and 119 000 constraints and was solved with IPOPT in under 35 CPU seconds with an expected objective value of $438 467/yr. By incorporating the uncertainty in the kinetic parameters, the amortized capital cost marginally increased from $29 921/yr. to $30 029/yr. Figures 18 and 19 show the distribution of the operating cost and the optimal values of the operating variables for the scenarios considered. From the solution of the stochastic program, it can be seen that reactor volume increased only slightly (to 0.300 m³ from the deterministic solution volume of 0.299 m³). For comparison, the reactor volume from the deterministic solution would have resulted in four infeasible scenarios, shown in Table 5, in which the overhead loss constraint (which limits the benzene to 20% in the vapor stream of the flash separator) was violated due to reduced single-pass conversion in the reactor. This simple example of optimization problem under uncertainty, demonstrates how the IDAES-CMF can easily extend deterministic optimization models to allow stochastic optimization under uncertainty—in this case with less than 20 lines of code.",
+    "zh": "所得两阶段随机规划问题包含 100 个情景、119 601 个变量和 119 000 个约束，使用 IPOPT 在不到 35 CPU 秒内完成求解，目标函数期望值为 $438 467/yr.。纳入动力学参数的不确定性后，摊销资本成本略有增加，从 $29 921/yr. 增至 $30 029/yr.。图 18 和图 19 展示了所考虑情景中的运行成本分布及操作变量最优值的分布。随机规划解表明，反应器体积仅略微增大，从确定性解的 0.299 m³ 增至 0.300 m³。作为比较，若采用确定性解中的反应器体积，会出现表 5 所示的四个不可行情景；在这些情景中，由于反应器单程转化率降低，塔顶损失约束被违反，该约束使闪蒸分离器气相物流带走的苯不超过 20%。这个简单的不确定性下优化示例表明，IDAES-CMF 可以方便地将确定性优化模型扩展为不确定性下的随机优化；本例所需代码不到 20 行。"
+  },
+  {
+    "id": "u157",
+    "kind": "paragraph",
+    "source": [
+      "PDF 27，右栏"
+    ],
+    "en": "While the case study shown here is relatively simple, the IDAES-CMF has been applied to simulating and optimizing complex chemical and energy related processes, such as the removal of CO₂ from power plant flue gas.[38] The IDAES-CMF has also been applied to a range of other problem types, such as conceptual design and process intensification[39] and dynamic real-time optimization and control,[40] and non-linear robust optimization.[41]",
+    "zh": "虽然这里展示的案例相对简单，IDAES-CMF 已用于复杂化工和能源相关过程的仿真与优化，例如从电厂烟气中脱除 CO₂。[38] IDAES-CMF 还被用于其他多种问题，包括概念设计和过程强化、[39] 动态实时优化与控制，[40] 以及非线性鲁棒优化。[41]"
+  },
+  {
+    "id": "u158",
+    "kind": "heading",
+    "source": [
+      "PDF 28，左栏"
+    ],
+    "en": "5 | CONCLUSION",
+    "zh": "5 | 结论"
+  },
+  {
+    "id": "u159",
+    "kind": "paragraph",
+    "source": [
+      "PDF 28，左栏",
+      "PDF 28，右栏"
+    ],
+    "en": "The IDAES Core Modeling Framework integrates mathematical optimization and simulation capabilities with libraries of equation-based models of unit operations and thermophysical properties and tools for editing and creating new models. The IDAES-CMF builds on the foundation of Pyomo,[27] an open-source, extensible algebraic modeling environment implemented in the Python programming language which provides direct access to state-of-the-art solvers, solution techniques and, through Python, access to numerous libraries for scientific computing, data analyses and visualization capabilities. This is combined with fully modifiable and extensible libraries of common processing unit operations and property calculations which enable a seamless transition between dynamic and steady-state modeling. The IDAES-CMF allows tight integration with advanced optimization-based approaches, such as conceptual design and optimization under uncertainty, to support the full process modeling lifecycle from process design to dynamic optimization and control within a single computational platform. With these capabilities, IDAES-CMF can be utilized to design novel processes and technologies for large scale complex systems, with more complete optimization studies than ever before.",
+    "zh": "IDAES 核心建模框架将数学优化与仿真能力、基于方程的单元操作和热物性模型库，以及编辑和创建新模型的工具集成在一起。IDAES-CMF 建立在 Pyomo[27] 的基础上；Pyomo 是使用 Python 编程语言实现的开源、可扩展代数建模环境，可直接调用最先进的求解器和求解技术，并通过 Python 使用众多科学计算、数据分析和可视化库。该基础与完全可修改、可扩展的常见过程单元操作和物性计算库相结合，使动态建模与稳态建模之间能够无缝转换。IDAES-CMF 可与先进的优化方法紧密集成，例如概念设计和不确定性下优化，从而在单一计算平台上支持从过程设计到动态优化与控制的完整过程建模生命周期。凭借这些能力，IDAES-CMF 可用于大型复杂系统中新过程和新技术的设计，并开展比以往更全面的优化研究。"
+  },
+  {
+    "id": "u160",
+    "kind": "paragraph",
+    "source": [
+      "PDF 28，右栏",
+      "PDF 29，左栏"
+    ],
+    "en": "The IDAES-CMF has been demonstrated by applying it to model and optimize a flowsheet for the hydrodealkylation (HDA) of toluene to form benzene, which includes both chemical reactions and phase separation to separate benzene from toluene. The case study provides a simple demonstration of how the IDAES-CMF can be used to rapidly assemble an EO model of the process using a library of pre-built, reusable unit operation models and property packages. Furthermore, the case study demonstrates its capabilities for solving both deterministic and stochastic optimization problems. The HDA optimization example includes 7 degrees of freedom (total of 1173 variables and 1186 constraints), including the reflux and boilup ratios and operating pressure of the distillation column, demonstrating the ability of the framework to optimize a complex non-linear system. The case study also highlights the flexibility of the IDAES-CMF to include different levels of detail and rigor in different parts of the flowsheet by demonstrating how two different sets of property calculations and component lists can be included in the same flowsheet by assuming complete removal of hydrogen and methane from the liquid product stream prior to the distillation column. Moreover, the IDAES-CMF framework allows these optimization models to be extended in a very flexible manner to consider a variety of challenging optimization formulations. For instance, it was demonstrated that with less than 20 lines of python code, the HDA example can be readily extended to incorporate uncertainty through a two-stage stochastic program with 117 601 variables and 117 000 constraints while remaining computationally tractable and solving in under 35 CPU s.",
+    "zh": "通过对甲苯加氢脱烷基（HDA）制苯流程进行建模和优化，展示了 IDAES-CMF 的应用；该流程同时包含化学反应以及用于分离苯和甲苯的相分离。案例简单展示了如何利用预先构建、可复用的单元操作模型和物性包库，通过 IDAES-CMF 快速组装过程的 EO 模型。此外，案例展示了其求解确定性和随机优化问题的能力。HDA 优化示例包含 7 个自由度，总计 1173 个变量和 1186 个约束；自由度包括精馏塔的回流比、再沸比和操作压力，展示了框架优化复杂非线性系统的能力。案例还突出了 IDAES-CMF 在流程不同部分采用不同细节程度和严谨程度的灵活性：通过假定进入精馏塔之前，液体产物流中的氢气和甲烷已完全脱除，展示了如何在同一流程中包含两组不同的物性计算与组分列表。此外，IDAES-CMF 框架能够非常灵活地扩展这些优化模型，以考虑多种具有挑战性的优化数学形式。例如，文中展示了只需不到 20 行 Python 代码，就能方便地将 HDA 示例扩展为含 117 601 个变量和 117 000 个约束的两阶段随机规划，以纳入不确定性，同时保持计算上的可求解性，并在不到 35 CPU 秒内完成求解。"
+  },
+  {
+    "id": "backhead-0",
+    "kind": "heading",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "ACKNOWLEDGMENTS",
+    "zh": "致谢"
+  },
+  {
+    "id": "back-0",
+    "kind": "paragraph",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "The authors would like to recognize the contributions of the greater IDAES team to the development of the IDAES Integrated Platform, and the numerous contributors to the model libraries and associated tools. IDAES is supported through the Simulation-Based Engineering, Crosscutting Research Program within the U.S. Department of Energy's Office of Fossil Energy.",
+    "zh": "作者感谢整个 IDAES 团队对 IDAES 集成平台开发作出的贡献，以及众多人员对模型库和相关工具作出的贡献。IDAES 得到美国能源部化石能源办公室跨领域研究计划中的“基于仿真的工程”项目支持。"
+  },
+  {
+    "id": "backhead-1",
+    "kind": "heading",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "CONFLICT OF INTEREST",
+    "zh": "利益冲突"
+  },
+  {
+    "id": "back-1",
+    "kind": "paragraph",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "The authors declare that there are no conflicts of interest regarding the publication of this article.",
+    "zh": "作者声明，关于本文的发表不存在利益冲突。"
+  },
+  {
+    "id": "backhead-2",
+    "kind": "heading",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "AUTHOR CONTRIBUTIONS",
+    "zh": "作者贡献"
+  },
+  {
+    "id": "back-2",
+    "kind": "paragraph",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "Andrew Lee: Conceptualization; methodology; software; writing-original draft; writing-review & editing. Jaffer Ghouse: Conceptualization; methodology; software; writing-original draft; writing-review & editing. John Eslick: Conceptualization; methodology; software; writing-review & editing. Carl Laird: Conceptualization; methodology; software; supervision; writing-review & editing. John Siirola: Conceptualization; methodology; software; supervision; writing-review & editing. Miguel Zamarripa: Conceptualization; methodology; software; writing-original draft; writing-review & editing. Dan Gunter: Project administration; software; supervision; writing-original draft; writing-review & editing. John Shinn: Funding acquisition; project administration; supervision. Alexander Dowling: Conceptualization; methodology; project administration; supervision; writing-original draft; writing-review & editing. Debangsu Bhattacharyya: Conceptualization; methodology; project administration; supervision; writing-review & editing. Lorenz Biegler: Conceptualization; methodology; project administration; supervision; writing-original draft; writing-review & editing. Anthony Burgard: Conceptualization; funding acquisition; methodology; project administration; software; supervision; writing-original draft; writing-review & editing. David Miller: Conceptualization; funding acquisition; project administration; supervision; writing-original draft; writing-review & editing.",
+    "zh": "Andrew Lee：概念构思；方法学；软件；初稿撰写；审阅与编辑。Jaffer Ghouse：概念构思；方法学；软件；初稿撰写；审阅与编辑。John Eslick：概念构思；方法学；软件；审阅与编辑。Carl Laird：概念构思；方法学；软件；监督指导；审阅与编辑。John Siirola：概念构思；方法学；软件；监督指导；审阅与编辑。Miguel Zamarripa：概念构思；方法学；软件；初稿撰写；审阅与编辑。Dan Gunter：项目管理；软件；监督指导；初稿撰写；审阅与编辑。John Shinn：获取资助；项目管理；监督指导。Alexander Dowling：概念构思；方法学；项目管理；监督指导；初稿撰写；审阅与编辑。Debangsu Bhattacharyya：概念构思；方法学；项目管理；监督指导；审阅与编辑。Lorenz Biegler：概念构思；方法学；项目管理；监督指导；初稿撰写；审阅与编辑。Anthony Burgard：概念构思；获取资助；方法学；项目管理；软件；监督指导；初稿撰写；审阅与编辑。David Miller：概念构思；获取资助；项目管理；监督指导；初稿撰写；审阅与编辑。"
+  },
+  {
+    "id": "backhead-3",
+    "kind": "heading",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "DATA AVAILABILITY STATEMENT",
+    "zh": "数据可用性声明"
+  },
+  {
+    "id": "back-3",
+    "kind": "paragraph",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "The data that support the findings of this study are openly available in the IDAES GitHub repository at https://github.com/IDAES/idaes-pse.",
+    "zh": "支持本研究结果的数据已在 IDAES GitHub 仓库公开：https://github.com/IDAES/idaes-pse。"
+  },
+  {
+    "id": "backhead-4",
+    "kind": "heading",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "DISCLAIMER",
+    "zh": "免责声明"
+  },
+  {
+    "id": "back-4",
+    "kind": "paragraph",
+    "source": [
+      "PDF 29，左／右栏"
+    ],
+    "en": "This project was funded by the United States Department of Energy, National Energy Technology Laboratory, in part, through a site support contract. Neither the United States Government nor any agency thereof, nor any of their employees, nor the support contractor, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof. Sandia National Laboratories is a multimission laboratory managed and operated by National Technology and Engineering Solutions of Sandia LLC, a wholly owned subsidiary of Honeywell International Inc. for the U.S. Department of Energy's National Nuclear Security Administration under contract DE-NA0003525. This material is based upon work supported by the U.S. Department of Energy, Office of Science, under Contract No. DEAC02-05CH11231.",
+    "zh": "本项目由美国能源部国家能源技术实验室资助，其中一部分通过现场支持合同提供。美国政府及其任何机构、其任何雇员、支持服务承包商及其任何雇员，均不对所披露的任何信息、装置、产品或过程的准确性、完整性或实用性作出任何明示或默示保证，也不承担任何法律责任或义务，且不声明其使用不会侵犯私人权利。本文通过商品名、商标、制造商或其他方式提及任何具体商业产品、过程或服务，并不必然构成或暗示美国政府或其任何机构对其的认可、推荐或支持。本文作者表达的观点和意见不一定代表或反映美国政府或其任何机构的观点和意见。桑迪亚国家实验室是一家承担多项任务的实验室，由 Honeywell International Inc. 的全资子公司 National Technology and Engineering Solutions of Sandia LLC，根据合同 DE-NA0003525，为美国能源部国家核安全局管理和运营。本材料基于美国能源部科学办公室根据合同 DEAC02-05CH11231 支持的工作。"
+  },
+  {
+    "id": "endnote",
+    "kind": "paragraph",
+    "source": [
+      "PDF 30，左栏"
+    ],
+    "en": "ENDNOTE: 1 https://github.com/IDAES/examples-pse/tree/main/src/Tutorials/Basics",
+    "zh": "尾注：1 https://github.com/IDAES/examples-pse/tree/main/src/Tutorials/Basics"
+  },
+  {
+    "id": "support",
+    "kind": "paragraph",
+    "source": [
+      "PDF 31，右栏"
+    ],
+    "en": "Additional supporting information may be found online in the Supporting Information section at the end of this article.",
+    "zh": "更多补充信息可在本文末尾的在线“补充信息”部分找到。"
+  },
+  {
+    "id": "citation",
+    "kind": "paragraph",
+    "source": [
+      "PDF 31，右栏"
+    ],
+    "en": "How to cite this article: A. Lee, J. H. Ghouse, J. C. Eslick, C. D. Laird, J. D. Siirola, M. A. Zamarripa, D. Gunter, J. H. Shinn, A. W. Dowling, D. Bhattacharyya, L. T. Biegler, A. P. Burgard, D. C. Miller, J Adv Manuf Process 2021, 3(3), e10095. https://doi.org/10.1002/amp2.10095",
+    "zh": "本文引用方式：A. Lee, J. H. Ghouse, J. C. Eslick, C. D. Laird, J. D. Siirola, M. A. Zamarripa, D. Gunter, J. H. Shinn, A. W. Dowling, D. Bhattacharyya, L. T. Biegler, A. P. Burgard, D. C. Miller, J Adv Manuf Process 2021, 3(3), e10095. https://doi.org/10.1002/amp2.10095"
+  }
+]

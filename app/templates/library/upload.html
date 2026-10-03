@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block content %}<main class="form-sheet"><a href="/">← 返回论文库</a><h1>分享一篇论文</h1><p class="muted">选择完整双语 HTML，检查预览后发布。</p><ol class="steps"><li class="active">1 选择文件</li><li>2 检查预览</li><li>3 发布</li></ol>
+{% if error %}<p class="error" role="alert">{{ error }}</p>{% endif %}<form method="post" enctype="multipart/form-data">{% csrf_token %}{{ form.non_field_errors }}
+<p>{{ form.html.label_tag }}{{ form.html }}{{ form.html.errors }}<small>支持 IDAES / ammonia 对照格式 · UTF-8 · 最大 50 MiB</small></p>
+<fieldset><legend>{{ form.categories.label }}</legend>{{ form.categories }}{{ form.categories.errors }}</fieldset>
+<p>{{ form.note.label_tag }}{{ form.note }}{{ form.note.errors }}</p>
+<details class="optional"><summary>题名与附加资料（可选）</summary>{% for field in form %}{% if field.name != 'html' and field.name != 'categories' and field.name != 'note' %}<p>{{ field.label_tag }}{{ field }}{{ field.errors }}</p>{% endif %}{% endfor %}<small>PDF 最大 100 MiB；映射最大 5 MiB。没有附件也可发布。</small></details>
+<button class="primary" type="submit">检查并预览 →</button></form></main>{% endblock %}

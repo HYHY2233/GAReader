@@ -1,0 +1,594 @@
+{
+  "format": "gareader-reference-audit-v1",
+  "checked_on": "2026-10-02",
+  "scope": "Static inspection of supplied HTML/JSON and byte hashes only; not browser/app/local-laptop/translation verification.",
+  "papers": [
+    {
+      "paper_key": "idaes",
+      "profile": "idaes-pair-v1",
+      "html": "examples/idaes/article.html",
+      "html_bytes": 5312814,
+      "html_sha256": "25817c7ba766c21ef54bfe04d1f55f4e1985cfbf8a3a42634993ed0f30ccce43",
+      "original_pdf": "examples/idaes/original.pdf",
+      "original_pdf_sha256": "9263617a09f0a74d08ad724be97821e5b3ced68d14bf884939c70c0a9704cd75",
+      "map_type": "array",
+      "map_sha256": "df1fecf7278382677f3f62e172c50680d208d31eec7c81bd50111fe0b425cb0e",
+      "map_entries": 198,
+      "map_kind_counts": {
+        "heading": 34,
+        "paragraph": 121,
+        "item": 43
+      },
+      "missing_map_ids": [],
+      "duplicate_main_ids": [],
+      "invalid_pair_indices": [],
+      "counts": {
+        "main_pairs": 234,
+        "paragraph_containers": 121,
+        "main_images": 19,
+        "all_document_images": 20,
+        "source_figure_objects": 19,
+        "numbered_equations": 13,
+        "mathml_nodes": 145,
+        "source_table_display_blocks": 5,
+        "all_html_tables_in_main": 37,
+        "figure_label_tables": 19,
+        "references": 41,
+        "whole_document_scripts": 2
+      },
+      "numbered_equation_ids": [
+        "eq-1",
+        "eq-2",
+        "eq-3",
+        "eq-4",
+        "eq-5",
+        "eq-6",
+        "eq-7",
+        "eq-8",
+        "eq-9",
+        "eq-10",
+        "eq-11",
+        "eq-12",
+        "eq-13"
+      ],
+      "table_caption_ids": [
+        "table-1",
+        "table-2",
+        "table-3",
+        "table-4",
+        "table-5"
+      ],
+      "reference_ids": [
+        "ref-1",
+        "ref-2",
+        "ref-3",
+        "ref-4",
+        "ref-5",
+        "ref-6",
+        "ref-7",
+        "ref-8",
+        "ref-9",
+        "ref-10",
+        "ref-11",
+        "ref-12",
+        "ref-13",
+        "ref-14",
+        "ref-15",
+        "ref-16",
+        "ref-17",
+        "ref-18",
+        "ref-19",
+        "ref-20",
+        "ref-21",
+        "ref-22",
+        "ref-23",
+        "ref-24",
+        "ref-25",
+        "ref-26",
+        "ref-27",
+        "ref-28",
+        "ref-29",
+        "ref-30",
+        "ref-31",
+        "ref-32",
+        "ref-33",
+        "ref-34",
+        "ref-35",
+        "ref-36",
+        "ref-37",
+        "ref-38",
+        "ref-39",
+        "ref-40",
+        "ref-41"
+      ],
+      "main_text_sha256_whitespace_normalized": "ddc1eaf88ff77f802e5cfdc89cec132fda8105ce252f5a330d3ceac46ce4892b",
+      "images": [
+        {
+          "ordinal": 1,
+          "decoded_sha256": "2d1783afa5ef4f629f75c3adc909e60e766d9dfa56a35ba09742fe20813b2f8d",
+          "decoded_bytes": 121186,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            368
+          ],
+          "alt": "原文图 1：IDAES 集成平台"
+        },
+        {
+          "ordinal": 2,
+          "decoded_sha256": "00a7437bb6be700bb1a63540efd4a08eac4078d06b79759f2cc34f89af39394b",
+          "decoded_bytes": 78497,
+          "format": "PNG",
+          "pixels": [
+            995,
+            437
+          ],
+          "alt": "原文图 2：IDAES 建模层次结构"
+        },
+        {
+          "ordinal": 3,
+          "decoded_sha256": "de5c07ee204a6509eeb1434cc05e0a0c9c1bc89639513ef806eeba43e17d952d",
+          "decoded_bytes": 137516,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            594
+          ],
+          "alt": "原文图 3：HDA 工艺流程图"
+        },
+        {
+          "ordinal": 4,
+          "decoded_sha256": "2559ca742de1610f1fe6eec710ff1a1339b68eed8625f40818f0c74b7f35c658",
+          "decoded_bytes": 190625,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            695
+          ],
+          "alt": "原文图 4：创建流程并添加物性包"
+        },
+        {
+          "ordinal": 5,
+          "decoded_sha256": "9b0b519a71a33ee89421dc8b9ce8a5d89553e628ad37e6b01e8533dd85772071",
+          "decoded_bytes": 309885,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            1184
+          ],
+          "alt": "原文图 5：添加进料块、混合器、加热器和反应器"
+        },
+        {
+          "ordinal": 6,
+          "decoded_sha256": "9e7c97f94a1022dfc364a8e9e088f0b7ed5896e5afe4524d516846928078fb34",
+          "decoded_bytes": 128468,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            572
+          ],
+          "alt": "原文图 6：添加闪蒸分离器、排放分流器和循环压缩机"
+        },
+        {
+          "ordinal": 7,
+          "decoded_sha256": "4c63745a17e61997afe5465b9f1a7d05b54641a4f63777c540da38b99be9120f",
+          "decoded_bytes": 349218,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            1325
+          ],
+          "alt": "原文图 7：添加转换块及相关约束"
+        },
+        {
+          "ordinal": 8,
+          "decoded_sha256": "0aab21d3f974f491558ac96e7e7f0ecf712ff711f21be50941c85dc28bd50d4b",
+          "decoded_bytes": 126939,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            527
+          ],
+          "alt": "原文图 8：添加精馏预热器和板式塔"
+        },
+        {
+          "ordinal": 9,
+          "decoded_sha256": "1deb6f7834d0332ddefcd125e00ac37e7e0cb186164524970d5e9634d5ecec9f",
+          "decoded_bytes": 257056,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            841
+          ],
+          "alt": "原文图 9：使用 Pyomo 弧连接流程中的单元模型"
+        },
+        {
+          "ordinal": 10,
+          "decoded_sha256": "73f255d92160394f4fd9ac331ae0d2c6e7e4229c6c1a33bc59a6eef028860ffd",
+          "decoded_bytes": 219910,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            701
+          ],
+          "alt": "原文图 10：添加额外变量、表达式和约束"
+        },
+        {
+          "ordinal": 11,
+          "decoded_sha256": "d1e134a52dbb056c8dfe919a5a86c9a92eaed83ebe4b059ffb68d5ee77d4c32a",
+          "decoded_bytes": 299572,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            950
+          ],
+          "alt": "原文图 11：检查自由度并设定进料条件"
+        },
+        {
+          "ordinal": 12,
+          "decoded_sha256": "096d6061f7c8c64402d16da61bf971960cb8ce7f22128e5498522c09be6cf626",
+          "decoded_bytes": 190580,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            701
+          ],
+          "alt": "原文图 12：设定单元设计条件"
+        },
+        {
+          "ordinal": 13,
+          "decoded_sha256": "9b7584b3da4fb83dc635fabf6b80f51c4ac2a7ca6ee6a6275f136e2bd922222d",
+          "decoded_bytes": 143255,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            616
+          ],
+          "alt": "原文图 13：准备序贯分解工具"
+        },
+        {
+          "ordinal": 14,
+          "decoded_sha256": "33891e3f6ebd88ca457466e25348ec215a058cafd2d3bf7d8b9cd9710c0e9d7c",
+          "decoded_bytes": 191234,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            816
+          ],
+          "alt": "原文图 14：设定撕裂物流猜测值并运行序贯分解工具"
+        },
+        {
+          "ordinal": 15,
+          "decoded_sha256": "ac6886bbc6a15610ef1b83fa0f45dcda905687fb57e6283944ea384e81f94a7a",
+          "decoded_bytes": 164512,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            630
+          ],
+          "alt": "原文图 15：添加目标函数和不等式约束"
+        },
+        {
+          "ordinal": 16,
+          "decoded_sha256": "fd5d2c41d339794123d4e80b14ad5c1f9e911a1826e632fc2799c72bc2dc398c",
+          "decoded_bytes": 269720,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            867
+          ],
+          "alt": "原文图 16：解除变量固定、设置边界并求解优化问题"
+        },
+        {
+          "ordinal": 17,
+          "decoded_sha256": "ba6446946c174caf8990688b6795f25efb6de28c25f3160f3e0b51b9155c8085",
+          "decoded_bytes": 360052,
+          "format": "PNG",
+          "pixels": [
+            1008,
+            1554
+          ],
+          "alt": "原文图 17：执行不确定性下优化的示例"
+        },
+        {
+          "ordinal": 18,
+          "decoded_sha256": "e3b031ba2ea78055e8b868dfc59fb35a8270326495b9c8daf4ae62b8e169b74e",
+          "decoded_bytes": 77370,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            712
+          ],
+          "alt": "原文图 18：所考虑动力学参数不确定性对应的资本成本与运行成本分布"
+        },
+        {
+          "ordinal": 19,
+          "decoded_sha256": "5767942730747e2c7b199d75545c44ac5564508f581eb0f3dfafdcbe9061f527",
+          "decoded_bytes": 94234,
+          "format": "PNG",
+          "pixels": [
+            1357,
+            693
+          ],
+          "alt": "原文图 19：所考虑动力学参数不确定性对应的操作变量最优值分布"
+        }
+      ],
+      "notes": [
+        "Counts are reference-specific, not thresholds for future papers.",
+        "Scientific table count uses original numbering; display blocks may differ.",
+        "Inline original scripts are content to discard during import, not trusted site code."
+      ]
+    },
+    {
+      "paper_key": "ammonia",
+      "profile": "ammonia-pair-v2",
+      "html": "examples/ammonia/article.html",
+      "html_bytes": 1997988,
+      "html_sha256": "60c52077ffe8973772ef79ad470795a7d3069e41a82fa85a3ace26f1bd8b142a",
+      "original_pdf": "examples/ammonia/original.pdf",
+      "original_pdf_sha256": "d6a1bcdaa2a5a38e020c3c068fadc639b8a1965ef0632bd2d32a8b1a09d7bda1",
+      "map_type": "object.paragraphs",
+      "map_sha256": "c496c16863ba11b5be96e8a43f04716b065ad407744f61109097102d2ffcffb7",
+      "map_entries": 91,
+      "map_kind_counts": {
+        "paragraph": 50,
+        "nomenclature": 41
+      },
+      "missing_map_ids": [],
+      "duplicate_main_ids": [],
+      "invalid_pair_indices": [],
+      "counts": {
+        "main_pairs": 158,
+        "paragraph_containers": 91,
+        "main_images": 10,
+        "all_document_images": 10,
+        "source_figure_objects": 10,
+        "numbered_equations": 70,
+        "mathml_nodes": 750,
+        "source_table_display_blocks": 10,
+        "all_html_tables_in_main": 22,
+        "figure_label_tables": 10,
+        "references": 35,
+        "whole_document_scripts": 0
+      },
+      "numbered_equation_ids": [
+        "eq-1",
+        "eq-2",
+        "eq-3",
+        "eq-4",
+        "eq-5",
+        "eq-6",
+        "eq-7",
+        "eq-8",
+        "eq-9",
+        "eq-10",
+        "eq-11",
+        "eq-12",
+        "eq-13",
+        "eq-14",
+        "eq-15",
+        "eq-16",
+        "eq-17",
+        "eq-18",
+        "eq-19",
+        "eq-20",
+        "eq-21",
+        "eq-22",
+        "eq-23",
+        "eq-24",
+        "eq-25",
+        "eq-26",
+        "eq-27",
+        "eq-28",
+        "eq-29",
+        "eq-30",
+        "eq-31",
+        "eq-32",
+        "eq-33",
+        "eq-34",
+        "eq-35",
+        "eq-36",
+        "eq-37",
+        "eq-38",
+        "eq-39",
+        "eq-40",
+        "eq-41",
+        "eq-42",
+        "eq-43",
+        "eq-44",
+        "eq-45",
+        "eq-46",
+        "eq-47",
+        "eq-48",
+        "eq-49",
+        "eq-50",
+        "eq-51",
+        "eq-52",
+        "eq-53",
+        "eq-54",
+        "eq-55",
+        "eq-56",
+        "eq-57",
+        "eq-58",
+        "eq-59",
+        "eq-60",
+        "eq-61",
+        "eq-62",
+        "eq-63",
+        "eq-64",
+        "eq-65",
+        "eq-66",
+        "eq-67",
+        "eq-68",
+        "eq-69",
+        "eq-70"
+      ],
+      "table_caption_ids": [
+        "table-1",
+        "table-2",
+        "table-3",
+        "table-4",
+        "table-5",
+        "table-6",
+        "table-7",
+        "table-8",
+        "table-B.9"
+      ],
+      "reference_ids": [
+        "ref-01",
+        "ref-02",
+        "ref-03",
+        "ref-04",
+        "ref-05",
+        "ref-06",
+        "ref-07",
+        "ref-08",
+        "ref-09",
+        "ref-10",
+        "ref-11",
+        "ref-12",
+        "ref-13",
+        "ref-14",
+        "ref-15",
+        "ref-16",
+        "ref-17",
+        "ref-18",
+        "ref-19",
+        "ref-20",
+        "ref-21",
+        "ref-22",
+        "ref-23",
+        "ref-24",
+        "ref-25",
+        "ref-26",
+        "ref-27",
+        "ref-28",
+        "ref-29",
+        "ref-30",
+        "ref-31",
+        "ref-32",
+        "ref-33",
+        "ref-34",
+        "ref-35"
+      ],
+      "main_text_sha256_whitespace_normalized": "42d47950163f3f8bcb778981a87b06f13c7d4e5b419be22bcbf2ba653b787bc2",
+      "images": [
+        {
+          "ordinal": 1,
+          "decoded_sha256": "939ea7f18909466a0730cb108528a80477bc08c632e883fe37fcde48fa6ed563",
+          "decoded_bytes": 75902,
+          "format": "PNG",
+          "pixels": [
+            966,
+            732
+          ],
+          "alt": "图 1 原图"
+        },
+        {
+          "ordinal": 2,
+          "decoded_sha256": "8cee215430c8d63939b4cad4f71e184a82cc39eb59d4c3572146045d3a03e749",
+          "decoded_bytes": 52589,
+          "format": "PNG",
+          "pixels": [
+            997,
+            518
+          ],
+          "alt": "图 2 原图"
+        },
+        {
+          "ordinal": 3,
+          "decoded_sha256": "a1e1c4660612247b46c90803992d8e95dc3cf869984d42e767ef156cde40f225",
+          "decoded_bytes": 225096,
+          "format": "PNG",
+          "pixels": [
+            1031,
+            834
+          ],
+          "alt": "图 3 原图"
+        },
+        {
+          "ordinal": 4,
+          "decoded_sha256": "0219d4168cbf7103e471509eac5f1318f3660f6a3c608e0d04db279f30fcb6ef",
+          "decoded_bytes": 220432,
+          "format": "PNG",
+          "pixels": [
+            1031,
+            832
+          ],
+          "alt": "图 4 原图"
+        },
+        {
+          "ordinal": 5,
+          "decoded_sha256": "82e4c1f47f75a567f609bd2af052d45872834e65ef0cfbd1c855c311a39cbd9b",
+          "decoded_bytes": 197590,
+          "format": "PNG",
+          "pixels": [
+            1023,
+            1432
+          ],
+          "alt": "图 5 原图"
+        },
+        {
+          "ordinal": 6,
+          "decoded_sha256": "a28187bdf991e3329024a5cb4b86b43dbd4e5eb6501e850edb0538c3fe603b9a",
+          "decoded_bytes": 179015,
+          "format": "PNG",
+          "pixels": [
+            992,
+            1418
+          ],
+          "alt": "图 6 原图"
+        },
+        {
+          "ordinal": 7,
+          "decoded_sha256": "aee3e57d82c0c2a2fb302fb8c3481a23c950a56d78ebf0b6a96d116a7cd794ba",
+          "decoded_bytes": 80940,
+          "format": "PNG",
+          "pixels": [
+            976,
+            727
+          ],
+          "alt": "图 7 原图"
+        },
+        {
+          "ordinal": 8,
+          "decoded_sha256": "cd636b090144f91e979d3714824cca888508ff949bb391fbfbb2367642368330",
+          "decoded_bytes": 86830,
+          "format": "PNG",
+          "pixels": [
+            961,
+            602
+          ],
+          "alt": "图 8 原图"
+        },
+        {
+          "ordinal": 9,
+          "decoded_sha256": "9e54760b8e6fc1823c0a168475d56caf00b712f74abe1624174f3884bd9ffa97",
+          "decoded_bytes": 37447,
+          "format": "PNG",
+          "pixels": [
+            958,
+            377
+          ],
+          "alt": "图 9 原图"
+        },
+        {
+          "ordinal": 10,
+          "decoded_sha256": "c4ac38502f943606bb92a38664704000f4ae8657fabce459bf45df5c653ea8af",
+          "decoded_bytes": 52516,
+          "format": "PNG",
+          "pixels": [
+            916,
+            424
+          ],
+          "alt": "图 10 原图"
+        }
+      ],
+      "notes": [
+        "Counts are reference-specific, not thresholds for future papers.",
+        "Scientific table count uses original numbering; display blocks may differ.",
+        "Inline original scripts are content to discard during import, not trusted site code."
+      ]
+    }
+  ]
+}

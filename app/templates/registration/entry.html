@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="entry-layout">
+<section class="account-entry-panel">{% block account_form %}{% endblock %}</section>
+<aside class="anonymous-entry-panel" id="anonymous-login" aria-labelledby="anonymous-heading">
+<h2 id="anonymous-heading">匿名登录</h2>
+{% if anonymous_error %}<p class="error" role="alert">{{ anonymous_error }}</p>{% endif %}
+{% if last_guest %}
+<p class="guest-label">上次使用的昵称 <span class="recommended">推荐沿用</span></p>
+<p class="remembered-name">{{ last_guest.first_name }}</p>
+<p class="entry-hint">继续使用上次身份，保留评论和评分记录。</p>
+<form method="post" action="{% url 'anonymous-login' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ next }}"><input type="hidden" name="action" value="resume"><button class="primary">使用上次身份登录</button></form>
+<details class="guest-switch"><summary>更换匿名身份</summary>
+<p class="entry-hint">更换后将记住新身份，旧记录仍保留。</p>
+<form method="post" action="{% url 'anonymous-login' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ next }}"><input type="hidden" name="action" value="new"><button>更换身份并登录</button></form>
+</details>
+{% else %}
+<p class="entry-hint">自动生成昵称，并在此浏览器记住身份。</p>
+<form method="post" action="{% url 'anonymous-login' %}">{% csrf_token %}<input type="hidden" name="next" value="{{ next }}"><input type="hidden" name="action" value="new"><button>匿名登录</button></form>
+{% endif %}
+</aside></main>
+{% endblock %}

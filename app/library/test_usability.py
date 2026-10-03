@@ -71,3 +71,34 @@ class TagWorkflowTests(TestCase):
         with patch.object(modeladmin,'message_user'):
             modeladmin.merge(request,Tag.objects.filter(pk__in=[other.pk,self.tag.pk]))
         self.assertEqual(list(p.tags.all()),[self.tag]);other.refresh_from_db();self.assertFalse(other.active)
+
+    def test_inactive_history_requires_explicit_removal_on_metadata_edit(self):
+        staged=self.upload()['Location'];self.client.post(staged,{'confirm':'yes'})
+        paper=Paper.objects.get();before=(paper.content_hash,paper.current_revision_id,paper.created_at)
+        self.tag.active=False;self.tag.save()
+        url=f'/papers/{paper.pk}/metadata/'
+        response=self.client.post(url,{'categories':[self.category.pk],'title_zh':'只修改标题','tags':[]})
+        self.assertEqual(response.status_code,302)
+        self.assertEqual(list(paper.tags.all()),[self.tag]);paper.refresh_from_db()
+        self.assertEqual((paper.content_hash,paper.current_revision_id,paper.created_at),before)
+        self.assertContains(self.client.get(url),'历史停用标签')
+        active=Tag.objects.create(name='新的有效词')
+        removed=self.client.post(url,{'categories':[self.category.pk],'tags':[active.pk],'remove_inactive_tags':[self.tag.pk]})
+        self.assertEqual(removed.status_code,302);self.assertEqual(list(paper.tags.all()),[active])
+        self.client.force_login(self.other)
+        self.assertEqual(self.client.post(url,{'categories':[self.category.pk],'tags':[active.pk]}).status_code,404)
+
+    def test_new_install_defaults_and_repeated_setup_preserve_admin_decisions(self):
+        from .tagging import initialize_vocabulary, DEFAULT_TAG_NAMES
+        disabled=Tag.objects.create(name='管理员另外停用的词',active=False)
+        self.assertEqual(initialize_vocabulary(new_install=False),[])
+        self.assertEqual(len(initialize_vocabulary(new_install=True)),len(DEFAULT_TAG_NAMES))
+        disabled.refresh_from_db();self.assertFalse(disabled.active)
+        tag=Tag.objects.get(name='NMPC');tag.active=False;tag.save()
+        initialize_vocabulary(new_install=False);tag.refresh_from_db();self.assertFalse(tag.active)
+
+    def test_empty_vocabulary_link_is_only_offered_to_admin(self):
+        Tag.objects.update(active=False)
+        self.assertContains(self.client.get('/upload/'),'请联系管理员')
+        self.user.is_staff=True;self.user.is_superuser=True;self.user.save()
+        self.assertContains(self.client.get('/upload/'),'/admin/library/tag/?active__exact=0')

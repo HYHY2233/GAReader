@@ -108,6 +108,7 @@
   }
   $('annotation-form').addEventListener('submit',submit);
   body.addEventListener('input',save);
+  body.addEventListener('keydown',event=>{if(event.ctrlKey&&event.key==='Enter'&&!event.isComposing&&!composing){event.preventDefault();$('annotation-form').requestSubmit();}});
   body.addEventListener('compositionstart',()=>{composing=true;});
   body.addEventListener('compositionend',()=>{composing=false;save();});
   $('annotation-cancel').addEventListener('click',close);

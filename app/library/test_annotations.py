@@ -232,7 +232,9 @@ class AnnotationTests(TestCase):
         target=revision_dir(self.rev)/'original.pdf';original=target.read_bytes()
         try:
             target.write_bytes(original+b'\nreplacement')
-            self.assertEqual(self.ca.get(self.base+f'revisions/{self.rev.id}/pdf/').status_code,400)
+            response=self.ca.get(self.base+f'revisions/{self.rev.id}/pdf/')
+            self.assertEqual(response.status_code,409)
+            self.assertIn('来源校验失败',response.json()['error'])
         finally:target.write_bytes(original)
 
     def test_incremental_poll_returns_reply_changed_thread(self):
@@ -312,3 +314,39 @@ class AnnotationTests(TestCase):
         self.assertEqual(result['removed_ids'],[created]);self.assertEqual(result['threads'],[])
         response=self.ca.post(self.base+'comments/',json.dumps({'body':'reply','parent':created,'request_key':str(uuid.uuid4())}),content_type='application/json')
         self.assertEqual(response.status_code,403)
+
+    def test_every_projection_retains_its_source_segment_without_mutation(self):
+        source=self.source('p1','en')
+        source['segments']+=self.source('unicode','en',quote='🐈')['segments']
+        created=self.send(source);self.assertEqual(created.status_code,201,created.content)
+        anchor=AnnotationAnchor.objects.get(comment_id=created.json()['id'])
+        original=json.dumps(anchor.source,sort_keys=True)
+        for view in ['both','en','zh','pdf']:
+            projections=self.threads(view)['threads'][0]['projections']
+            self.assertEqual({p['source_segment_index'] for p in projections},{0,1})
+            if view=='both':
+                for index in (0,1):
+                    self.assertEqual({p['precision'] for p in projections if p['source_segment_index']==index},{'exact','block'})
+        anchor.refresh_from_db();self.assertEqual(json.dumps(anchor.source,sort_keys=True),original)
+
+    def test_pdf_read_download_and_html_download_have_distinct_headers(self):
+        read=self.ca.get(self.base+f'revisions/{self.rev.id}/pdf/')
+        self.assertEqual(read.status_code,200);self.assertEqual(read['Content-Type'],'application/pdf')
+        self.assertTrue(read['Content-Disposition'].startswith('inline'))
+        read.close()
+        for name in ['original.pdf','original.html']:
+            from django.urls import reverse
+            response=self.ca.get(reverse('revision-file',args=[self.p.pk,self.rev.pk,name]))
+            self.assertEqual(response.status_code,200)
+            self.assertTrue(response['Content-Disposition'].startswith('attachment'))
+            self.assertIn('sandbox',response['Content-Security-Policy']);response.close()
+
+    def test_pdf_missing_and_absent_return_actionable_errors(self):
+        from .revisions import revision_dir
+        self.assertEqual(self.ca.get(f'/api/papers/{self.q.pk}/revisions/{self.q.current_revision_id}/pdf/').status_code,404)
+        file=revision_dir(self.rev)/'original.pdf';original=file.read_bytes()
+        try:
+            file.unlink()
+            result=self.ca.get(self.base+f'revisions/{self.rev.id}/pdf/')
+            self.assertEqual(result.status_code,404);self.assertIn('不可访问',result.json()['error'])
+        finally:file.write_bytes(original)

@@ -20,7 +20,7 @@ from django.views.decorators.http import require_http_methods, require_GET
 from django.utils import timezone
 
 from .article import load_article, FormatError, digest
-from .forms import UploadForm, MetadataForm
+from .forms import UploadForm, MetadataForm, PaperMetadataEditForm
 from .models import Paper, Category, Tag, Rating, Comment
 from .storage import paper_dir, write_bundle, publish, cleanup_staging, rendered_body
 from .discussion import visible_threads
@@ -168,7 +168,7 @@ def paper_metadata(request,pk):
     fields=('title_en','title_zh','authors','year','note','source_url')
     initial={k:getattr(paper,k) for k in fields}
     initial.update(categories=list(paper.categories.values_list('pk',flat=True)),tags=list(paper.tags.filter(active=True).values_list('pk',flat=True)))
-    form=MetadataForm(request.POST or None,initial=initial)
+    form=PaperMetadataEditForm(request.POST or None,initial=initial,paper=paper)
     if request.method=='POST' and form.is_valid():
         data=form.cleaned_data
         with transaction.atomic():
@@ -176,7 +176,7 @@ def paper_metadata(request,pk):
                 if field.startswith('title_') and not data[field]: continue
                 setattr(paper,field,data[field])
             paper.save(update_fields=fields)
-            paper.categories.set(data['categories']);paper.tags.set(data['tags'])
+            paper.categories.set(data['categories']);paper.tags.set([*data['tags'],*data['retained_inactive_tags']])
         return redirect('reader',pk=pk)
     return render(request,'library/metadata.html',{'form':form,'back':reverse('reader',args=[pk]),'paper':paper})
 

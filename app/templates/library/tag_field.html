@@ -1,5 +1,5 @@
 <fieldset class="tag-field"><legend>{{ form.tags.label }}</legend>
 <p class="muted">从管理员维护的词表选择方法、对象或工具。</p>
 {{ form.tags }}{{ form.tags.errors }}
-{% if not form.tags.field.queryset.exists %}<p class="error">暂无启用的标签，请管理员先在管理后台核对并启用词条。</p>{% endif %}
+{% if not form.tags.field.queryset.exists %}<p class="error">暂无启用的标签。{% if user.is_staff %}<a href="{% url 'admin:library_tag_changelist' %}?active__exact=0">核对并启用标签</a>：勾选需要的词条，执行“启用所选标签（管理员已核对）”。{% else %}请联系管理员启用可选标签后再上传。{% endif %}</p>{% endif %}
 <noscript><p>按住 Ctrl（Mac 为 Command）可选择多项。</p></noscript></fieldset>

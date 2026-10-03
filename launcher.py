@@ -213,11 +213,19 @@ def setup(data):
     subprocess.run([sys.executable,'-m','pip','install','-r',str(ROOT/'requirements.lock')],check=True)
     configure(data)
     with exclusive(data):
-        if (data/'db.sqlite3').is_file() and (data/'db.sqlite3').stat().st_size:
+        new_install=not (data/'db.sqlite3').is_file() or not (data/'db.sqlite3').stat().st_size
+        if not new_install:
             print('迁移前备份：'+str(backup_data(data)),flush=True)
         init_django(data)
         from django.core.management import call_command
         call_command('migrate',interactive=False)
+        from library.tagging import initialize_vocabulary
+        enabled=initialize_vocabulary(new_install=new_install)
+        if enabled: print('首次安装已启用常用标签：'+ '、'.join(enabled),flush=True)
+        else:
+            from library.models import Tag
+            if not Tag.objects.filter(active=True).exists():
+                print('现有词表保持不变：暂无启用标签。管理员可从上传页进入标签管理，选择并启用需要的词条。',flush=True)
         call_command('collectstatic',interactive=False,verbosity=0)
         import_references()
         from library.revisions import initialize_revisions

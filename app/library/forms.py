@@ -58,6 +58,29 @@ class MetadataForm(forms.Form):
         if value and urlsplit(value).scheme not in {'http','https'}:raise forms.ValidationError('来源链接仅支持 http 或 https。')
         return value
 
+class PaperMetadataEditForm(MetadataForm):
+    remove_inactive_tags = forms.ModelMultipleChoiceField(label='勾选要移除的历史停用标签',
+        queryset=Tag.objects.none(), required=False, widget=forms.CheckboxSelectMultiple)
+
+    def __init__(self, *args, paper, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.inactive_tags = paper.tags.filter(active=False)
+        self.fields['remove_inactive_tags'].queryset = self.inactive_tags
+        # Existing inactive associations may be retained when only the title or note changes.
+        self.fields['tags'].required = not self.inactive_tags.exists()
+
+    def clean(self):
+        values = super().clean()
+        removed = values.get('remove_inactive_tags', Tag.objects.none())
+        retained = list(self.inactive_tags.exclude(pk__in=removed))
+        values['retained_inactive_tags'] = retained
+        if 'tags' not in self.errors:
+            count = len(values.get('tags', [])) + len(retained)
+            if not count: self.add_error('tags', '请至少选择1个标签，或保留已有的历史标签。')
+            if count > 5: self.add_error('tags', '新增与保留的历史标签合计最多5个，请明确选择要移除的旧标签。')
+        return values
+
+
 class UploadForm(MetadataForm):
     html = forms.FileField(label='标准双语 HTML', widget=forms.FileInput(attrs={'accept':'.html'}))
     pdf = forms.FileField(label='原文 PDF（可选）',required=False,widget=forms.FileInput(attrs={'accept':'.pdf'}))

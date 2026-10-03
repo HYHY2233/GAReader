@@ -24,7 +24,7 @@ async function fixture(){
   if(options.method==='POST'){if(fail)throw Error('离线，未保存');return {ok:true,json:async()=>({id:7,version:1})};}
   return {ok:true,json:async()=>({threads:[],count:0,cursor:new Date().toISOString()})};};
  w.open=()=>{if(blocked)return null;const p={opener:w,closed:false,close(){},location:{replace(url){assert.equal(p.opener,null);queries.push(url);}}};return p;};
- for(const name of ['reader-text','reader-views','reader','reader-google','annotation-presentation','reader-composer','reader-navigation','reader-geometry','reader-annotations'])w.eval(fs.readFileSync(path.join(root,'app/static',name+'.js'),'utf8'));
+ for(const name of ['reader-text','reader-views','reader','reader-google','annotation-display','annotation-presentation','reader-composer','reader-navigation','reader-geometry','reader-annotations'])w.eval(fs.readFileSync(path.join(root,'app/static',name+'.js'),'utf8'));
  await delay(30);
  async function select(text){const p=d.querySelector('#p-p1 .en p');p.textContent=text;const r=d.createRange();r.selectNodeContents(p);
   w.getSelection().removeAllRanges();w.getSelection().addRange(r);d.dispatchEvent(new w.Event('selectionchange'));await delay(130);}

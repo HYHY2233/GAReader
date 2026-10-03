@@ -4,5 +4,6 @@
 <form method="post">{% csrf_token %}{{ form.non_field_errors }}
 <fieldset><legend>{{ form.categories.label }}</legend>{{ form.categories }}{{ form.categories.errors }}</fieldset>
 {% include 'library/tag_field.html' %}
-{% for field in form %}{% if field.name != 'categories' and field.name != 'tags' %}<p>{{ field.label_tag }}{{ field }}{{ field.errors }}</p>{% endif %}{% endfor %}
+{% if form.inactive_tags %}<fieldset class="historical-tags"><legend>历史停用标签</legend><p>这些标签会继续保留。只有勾选下列词条，保存时才会移除；新标签与保留的历史标签合计最多5个。</p>{{ form.remove_inactive_tags }}{{ form.remove_inactive_tags.errors }}</fieldset>{% endif %}
+{% for field in form %}{% if field.name != 'categories' and field.name != 'tags' and field.name != 'remove_inactive_tags' %}<p>{{ field.label_tag }}{{ field }}{{ field.errors }}</p>{% endif %}{% endfor %}
 <button class="primary">保存{% if staged %}并返回预览{% endif %}</button></form></main>{% endblock %}

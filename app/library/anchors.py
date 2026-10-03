@@ -146,6 +146,14 @@ def validate_source(source, revision, manifest, pdf):
 
 
 def project(source, old_manifest, manifest, pdf, view):
+    # Candidates retain their original segment identity. Never rewrite the saved source.
+    # A single segment may legitimately project onto several PDF page fragments.
+    return [dict(target, source_segment_index=index)
+            for index, segment in enumerate(source['segments'])
+            for target in _project_segment(dict(source, segments=[segment]), old_manifest, manifest, pdf, view)]
+
+
+def _project_segment(source, old_manifest, manifest, pdf, view):
     targets=[]; same=source['revision_id']==manifest['revision_id']
     is_pdf=source['created_view']=='pdf'
     if is_pdf:

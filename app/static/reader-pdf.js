@@ -61,10 +61,10 @@
     if(loading)return loading;
     if(documentPDF)return documentPDF;
     loading=(async()=>{
-      status('正在加载原版 PDF…');
+      status('正在加载原版 PDF…');$('pdf-retry').hidden=true;
       pdfjs=await import(reader.dataset.pdfLibrary);pdfjs.GlobalWorkerOptions.workerSrc=reader.dataset.pdfWorker;
       const response=await fetch(base,{credentials:'same-origin'});
-      if(!response.ok)throw Error('原版 PDF 无法读取，请确认登录状态和文件。');
+      if(!response.ok){let detail;try{detail=await response.json();}catch{}throw Error(response.status===401?'登录已失效，请重新登录后读取原版 PDF。':detail?.error||'原版 PDF 无法读取，请确认文件后重试。');}
       const bytes=await response.arrayBuffer();
       const sha=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
       if(sha!==core.manifest?.pdf_sha256)throw Error('PDF 来源校验失败，未使用旧坐标。');
@@ -93,7 +93,7 @@
       const target=Math.min(documentPDF.numPages-1,core.position.pdf_page||0);
       await renderPage(pages.get(target));$('pdf-page-number').value=target+1;
       status('原版 PDF · '+documentPDF.numPages+' 页');return documentPDF;
-    })().catch(error=>{status(error.message||'PDF 加载失败。');loading=null;documentPDF=null;throw error;});
+    })().catch(error=>{status(error.message||'PDF 加载失败。');$('pdf-retry').hidden=false;loading=null;documentPDF=null;throw error;});
     return loading;
   }
   async function jump(index,{scroll=true,isCurrent=()=>core.view==='pdf'}={}){
@@ -173,6 +173,7 @@
   }
   window.GAReaderPDF={load,currentPage,jump,locate,projectedRects,sourceSelection,capturePosition,restorePosition,get pages(){return pages;},get scale(){return scale;},get rotation(){return rotation;}};
   document.addEventListener('gareader:view',()=>{jumpEpoch++;if(core.view==='pdf')load().then(()=>{if(core.view!=='pdf')return;for(const info of pages.values())if(info.section.getBoundingClientRect().top<innerHeight+900)renderPage(info);core.emitLayout();}).catch(()=>{});});
+  $('pdf-retry').addEventListener('click',()=>load().catch(()=>{}));
   $('pdf-page-number').addEventListener('change',e=>{const page=Number(e.target.value);if(!Number.isInteger(page)||page<1||page>(documentPDF?.numPages||1)){status('请输入有效的物理页码。');e.target.value=currentPage()+1;return;}jump(page-1);});
   $('pdf-prev').addEventListener('click',()=>jump(currentPage()-1));$('pdf-next').addEventListener('click',()=>jump(currentPage()+1));
   $('pdf-scale').addEventListener('change',e=>{const n=Number(e.target.value);if(!Number.isFinite(n)){e.target.value=Math.round(scale*100);return;}scale=Math.max(.5,Math.min(3,n/100));e.target.value=Math.round(scale*100);fit=null;rerender();});

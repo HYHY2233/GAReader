@@ -9,7 +9,7 @@
 <script src="{% static 'reader.js' %}" defer></script>
 <script src="{% static 'reader-google.js' %}" defer></script>
 <script src="{% static 'reader-pdf.js' %}" defer></script>
-<script src="{% static 'annotation-presentation.js' %}" defer></script>
+<script src="{% static 'annotation-display.js' %}" defer></script><script src="{% static 'annotation-presentation.js' %}" defer></script>
 <script src="{% static 'reader-composer.js' %}" defer></script>
 <script src="{% static 'reader-navigation.js' %}" defer></script>
 <script src="{% static 'reader-geometry.js' %}" defer></script>
@@ -39,7 +39,7 @@
   <div id="pdf-controls" class="pdf-controls" role="group" aria-label="原版 PDF 控件" hidden>
     <button id="pdf-prev" aria-label="上一页">‹</button><label>页 <input id="pdf-page-number" type="number" min="1" value="1" aria-label="PDF 物理页码"></label><span id="pdf-page-total"></span><button id="pdf-next" aria-label="下一页">›</button>
     <label>缩放 <input id="pdf-scale" type="number" min="50" max="300" step="10" value="100" aria-label="PDF 缩放百分比">%</label>
-    <button id="pdf-fit-width">适合宽度</button><button id="pdf-fit-page">适合整页</button><button id="pdf-rotate">旋转 90°</button><span id="pdf-status" role="status"></span>
+    <button id="pdf-fit-width">适合宽度</button><button id="pdf-fit-page">适合整页</button><button id="pdf-rotate">旋转 90°</button><span id="pdf-status" role="status"></span><button id="pdf-retry" type="button" hidden>重试读取</button>
   </div>
 </header>
 {% endblock %}
@@ -47,6 +47,7 @@
 <div id="reader" data-view="both" data-paper="{{ paper.id }}" data-user="{{ user.id }}" data-revision="{{ revision.id|default:paper.content_hash }}" data-content-hash="{{ paper.content_hash }}" data-csrf="{{ csrf_token }}" data-has-pdf="{% if revision.pdf_sha256 %}true{% else %}false{% endif %}"
  data-pdf-library="{% static 'pdfjs/pdf.min.mjs' %}" data-pdf-worker="{% static 'pdfjs/pdf.worker.min.mjs' %}" data-pdf-assets="{% get_static_prefix %}pdfjs/">
   <div class="reading-caption"><span id="view-label">中英对照</span><span>图表与公式保留原貌</span>{% if not revision.pdf_sha256 %}<span id="no-pdf">未提供原版 PDF</span>{% endif %}</div>
+  {% include 'library/paper_tags.html' %}
   {% if old_revision %}<p class="revision-banner">正在阅读旧修订。<a href="{% url 'reader' paper.id %}">返回当前版本</a></p>{% endif %}
   <div id="reading-layout" class="reading-layout">
     <div class="reading-main"><div id="article" class="article">{{ body|safe }}</div><div id="pdf-reader" hidden><div id="pdf-pages"></div></div></div>

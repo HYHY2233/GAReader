@@ -49,7 +49,7 @@ def revision_reader(request,pk,revision_id=None):
         body=body.replace('@@IMAGE:'+image.stem.split('-')[1]+'@@',reverse('revision-file',args=[pk,revision.id,image.name]))
     return render(request,'library/reader.html',{'paper':paper,'revision':revision,'body':body,'manifest':manifest,
         'old_revision':revision.id!=paper.current_revision_id,'revision_has_map':(folder/'paragraph_map.json').is_file(),
-        'nav':read_json(folder/'nav.json')})
+        'nav':read_json(folder/'nav.json'),'selected_tags':list(paper.tags.all())})
 
 
 @login_required
@@ -66,8 +66,14 @@ def revision_file(request,pk,revision_id,name):
 @require_GET
 def pdf_document(request,pk,revision_id):
     paper=visible_paper(request,pk);revision=get_revision(request,paper,revision_id)
-    if not revision.pdf_sha256: raise Http404()
-    pdf_for(revision)  # A replacement file must never silently inherit old geometry.
+    if not revision.pdf_sha256:
+        return JsonResponse({'error':'此修订未提供原版 PDF。'},status=404)
+    if not (revision_dir(revision)/'original.pdf').is_file():
+        return JsonResponse({'error':'此修订的原版 PDF 文件不可访问，请联系管理员恢复附件。'},status=404)
+    try:
+        pdf_for(revision)  # A replacement file must never silently inherit old geometry.
+    except (ValueError,OSError):
+        return JsonResponse({'error':'原版 PDF 来源校验失败，未加载文件或复用批注坐标。'},status=409)
     response=FileResponse((revision_dir(revision)/'original.pdf').open('rb'),content_type='application/pdf')
     response['Content-Disposition']='inline; filename="original.pdf"'
     response['ETag']='"'+revision.pdf_sha256+'"'

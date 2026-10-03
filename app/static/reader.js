@@ -30,6 +30,7 @@
  }
  document.querySelectorAll('[data-panel]').forEach(b=>b.addEventListener('click',()=>openPanel(b.dataset.panel,b)));
  panel.querySelector('[data-close]').addEventListener('click',closePanel);
+ $('view-original-pdf')?.addEventListener('click',()=>{if(window.GAReaderComposer?.composing)return;closePanel();window.GAReader?.setView('pdf');});
  panel.addEventListener('click',e=>{if(e.target===panel&&e.clientX<panel.getBoundingClientRect().left)closePanel();});
  panel.addEventListener('close',()=>{if(opener)opener.focus({preventScroll:true});});
  if(window.GAReader){window.GAReader.api=api;window.GAReader.node=node;}
@@ -70,7 +71,7 @@
  }
  function jump(step){if(!ranges.length)return;hit=(hit+step+ranges.length)%ranges.length;highlight();const el=ranges[hit].startContainer.parentElement;let d=el.closest('details');while(d){d.open=true;d=d.parentElement.closest('details');}closePanel();el.scrollIntoView({block:'center'});$('search-status').textContent=`第 ${hit+1} / ${ranges.length} 处`;}
  $('in-paper-search').addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(find,150);});
- $('in-paper-search').addEventListener('keydown',e=>{if(e.key==='Enter'){clearTimeout(searchTimer);find();jump(1);}});
+ $('in-paper-search').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing){e.preventDefault();clearTimeout(searchTimer);find();jump(1);}});
  $('search-next').addEventListener('click',()=>jump(1));$('search-prev').addEventListener('click',()=>jump(-1));
  $('search-clear').addEventListener('click',()=>{$('in-paper-search').value='';find();$('in-paper-search').focus();});
  const ratingHints={interesting:['兴趣较低','有一点启发','值得了解','很有启发','非常有意思'],importance:['背景资料','有参考价值','相关人员值得读','建议优先读','核心参考']};

@@ -1,0 +1,3551 @@
+{
+  "paper": "idaes",
+  "paper_id": "6034ef0a-0ba0-4b96-8073-87bed4a787b1",
+  "revision_id": "db9b236f-c8a5-4dd4-af98-e5c8bd05782f",
+  "pdf_sha256": "9263617a09f0a74d08ad724be97821e5b3ced68d14bf884939c70c0a9704cd75",
+  "content_hash": "398c21f09969c0ad867858271c100c539e0d3ea60c5107dffd2d13d36191d5b6",
+  "schema_version": 1,
+  "coverage": {
+    "exact": 0,
+    "block": 128,
+    "object": 0,
+    "page": 108,
+    "unmapped": 68,
+    "total_units": 304,
+    "exact_representations": 129
+  },
+  "units": [
+    {
+      "unit_id": "content-f415e2682a3d8bb9f8-1",
+      "kind": "heading",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-article-type",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        2
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-aff-1",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-2",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-3",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-4",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-5",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-6",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-aff-7",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-correspondence",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-funding",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-dates",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-abstract-head",
+      "kind": "heading",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-abstract",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-keywords",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-copyright-note",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        2
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-license",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        2
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-copyright",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        2
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-journal-source",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-intro",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        2
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u001",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        2,
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u002",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u003",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        3
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u004",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u005",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u006",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        3
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u007",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u008",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u009",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        3,
+        4
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u010",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        4
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u011",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        4
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u012",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        4
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u013",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        4
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u014",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        4
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u015",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        4,
+        5
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-1",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        5
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u016",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        5
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u017",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        5
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u018",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        5
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u019",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        5
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u020",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        5
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u021",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        5
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u022",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        5,
+        6
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-table-1",
+      "kind": "table",
+      "precision": "block",
+      "physical_pages": [
+        6
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u023",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        6
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u024",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        6
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u025",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        6
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u026",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        6
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u027",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        6,
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-2",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        7
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u028",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        7
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u029",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u030",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u031",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u032",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u033",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        7
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u034",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        7
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u035",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        8
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u036",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        8
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u038",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        8
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u039",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        8
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u041",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        8
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u042",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        8
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u043",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u046",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u047",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u048",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        9
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-table-2",
+      "kind": "table",
+      "precision": "block",
+      "physical_pages": [
+        9
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 2
+    },
+    {
+      "unit_id": "p-u049",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        9
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u050",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        9
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u051",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        9
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u052",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        9
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u053",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u054",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u055",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        10
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u056",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u057",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u058",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u059",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        10
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u060",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        10
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u061",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u062",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        10
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u063",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        10
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u064",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        11
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u065",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u066",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u067",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u068",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        11
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u069",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u070",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        11
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u073",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-3",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u074",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        11
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u075",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u076",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        11
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u077",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        11,
+        12
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u078-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-2",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-3",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-4",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-5",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-6",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u078-7",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u079",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        13
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u080",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        13
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u081",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        13
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u082",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        13
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u083",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u084",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        13
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-fig-4",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        12
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u085",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        13
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u086",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        13
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u087",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        13,
+        14
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u088",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        14
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u089",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        14
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u090",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        14,
+        15
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-5",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        14
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u091",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        15
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-6",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        15
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u092",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        15
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u093",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        15
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u099",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        15
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u111",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        15
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u112",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        15
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u117",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        15
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-fig-7",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        16
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u119",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        15,
+        16
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-8",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        17
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u120",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        16
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u121",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        16,
+        17
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-9",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        17
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u122",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        17
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u123",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        17,
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u124",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        18
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u125-1",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u125-2",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u125-3",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u125-4",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u125-5",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u125-6",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u126",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-10",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        18
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u127",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        18
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u128",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u129",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u130-1",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18,
+        19
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u130-2",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        18,
+        19
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-11",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        19
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u131-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-2",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-3",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-4",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-5",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-6",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u131-7",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        19
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u132",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-fig-12",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        20
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u133",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        19
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u134",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        19,
+        20
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u135",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        20
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u136",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        20
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-13",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        21
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u137",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        20
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u138",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        20,
+        21,
+        22
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-14",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        21
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u139",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        22
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u140",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        22,
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-table-3",
+      "kind": "table",
+      "precision": "block",
+      "physical_pages": [
+        22
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u141",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u142",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u143-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u143-2",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u143-3",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u143-4",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u143-5",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u144",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u145",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u145-1",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u145-2",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u145-3",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u146",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-15",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u147",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u148",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u149-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-2",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        23
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-3",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        23,
+        24
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u149-4",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-5",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-6",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-7",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u149-8",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-fig-16",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u150",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u151",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        24
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u152",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        24
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-table-4",
+      "kind": "table",
+      "precision": "block",
+      "physical_pages": [
+        25
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u153",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        24
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u154",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u155",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "text-differs",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-17",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        26
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u156",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        27
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-fig-18",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        27
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-fig-19",
+      "kind": "figure",
+      "precision": "block",
+      "physical_pages": [
+        28
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-table-5",
+      "kind": "table",
+      "precision": "block",
+      "physical_pages": [
+        28
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u157",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        27
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u158",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        28
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-u159",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        28
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-u160",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        28,
+        29
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-backhead-0",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-back-0",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-backhead-1",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-back-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-backhead-2",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-back-2",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        29
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-backhead-3",
+      "kind": "heading",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-back-3",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-backhead-4",
+      "kind": "heading",
+      "precision": "page",
+      "physical_pages": [
+        29
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-back-4",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        29
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-45052d6ba3c302269d-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        29
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "content-e278547f8c74098af4-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "content-9be05ccbe69a48d663-1",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-2d8d3c68fa42f03580-1",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-d38087bb02ad117e74-1",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-endnote",
+      "kind": "paragraph",
+      "precision": "page",
+      "physical_pages": [
+        30
+      ],
+      "method": "validated-map-physical-page-hint",
+      "reason": "仅确认映射中注明的 PDF 物理页，没有可靠段落几何。",
+      "map_text_status": "verified",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-7a08224862f1b6fd32-1",
+      "kind": "paragraph",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-b07d46873489614415-1",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        31
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-support",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        31
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-citation",
+      "kind": "paragraph",
+      "precision": "block",
+      "physical_pages": [
+        31
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "verified",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-eq-1",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-2",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-3",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-4",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-5",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-6",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-7",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-8",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-9",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-10",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-11",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-12",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-eq-13",
+      "kind": "formula",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-1",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-2",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-3",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-4",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-5",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-6",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-7",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-8",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-9",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-10",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-11",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-12",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-13",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-14",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-15",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-16",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-17",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-18",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-19",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-20",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-21",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-22",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-23",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-24",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-25",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-26",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-27",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-28",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-29",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-30",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-31",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-32",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-33",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-34",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-35",
+      "kind": "reference",
+      "precision": "block",
+      "physical_pages": [
+        30
+      ],
+      "method": "unique-english-representation",
+      "reason": "英文表示与原版文字唯一匹配；中文仅按内容单元对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 1
+    },
+    {
+      "unit_id": "p-ref-36",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-37",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-38",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-39",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-40",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-ref-41",
+      "kind": "reference",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "未找到可靠的 PDF 对应内容。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-10c20ffa506353d893-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-78cb899e749b8a1172-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-0a1e87b9abc3aa12ea-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-81e67a7c9af63cf12c-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-abb2edddad09901fc5-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-148ac8a6e6097f8113-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-c64867c3a404f20749-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-caca26667daf9aaa82-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-9d52d5a3907ce0e1df-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-0f1f59a47e10af52cd-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-0827bd57df6a870248-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-5495ea556ec46aed18-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-063c9e5612a1bce4f2-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-e1b382d879fe8ef175-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-e65cbc57b04446114a-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-cb2ab5560491be0bab-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-43eb9b289adc798139-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "content-0ff795c886d1d4e2bb-1",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-reader-google-update",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    },
+    {
+      "unit_id": "p-reader-update",
+      "kind": "note",
+      "precision": "unmapped",
+      "physical_pages": [],
+      "method": "none",
+      "reason": "译者或补充说明未确认有原文对应。",
+      "map_text_status": "not-supplied",
+      "exact_english_representations": 0
+    }
+  ],
+  "note": "Unit coverage is conservative: bilingual counterparts use block/page. Quote+context can resolve a selected English subrange separately. No audited cross-language phrase alignment is supplied."
+}

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "paper": "idaes",
+      "coverage": {
+        "exact": 0,
+        "block": 128,
+        "object": 0,
+        "page": 108,
+        "unmapped": 68,
+        "total_units": 304,
+        "exact_representations": 129
+      },
+      "threads": 3,
+      "source_fidelity": "PASS",
+      "permissions": "PASS",
+      "four_view_identity": "PASS"
+    },
+    {
+      "paper": "ammonia",
+      "coverage": {
+        "exact": 0,
+        "block": 81,
+        "object": 0,
+        "page": 20,
+        "unmapped": 138,
+        "total_units": 239,
+        "exact_representations": 84
+      },
+      "threads": 2,
+      "source_fidelity": "PASS",
+      "permissions": "PASS",
+      "four_view_identity": "PASS"
+    }
+  ]
+}

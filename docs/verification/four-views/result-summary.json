@@ -1,0 +1,13 @@
+{
+  "code_commit": "f8d5b3b92cf866de8bdae4df4e03c06f600ab7b8",
+  "date": "2026-10-03",
+  "python_suite": {
+    "passed": 53,
+    "followup_anchor_tests": 15
+  },
+  "offline_dom_checks": 6,
+  "real_browser_layout_cases": 120,
+  "real_pdf_transform_cases": 32,
+  "vendor_assets_verified": 200,
+  "limitations": "See FOUR_VIEWS_VERIFICATION.md; no production migration or remote push."
+}

@@ -1,0 +1,305 @@
+﻿unit_id,kind,precision,physical_pages,method,reason,map_text_status,exact_english_representations
+content-f415e2682a3d8bb9f8-1,heading,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-article-type,heading,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-aff-1,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-2,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-3,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-4,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-5,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-6,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-aff-7,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-correspondence,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-funding,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-dates,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-abstract-head,heading,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-abstract,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-keywords,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-copyright-note,paragraph,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-license,paragraph,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-copyright,paragraph,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-journal-source,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-intro,heading,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u001,paragraph,page,"[2, 3]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u002,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u003,heading,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u004,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u005,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u006,heading,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u007,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u008,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u009,paragraph,page,"[3, 4]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u010,paragraph,page,[4],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u011,paragraph,page,[4],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u012,paragraph,page,[4],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u013,paragraph,page,[4],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u014,heading,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u015,paragraph,page,"[4, 5]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-1,figure,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u016,paragraph,page,[5],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u017,heading,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u018,paragraph,page,[5],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u019,paragraph,page,[5],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u020,paragraph,page,[5],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u021,heading,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u022,paragraph,page,"[5, 6]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-1,table,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u023,paragraph,page,[6],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u024,heading,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u025,paragraph,page,[6],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u026,paragraph,page,[6],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u027,paragraph,page,"[6, 7]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-2,figure,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u028,heading,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u029,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u030,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u031,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u032,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u033,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u034,paragraph,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u035,heading,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u036,paragraph,page,[8],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u038,heading,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u039,paragraph,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u041,paragraph,page,[8],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u042,paragraph,page,[8],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u043,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u046,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u047,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u048,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-2,table,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,2
+p-u049,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u050,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u051,heading,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u052,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u053,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u054,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u055,heading,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u056,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u057,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u058,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u059,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u060,heading,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u061,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u062,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u063,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u064,heading,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u065,paragraph,page,[11],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u066,paragraph,page,[11],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u067,paragraph,page,[11],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u068,heading,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u069,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u070,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-u073,paragraph,page,[11],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-3,figure,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u074,heading,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u075,paragraph,page,[11],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u076,heading,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u077,paragraph,page,"[11, 12]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u078-1,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-2,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-3,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-4,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-5,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-6,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u078-7,paragraph,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u079,paragraph,page,[13],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u080,paragraph,page,[13],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u081,paragraph,page,[13],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u082,paragraph,block,[13],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-u083,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u084,paragraph,block,[13],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-fig-4,figure,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u085,heading,block,[13],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u086,paragraph,block,[13],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u087,paragraph,page,"[13, 14]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u088,paragraph,page,[14],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u089,paragraph,page,[14],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u090,paragraph,page,"[14, 15]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-5,figure,block,[14],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u091,paragraph,page,[15],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-6,figure,block,[15],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u092,paragraph,page,[15],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u093,paragraph,page,[15],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u099,paragraph,page,[15],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u111,paragraph,block,[15],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u112,paragraph,block,[15],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u117,paragraph,block,[15],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-fig-7,figure,block,[16],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u119,paragraph,page,"[15, 16]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-8,figure,block,[17],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u120,heading,block,[16],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u121,paragraph,page,"[16, 17]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-9,figure,block,[17],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u122,heading,block,[17],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u123,paragraph,page,"[17, 18]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u124,paragraph,block,[18],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u125-1,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u125-2,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u125-3,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u125-4,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u125-5,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u125-6,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u126,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-10,figure,block,[18],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u127,heading,block,[18],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u128,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u129,paragraph,page,[18],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u130-1,paragraph,page,"[18, 19]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u130-2,paragraph,page,"[18, 19]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-11,figure,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u131,paragraph,page,[19],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u131-1,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-2,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-3,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-4,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-5,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-6,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u131-7,paragraph,page,[19],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u132,paragraph,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-fig-12,figure,block,[20],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u133,heading,block,[19],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u134,paragraph,page,"[19, 20]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u135,paragraph,page,[20],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u136,paragraph,page,[20],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-13,figure,block,[21],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u137,paragraph,page,[20],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u138,paragraph,page,"[20, 21, 22]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-14,figure,block,[21],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u139,paragraph,block,[22],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u140,paragraph,page,"[22, 23]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-3,table,block,[22],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u141,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u142,paragraph,page,[23],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u143-1,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u143-2,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u143-3,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u143-4,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u143-5,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u144,heading,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u145,paragraph,page,[23],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u145-1,paragraph,page,[23],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u145-2,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u145-3,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u146,paragraph,page,[23],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-15,figure,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u147,heading,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u148,paragraph,page,[23],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u149-1,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-2,paragraph,block,[23],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-3,paragraph,page,"[23, 24]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u149-4,paragraph,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-5,paragraph,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-6,paragraph,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-7,paragraph,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u149-8,paragraph,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-fig-16,figure,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u150,heading,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u151,paragraph,page,[24],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u152,paragraph,page,[24],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-4,table,block,[25],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u153,heading,block,[24],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u154,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-u155,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-fig-17,figure,block,[26],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u156,paragraph,page,[27],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-fig-18,figure,block,[27],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-fig-19,figure,block,[28],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-table-5,table,block,[28],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-u157,paragraph,page,[27],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u158,heading,block,[28],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-u159,paragraph,page,[28],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-u160,paragraph,page,"[28, 29]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-backhead-0,heading,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-back-0,paragraph,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-backhead-1,heading,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-back-1,paragraph,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-backhead-2,heading,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-back-2,paragraph,page,[29],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-backhead-3,heading,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-back-3,paragraph,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-backhead-4,heading,page,[29],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-back-4,paragraph,page,[29],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+content-45052d6ba3c302269d-1,paragraph,block,[29],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+content-e278547f8c74098af4-1,paragraph,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+content-9be05ccbe69a48d663-1,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+content-2d8d3c68fa42f03580-1,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+content-d38087bb02ad117e74-1,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-endnote,paragraph,page,[30],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+content-7a08224862f1b6fd32-1,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+content-b07d46873489614415-1,paragraph,block,[31],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-support,paragraph,block,[31],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-citation,paragraph,block,[31],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-eq-1,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-2,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-3,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-4,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-5,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-6,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-7,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-8,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-9,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-10,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-11,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-12,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-13,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-1,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-2,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-3,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-4,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-5,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-6,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-7,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-8,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-9,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-10,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-11,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-12,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-13,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-14,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-15,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-16,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-17,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-18,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-19,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-20,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-21,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-22,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-23,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-24,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-25,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-26,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-27,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-28,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-29,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-30,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-31,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-32,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-33,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-34,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-35,reference,block,[30],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-36,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-37,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-38,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-39,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-40,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-41,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+content-10c20ffa506353d893-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-78cb899e749b8a1172-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-0a1e87b9abc3aa12ea-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-81e67a7c9af63cf12c-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-abb2edddad09901fc5-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-148ac8a6e6097f8113-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-c64867c3a404f20749-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-caca26667daf9aaa82-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-9d52d5a3907ce0e1df-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-0f1f59a47e10af52cd-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-0827bd57df6a870248-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-5495ea556ec46aed18-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-063c9e5612a1bce4f2-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-e1b382d879fe8ef175-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-e65cbc57b04446114a-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-cb2ab5560491be0bab-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-43eb9b289adc798139-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+content-0ff795c886d1d4e2bb-1,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+p-reader-google-update,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0
+p-reader-update,note,unmapped,[],none,译者或补充说明未确认有原文对应。,not-supplied,0

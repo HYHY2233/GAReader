@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "backup_sha256": "a475efe56bcbe4336d92ae00cef5522e56c735c29a83efd65d4839f926f50be9",
+  "restored_rows_identical": true,
+  "restored_counts": {
+    "library_comment": 8,
+    "library_rating": 4,
+    "library_annotationanchor": 5,
+    "library_paperrevision": 2
+  },
+  "css_only_no_revision": "PASS",
+  "text_correction_new_snapshot": "PASS",
+  "unchanged_english_exact": "PASS",
+  "changed_chinese_stale": "PASS",
+  "removed_formula_stale": "PASS",
+  "original_source_anchors_unchanged": "PASS",
+  "old_snapshot_bytes_unchanged": "PASS",
+  "old_source_urls_accessible": "PASS",
+  "pdf_crosspage_independent_fragments": "PASS",
+  "note": "Only isolated copies were modified. Browser acceptance is recorded separately."
+}

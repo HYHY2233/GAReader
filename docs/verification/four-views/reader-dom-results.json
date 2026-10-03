@@ -1,0 +1,29 @@
+{
+  "kind": "offline DOM simulation; not visual/browser evidence",
+  "checks": [
+    {
+      "name": "Explicit Google click encodes full selection; refusal and oversized queries remain editable",
+      "status": "PASS"
+    },
+    {
+      "name": "Numeric limits, slider, increment, reset and account preferences",
+      "status": "PASS"
+    },
+    {
+      "name": "Codepoint ranges across inline tags, composed accents, Greek, subscripts, emoji and Hangul",
+      "status": "PASS"
+    },
+    {
+      "name": "Continuous same-language segments; visible mixed languages rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft retained after view switch, close and failed save; double submit sends once",
+      "status": "PASS"
+    },
+    {
+      "name": "Search highlighting is independent of the annotation visibility preference",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+﻿unit_id,kind,precision,physical_pages,method,reason,map_text_status,exact_english_representations
+p-nonlinear-model-predictive-control-of-flexible-ammonia-production,heading,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-001,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-p-002,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-p-003,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-p-004,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-p-005,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-abstract,heading,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-p-006,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-p-007,paragraph,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-section-1,heading,block,[1],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-008,paragraph,page,[1],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-009,paragraph,page,[1],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-010,paragraph,page,[1],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-011,paragraph,page,"[1, 2]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-012,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-013,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-section-2,heading,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-014,paragraph,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-figure-1,paragraph,block,[2],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-015,paragraph,page,[2],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-016,paragraph,page,"[2, 3]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-017,paragraph,page,[3],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-018,paragraph,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,verified,1
+p-table-1,paragraph,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-table-2,paragraph,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-reactor-model,heading,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-019,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-020,paragraph,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-021,paragraph,block,[3],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-heat-exchanger-model,heading,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-022,paragraph,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-separator-model,heading,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-023,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-024,paragraph,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,2
+p-mixing-and-splitting,heading,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-025,paragraph,block,[4],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,3
+p-p-026,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-section-3,heading,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-027,paragraph,page,[5],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-028,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-029,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-030,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-table-3,paragraph,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-table-4,paragraph,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-031,paragraph,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-section-4,heading,block,[5],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-032,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-033,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-figure-2,paragraph,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-objective-function,heading,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-034,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-table-5,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ramping-constraints,heading,block,[6],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-035,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-036,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-initial-and-terminal-conditions,heading,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-037,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-section-5,heading,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-simulation-setup,heading,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-038,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-039,paragraph,page,[7],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-6,paragraph,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-040,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-041,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-nmpc-results,heading,block,[7],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-042,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-figure-3,paragraph,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-figure-4,paragraph,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-043,paragraph,page,"[7, 8]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-figure-5,paragraph,block,[8],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-044,paragraph,page,[8],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-figure-6,paragraph,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-comparison-with-pid-control,heading,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-045,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-figure-7,paragraph,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-table-7,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-046,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-table-8,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-047,paragraph,page,[9],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-figure-8,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-figure-9,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-figure-10,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-section-6,heading,block,[9],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-048,paragraph,page,"[9, 10]",validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-p-049,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-acknowledgements,heading,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-p-050,paragraph,page,[10],validated-map-physical-page-hint,仅确认映射中注明的 PDF 物理页，没有可靠段落几何。,verified,0
+p-appendix-a,heading,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-sets,heading,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-p-051,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-052,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-053,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-054,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-055,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-variables,heading,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-p-056,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-057,paragraph,block,[10],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-058,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-059,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-060,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-061,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-062,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-063,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-064,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-065,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-066,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-067,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-068,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-069,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-070,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-071,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-072,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,text-differs,1
+p-p-073,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-074,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-075,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-076,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-077,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-078,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-079,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-080,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-081,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-082,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-083,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-084,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-085,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-086,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-087,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-088,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-089,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-090,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-p-091,paragraph,unmapped,[],none,未找到可靠的 PDF 对应内容。,text-differs,0
+p-appendix-b.-parameters-in-simulation,heading,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-table-B.9,paragraph,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-references,heading,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-1,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-2,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-3,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-4,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-5,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-6,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-7,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-8,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-9,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-10,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-11,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-12,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-13,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-14,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-15,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-16,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-17,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-18,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-19,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-20,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-21,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-22,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-23,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-24,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-25,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-26,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-27,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-28,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-29,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-30,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-31,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-32,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-33,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-34,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-35,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-36,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-37,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-38,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-39,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-40,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-41,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-42,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-43,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-44,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-45,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-46,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-47,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-48,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-49,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-50,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-51,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-52,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-53,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-54,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-55,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-56,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-57,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-58,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-59,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-60,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-61,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-62,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-63,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-64,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-65,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-66,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-67,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-68,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-69,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-eq-70,formula,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-01,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-02,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-03,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-04,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-05,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-06,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-07,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-08,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-09,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-10,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-11,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-12,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-13,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-14,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-15,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-16,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-17,reference,block,[11],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-18,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-19,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-20,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-21,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-22,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-23,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-24,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-25,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-26,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-27,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-28,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-29,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-30,reference,unmapped,[],none,未找到可靠的 PDF 对应内容。,not-supplied,0
+p-ref-31,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-32,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-33,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-34,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1
+p-ref-35,reference,block,[12],unique-english-representation,英文表示与原版文字唯一匹配；中文仅按内容单元对应。,not-supplied,1

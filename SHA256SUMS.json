@@ -1,8 +1,8 @@
 {
   "format": "gareader-source-manifest-v1",
-  "created_on": "2026-10-03",
-  "code_commit": "5c39cfe979034326cc9f65cda5073dc1a40482ee",
-  "note": "Runtime data and this manifest itself are excluded. Selected redacted actual-application verification artifacts are included. code_commit identifies the functional code; documentation is included in the final delivery commit.",
+  "created_on": "2026-10-04",
+  "code_commit": "5968a935396f213ff4e8125239d05d183298a924",
+  "note": "Runtime data and this manifest itself are excluded. Hashes cover Git source blobs distributed by git archive. code_commit identifies functional code; the delivery commit also contains documentation and selected redacted acceptance evidence.",
   "files": [
     {
       "path": ".env.example",
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13923,
-      "sha256": "93f1aa4f3ba7b75a88c53d4b7d596b00f20b407667f27ee52bfc4136b2ef8ada"
+      "bytes": 14889,
+      "sha256": "23fa27afdcb098d8ebad30c1a5e03d4217d356e1b7a28e2c6d11ce5263962a02"
     },
     {
       "path": "SOURCES.md",
@@ -76,13 +76,13 @@
     },
     {
       "path": "app/library/anchors.py",
-      "bytes": 17378,
-      "sha256": "aa0df504ee57faf054ef1af6e0f48c9b597d05c695a51ea4e17074329a338b09"
+      "bytes": 17845,
+      "sha256": "9d2797e6ef36049afd1a0d4758f56f45c5005694d4565ee29e2b6c9e89e7b289"
     },
     {
       "path": "app/library/annotation_views.py",
-      "bytes": 9002,
-      "sha256": "70e40994858dee774284699c9a3e2ac1c7688934827233e9e69e0d1eae2d6612"
+      "bytes": 9471,
+      "sha256": "ff6feb5f1b94b99311ebebfd7968c1eadfc55002e480b8c86fd17d4d5e226919"
     },
     {
       "path": "app/library/article.py",
@@ -96,8 +96,8 @@
     },
     {
       "path": "app/library/forms.py",
-      "bytes": 3553,
-      "sha256": "14d8e7a51a0e1a05f3c8c4302892bfa4c700137737386b2896356a18343513b6"
+      "bytes": 4810,
+      "sha256": "be1c942aaba797e8487f436cfd4639084cec37c2259d6c804c6bbd23757eeee7"
     },
     {
       "path": "app/library/identity.py",
@@ -160,14 +160,19 @@
       "sha256": "108c92cb59ead06f8e6df49c661cbb6a735f318966527200e4af594155061f0d"
     },
     {
+      "path": "app/library/tagging.py",
+      "bytes": 841,
+      "sha256": "bb3b6b075e824a905cfea1cfe490c4e0e179537ea2947be0fdec99df85f45fee"
+    },
+    {
       "path": "app/library/test_accounts.py",
       "bytes": 5446,
       "sha256": "e5d8e567a4264dad143cf06132b987da70cae586aa990b0458c6bf42c9e74fb3"
     },
     {
       "path": "app/library/test_annotations.py",
-      "bytes": 23069,
-      "sha256": "e27d69fa1dbd891082c44f07475d353cc9dbb510c1093ed2154d29bedea245ef"
+      "bytes": 25446,
+      "sha256": "d4ee4bc10a26f885488ee2582d5f6f5fd81ea306cf81296bd6a186b38ded59ec"
     },
     {
       "path": "app/library/test_anonymous.py",
@@ -181,8 +186,8 @@
     },
     {
       "path": "app/library/test_usability.py",
-      "bytes": 5686,
-      "sha256": "5b648f5ce7b758b5f42a8c58a987b5e973b08267052f75c38f01e1b68964808c"
+      "bytes": 7910,
+      "sha256": "7e22ba3239158d8da2afce195fe86daa5a14e71cb1c03e7f0bb3a25eb4f0228c"
     },
     {
       "path": "app/library/tests.py",
@@ -196,13 +201,18 @@
     },
     {
       "path": "app/library/views.py",
-      "bytes": 19813,
-      "sha256": "2da27bf3d6019e9f93e3a753d6999e4ab433844e63c2ad7482f7250576d128aa"
+      "bytes": 19892,
+      "sha256": "460a5279eacca57690a78f928a24669f9c6418de700579af60db17c67b37658b"
     },
     {
       "path": "app/manage.py",
       "bytes": 186,
       "sha256": "f40123f9f06fdafa8faf8e887a862b42d7f931f66237392b800c239eaa5e4c73"
+    },
+    {
+      "path": "app/static/annotation-display.js",
+      "bytes": 3173,
+      "sha256": "952a13b4f7f60a087b42b638b63d371c9a7f03272765563905723973b4dc0839"
     },
     {
       "path": "app/static/annotation-presentation.js",
@@ -1221,18 +1231,18 @@
     },
     {
       "path": "app/static/reader-annotations.css",
-      "bytes": 6682,
-      "sha256": "5801364a594bb1d28a4bb0ef18669ee461e4a794f48c344e0b844d23493447f5"
+      "bytes": 7005,
+      "sha256": "e6539bee79c7434223b60c626d251f79b554c8533abfbf10edd3abc190e77547"
     },
     {
       "path": "app/static/reader-annotations.js",
-      "bytes": 24461,
-      "sha256": "e1c7fcdeb72a5b0581589186a6695cef08c185b333df22ed305eef56b8a4796b"
+      "bytes": 26088,
+      "sha256": "29b75e8e290fe89edbe54f6a1b7d571ef16d881a6ad31eebb425134941a94743"
     },
     {
       "path": "app/static/reader-composer.js",
-      "bytes": 8683,
-      "sha256": "690401778ec92810f8274a546c3281410f6b716d52f1b57348b295e095ace8aa"
+      "bytes": 8861,
+      "sha256": "3b875ead721bb1c319f7534aa0b4d8a10c9128c7bb38494830905908ceb62790"
     },
     {
       "path": "app/static/reader-four-views.css",
@@ -1241,8 +1251,8 @@
     },
     {
       "path": "app/static/reader-geometry.js",
-      "bytes": 8867,
-      "sha256": "a58ed76972f473877df88135727cdf12ecf6666de26fa3bd62ccdcf423c7e6e1"
+      "bytes": 10092,
+      "sha256": "8c183976c58e0155e08e9cf3b836bb0e19671aff1e0746b5311185f5f61cef63"
     },
     {
       "path": "app/static/reader-google.js",
@@ -1256,8 +1266,8 @@
     },
     {
       "path": "app/static/reader-pdf.js",
-      "bytes": 14567,
-      "sha256": "deeba2fce6ce6379bd3727a75c8c4dfb417db5388eb806aea455ee11cdcecc31"
+      "bytes": 14834,
+      "sha256": "166d1364d4fae2973524b058a9d822184e533fdb4cc146a465cab93f0a6413e3"
     },
     {
       "path": "app/static/reader-text.js",
@@ -1271,8 +1281,8 @@
     },
     {
       "path": "app/static/reader.js",
-      "bytes": 12677,
-      "sha256": "c8fb640092536bfae93238807492cced743b82dc27a835d7f19b2ad55bde2a24"
+      "bytes": 12861,
+      "sha256": "41ee9696c7ed420b909f4a50c2b92bfe832736184c21a625f8e5ea6cc5b8a91b"
     },
     {
       "path": "app/static/site.css",
@@ -1281,8 +1291,8 @@
     },
     {
       "path": "app/static/site.js",
-      "bytes": 4605,
-      "sha256": "c7940f1a77b7e3c55b5aed26126e4ad41322118494ec899432bfef35906e97b2"
+      "bytes": 4901,
+      "sha256": "eadc377f98a4d4150bc459e777d4ccb9b52ced39aed56d7802ab5000ba03d5be"
     },
     {
       "path": "app/templates/404.html",
@@ -1306,13 +1316,18 @@
     },
     {
       "path": "app/templates/library/metadata.html",
-      "bytes": 886,
-      "sha256": "7394cab3f53a3eca5206acf9296681a88ed253f72c766d118564acb5dd1c8088"
+      "bytes": 1255,
+      "sha256": "7f0321c1bd14095d7e32802fc459959f8f551ab8cd14f7fbc2a129c0231219fc"
     },
     {
       "path": "app/templates/library/paper_row.html",
       "bytes": 1286,
       "sha256": "1a06d3e0cc58797c57ddfcb19ec8b10781ef00c4aa3944afff493a6638251c28"
+    },
+    {
+      "path": "app/templates/library/paper_tags.html",
+      "bytes": 475,
+      "sha256": "e57b685c48abf884c81c40be2795702a1780f93efdec98c6d38dfe67b0d162ff"
     },
     {
       "path": "app/templates/library/preview.html",
@@ -1321,18 +1336,18 @@
     },
     {
       "path": "app/templates/library/reader-panels.html",
-      "bytes": 3355,
-      "sha256": "f9b8424079ab1bb6d89d0b7195d78aeb144bc36bf3a5868bb7548c25dda50fa0"
+      "bytes": 3526,
+      "sha256": "f1613479acbcb3f1caf737bd7e063e8c08f82c369ee4b823e11063f031cca804"
     },
     {
       "path": "app/templates/library/reader.html",
-      "bytes": 9642,
-      "sha256": "c27d1805e363fe5d2d3a73ba938d6a2da45b7fec3c35d70897663e76644a1383"
+      "bytes": 9815,
+      "sha256": "0d63bf40c6d5d69652daf4c0cca7b8e2b39cbda0a883b8fcb31630910e569e49"
     },
     {
       "path": "app/templates/library/tag_field.html",
-      "bytes": 432,
-      "sha256": "abdf2a39cfd5792e041b1453d56a270dfbbe3a171f233abdded296269c54d7ec"
+      "bytes": 648,
+      "sha256": "5a195cb2d6f2cfbdf325ee4c610b244006397272472bccccd26c95f94fd8d91b"
     },
     {
       "path": "app/templates/library/upload.html",
@@ -1395,6 +1410,11 @@
       "sha256": "0f5827d52fc8714e080ca1a1d3f137a71e3550dbba7898cbaf9282a3b90a8817"
     },
     {
+      "path": "docs/ROOT_CAUSE_V4_VERIFICATION.md",
+      "bytes": 9714,
+      "sha256": "d6d5a7293e85fe33ee3baf8c3cf6e4b82fc905aef997cc7e8d1b981008433ca2"
+    },
+    {
       "path": "docs/USABILITY_V3_UPGRADE.md",
       "bytes": 4692,
       "sha256": "b0958e02e0bb5f5af90421fa5656a832b63197c259dc7a572d0b0dfcf65db648"
@@ -1403,6 +1423,141 @@
       "path": "docs/USABILITY_V3_VERIFICATION.md",
       "bytes": 12226,
       "sha256": "313b27862776eb8f163af3302f284c46df02e7136d921e189bf649d4ffdf9e1b"
+    },
+    {
+      "path": "docs/root-cause-v4/after-ammonia-abstract-both-19.png",
+      "bytes": 277489,
+      "sha256": "7070a28ee901bc64e11ec24a691027e0e6caaf896b03284f12b94791b52730c4"
+    },
+    {
+      "path": "docs/root-cause-v4/backend-results.txt",
+      "bytes": 619,
+      "sha256": "b81d187f7e23fac596f7c808d386de23e18a929ee9434e1520338dc2db34ec74"
+    },
+    {
+      "path": "docs/root-cause-v4/before-ammonia-abstract-both-19.png",
+      "bytes": 279349,
+      "sha256": "2364e1990f58d933456b4a8ecf1ec6956046fa6a59aa5f7d6c35cdf5fadb04f2"
+    },
+    {
+      "path": "docs/root-cause-v4/before-results.json",
+      "bytes": 2783,
+      "sha256": "ae4f5e930ce7f70ba09771e38aaddf637a9ee588141b0932c3bb5f1b73943b18"
+    },
+    {
+      "path": "docs/root-cause-v4/browser-results.json",
+      "bytes": 14587,
+      "sha256": "fa3826cee92f2e30d2ca392d5e9a5d7758840d0c2f36088e9f5fd6ad9e278f47"
+    },
+    {
+      "path": "docs/root-cause-v4/cross-page-pdf-segment.png",
+      "bytes": 246597,
+      "sha256": "364db42efde0d37b6296e9baccac07be9aa708751013605d0fb1a7975970ac89"
+    },
+    {
+      "path": "docs/root-cause-v4/display-plan-tests.json",
+      "bytes": 884,
+      "sha256": "a5f74442a64cc3129324ee2a7792dbfc576dbcbe41ff0c7eeeae68c972d47121"
+    },
+    {
+      "path": "docs/root-cause-v4/english-to-chinese-fallback.png",
+      "bytes": 183119,
+      "sha256": "15087cc7c26d57455fc69e0c2adf80adf52fd78cc5acec88289f90ac0777d676"
+    },
+    {
+      "path": "docs/root-cause-v4/formal-preservation.json",
+      "bytes": 1863,
+      "sha256": "5f12c36a69bf4370f4781a36aa2d03243b012d219f6a70e88e24ce1aab6c2fdf"
+    },
+    {
+      "path": "docs/root-cause-v4/fresh-install-tags.png",
+      "bytes": 78894,
+      "sha256": "d3ad2a35ae862ed4d682944a49d197e5a936c2dc8a3daf37aab00182b764d3b2"
+    },
+    {
+      "path": "docs/root-cause-v4/legacy-admin-selected-tags.png",
+      "bytes": 71045,
+      "sha256": "2d6d695a7ec723ff1d1c148f0780bc078dc7734880b5da726edcaab3812543de"
+    },
+    {
+      "path": "docs/root-cause-v4/maintenance-output.txt",
+      "bytes": 1743,
+      "sha256": "4918fe38098cee5eb6b4499b631e95f1d758bfa6252ee37e6afc401b0fb44c7d"
+    },
+    {
+      "path": "docs/root-cause-v4/mixed-exact-block-pdf.png",
+      "bytes": 342174,
+      "sha256": "1987c4d74cb5e983348744fe8f768ddcbd21e5586bdbc9e73d3307fe9a460f64"
+    },
+    {
+      "path": "docs/root-cause-v4/multiline-multi-source.png",
+      "bytes": 120930,
+      "sha256": "b249d5ccfceb20ee223602244dd457d446ff8b9174ad19e6818984421fee25ff"
+    },
+    {
+      "path": "docs/root-cause-v4/native-zoom-results.json",
+      "bytes": 7872,
+      "sha256": "a55d578956d0bd5c466bf8f99aa0b91badf49f75fb146f8ba540aef317dc9677"
+    },
+    {
+      "path": "docs/root-cause-v4/pdf-errors-results.json",
+      "bytes": 3354,
+      "sha256": "e36dd910597ae8f12085408800b5b8c7f07f1c535182b64b2e48ac22beca7485"
+    },
+    {
+      "path": "docs/root-cause-v4/published-five-tags.png",
+      "bytes": 91102,
+      "sha256": "15324748d2a9a0ff359493ef2de5c735275828133e2b8b88262c7dd563b0e2ff"
+    },
+    {
+      "path": "docs/root-cause-v4/reader-1366-19.png",
+      "bytes": 181423,
+      "sha256": "c7783fb0d6c18ec3e33c45aa51fe55ee86ea5b972eba92ce3290672612bffe38"
+    },
+    {
+      "path": "docs/root-cause-v4/reader-390-19.png",
+      "bytes": 63526,
+      "sha256": "82ae95337d08dc21aa2f833cbe2f1285917b6e195dead5533fc830857ddbe10a"
+    },
+    {
+      "path": "docs/root-cause-v4/reader-dom-results.json",
+      "bytes": 876,
+      "sha256": "7d1f9c2061da4f6cdb1c5005d7e222a56c354713c1ae3bf705c88fe22dfbcf88"
+    },
+    {
+      "path": "docs/root-cause-v4/reader-native-200-font19.png",
+      "bytes": 106894,
+      "sha256": "cc9db3c98406d4c919bd5379b06b4024a4e82d565ec7a47eda4f42cb6d688000"
+    },
+    {
+      "path": "docs/root-cause-v4/reader-native-200-font40.png",
+      "bytes": 107120,
+      "sha256": "52bf2f425526e757a1ccc46c7e78e185c7fce26659fbea6067ea18c0c8509127"
+    },
+    {
+      "path": "docs/root-cause-v4/regression-results.json",
+      "bytes": 2192,
+      "sha256": "76da42dda659663d89f57bad9d45fc542e10b1c2a07978667f080a9c0f550234"
+    },
+    {
+      "path": "docs/root-cause-v4/restart-browser-results.json",
+      "bytes": 513,
+      "sha256": "ca4e95ae238f0497a9c416872340a1d7e4f86468ed4f0ff8003e537bcc0302ed"
+    },
+    {
+      "path": "docs/root-cause-v4/running-build.json",
+      "bytes": 1808,
+      "sha256": "effe0b3d4f2148af16b7e0188c255ed0d7178119cc78809a1702bc59559e58db"
+    },
+    {
+      "path": "docs/root-cause-v4/tag-persistence.json",
+      "bytes": 486,
+      "sha256": "2f0cdc8adaa5d52f87318d8778aa39613568361a0b31ce324cb5addebfad26c8"
+    },
+    {
+      "path": "docs/root-cause-v4/tags-browser-results.json",
+      "bytes": 1646,
+      "sha256": "476cafaf29627865bf9497d591a985958aeff42018ebd53c095ea7a3a34260ec"
     },
     {
       "path": "docs/usability-v3/backend-results.txt",
@@ -1721,8 +1876,8 @@
     },
     {
       "path": "launcher.py",
-      "bytes": 21354,
-      "sha256": "048bf9aeab5873b316a6b54f901f50980efbf9b87a28d78ca5539b438acd7976"
+      "bytes": 21897,
+      "sha256": "8dd22ce5ba0e92b8f9361b949dca3c5966a26d0d06e4b088ddabb3ffca453f1c"
     },
     {
       "path": "manage-account.cmd",
@@ -1771,8 +1926,13 @@
     },
     {
       "path": "tools/TESTING.md",
-      "bytes": 9766,
-      "sha256": "800ed4ac6e7d79a255f42eef59a2343cd590fffe6f2b4abdd015a19502af41a7"
+      "bytes": 12797,
+      "sha256": "d2f1dfa27acff83ad0a7c839f7932d5b5ee4f63cef3b5afb385ce7f28fd7f53a"
+    },
+    {
+      "path": "tools/annotation-display-tests.cjs",
+      "bytes": 3565,
+      "sha256": "2a2492c556620b46b3755e9882acf58c1bcd16d4a8905fd204b09396239fc2da"
     },
     {
       "path": "tools/browser-tests.cjs",
@@ -1816,8 +1976,8 @@
     },
     {
       "path": "tools/reader-v2-dom-tests.cjs",
-      "bytes": 8250,
-      "sha256": "b42997bb2b75d4a080f4df51bcfd1195a6d326128e0cf4473e4ec15a3cf4e9cc"
+      "bytes": 8271,
+      "sha256": "1b256ffa1f8bef875444ef476fe05b2749f22c0a842de64213245461c1332ed9"
     },
     {
       "path": "tools/restart-checks.py",
@@ -1833,6 +1993,56 @@
       "path": "tools/revision_rehearsal.py",
       "bytes": 6545,
       "sha256": "503a4a9c111d2e12b0f22a5a3173d3526952b7d960ddea3d5b6a0da6f1dcad2a"
+    },
+    {
+      "path": "tools/root-cause-before.cjs",
+      "bytes": 5040,
+      "sha256": "62f00eb6a685e4f28113207fbda23ea55e85f31597c0576f91c115f22741b9fe"
+    },
+    {
+      "path": "tools/root-cause-browser.cjs",
+      "bytes": 12449,
+      "sha256": "353b678bece13b748b0b2633d1c4820b3a91bab54fe753c2fc88432163d3b951"
+    },
+    {
+      "path": "tools/root-cause-fixtures.py",
+      "bytes": 1786,
+      "sha256": "498a5e5990308dc669658e9decc2170bfcb849fd2dfd8066e91497c9ad53f55b"
+    },
+    {
+      "path": "tools/root-cause-pdf-errors.cjs",
+      "bytes": 6408,
+      "sha256": "e1faf4a9bb7dbbdaa6597fd054148a0dc0ffa7b994154ed6ab8df329d3f7f7dd"
+    },
+    {
+      "path": "tools/root-cause-persistence.py",
+      "bytes": 1359,
+      "sha256": "8811da4cd561fd77fa622c8bca9b73ccd260accbe01fd406ec3c9cac2c1f9a0b"
+    },
+    {
+      "path": "tools/root-cause-regression-data.py",
+      "bytes": 2355,
+      "sha256": "c7dc060004088922363f8d02889f423524a5bfd5e0bad22e7f67a20844f8f94e"
+    },
+    {
+      "path": "tools/root-cause-regression.cjs",
+      "bytes": 10708,
+      "sha256": "bac401ad702bb561f09c92c1a696c91f3cfd974e7eab5c4856f461227dcfd0d4"
+    },
+    {
+      "path": "tools/root-cause-restart.cjs",
+      "bytes": 3873,
+      "sha256": "5ef2361a6f0409f43d26a6b2b7c3a812125f05d06064043d89722d409f8ca29c"
+    },
+    {
+      "path": "tools/root-cause-tags.cjs",
+      "bytes": 9929,
+      "sha256": "8c862f5311e659474d1f066badb01c577f5a0a5c66dd82dd1a985e95735192a8"
+    },
+    {
+      "path": "tools/root-cause-zoom.cjs",
+      "bytes": 3863,
+      "sha256": "0c79b2739014223aedce6f47913a0799dedcb9c1bc9bb5e8271fa3805ae8aa1c"
     },
     {
       "path": "tools/runtime-checks.py",
@@ -1888,6 +2098,11 @@
       "path": "tools/vendor_pdfjs.py",
       "bytes": 2019,
       "sha256": "471a6b1b8acb6cf8b884b85f6098c8416fadb8f34632f76f88895dfab2fedda1"
+    },
+    {
+      "path": "tools/verify-preservation.py",
+      "bytes": 1759,
+      "sha256": "3521b9d094e745428b5220dca2158629aff8a6a8d303723ac1aee62b6dd16912"
     },
     {
       "path": "tools/verify_bundle.py",

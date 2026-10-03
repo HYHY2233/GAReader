@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Fresh install: selected paper tags survived real server restart and repeated setup",
+    "Existing 0003: only administrator-selected tags enabled; unrelated inactive tag unchanged"
+  ],
+  "instances": {
+    "fresh-install": {
+      "library_tag": 13,
+      "library_paper_tags": 5,
+      "library_paper_categories": 3
+    },
+    "legacy": {
+      "library_tag": 14,
+      "library_paper_tags": 0,
+      "library_paper_categories": 2
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "id": "C01 normal empty-directory installation supplies 13 enabled choices before fixtures add accounts",
+      "status": "PASS",
+      "detail": {
+        "normalSetupActiveTags": 13
+      }
+    },
+    {
+      "id": "C03 C04 real HTML upload, required tags, 1/5 allowed, 6/unknown/disabled rejected, preview edit and publish",
+      "status": "PASS",
+      "detail": {
+        "paper": "f4dfe19e-5e8d-4dff-af0b-170930b60362",
+        "selectedTags": [
+          "绿氨",
+          "成本模型",
+          "敏感性分析",
+          "动态仿真",
+          "稳态仿真"
+        ],
+        "serverRejections": [
+          {
+            "count": 0,
+            "status": 200
+          },
+          {
+            "count": 6,
+            "status": 200
+          },
+          {
+            "count": 1,
+            "status": 200
+          }
+        ]
+      }
+    },
+    {
+      "id": "C05 existing article metadata keeps revision, full anchor API and both ratings unchanged",
+      "status": "PASS",
+      "detail": {
+        "paper": "c7bfb75d-42d7-41ee-ab10-bc666271c1d2",
+        "revision": "7a6c4762-bdd9-4bee-81df-ee87845087d8"
+      }
+    },
+    {
+      "id": "C06 disabled historical labels survive title-only edit and are removed only by explicit choice",
+      "status": "PASS"
+    },
+    {
+      "id": "C02 upgraded 0003 vocabulary stays disabled until selected admin action; unrelated disabled term remains off",
+      "status": "PASS",
+      "detail": {
+        "selected": [
+          "NMPC",
+          "IDAES"
+        ],
+        "unrelatedDisabledPreserved": true
+      }
+    }
+  ],
+  "errors": []
+}

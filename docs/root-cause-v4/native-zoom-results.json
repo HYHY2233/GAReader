@@ -1,0 +1,438 @@
+{
+  "checks": [
+    {
+      "font": 12,
+      "view": "both",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 12,
+      "view": "both",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 12,
+      "view": "zh",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 12,
+      "view": "zh",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 12,
+      "view": "en",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "block"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 12,
+      "view": "en",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "block"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 19,
+      "view": "both",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 19,
+      "view": "both",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 19,
+      "view": "zh",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 19,
+      "view": "zh",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 19,
+      "view": "en",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "block"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 19,
+      "view": "en",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "block"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 32,
+      "view": "both",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 32,
+      "view": "both",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 32,
+      "view": "zh",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 32,
+      "view": "zh",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 32,
+      "view": "en",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "block"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 32,
+      "view": "en",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "block"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 40,
+      "view": "both",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 40,
+      "view": "both",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 40,
+      "view": "zh",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "exact"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 40,
+      "view": "zh",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "exact"
+        ],
+        "markers": 0
+      }
+    },
+    {
+      "font": 40,
+      "view": "en",
+      "inline": true,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": true,
+        "plan": [
+          "block"
+        ],
+        "markers": 1
+      }
+    },
+    {
+      "font": 40,
+      "view": "en",
+      "inline": false,
+      "status": "PASS",
+      "metrics": {
+        "inner": 668,
+        "dpr": 2,
+        "height": 402,
+        "overflow": 668,
+        "bar": 222,
+        "inline": false,
+        "plan": [
+          "block"
+        ],
+        "markers": 0
+      }
+    }
+  ],
+  "errors": [],
+  "nativeZoom": 2
+}

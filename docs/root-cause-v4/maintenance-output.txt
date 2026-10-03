@@ -1,0 +1,27 @@
+fresh-install.log (actual output excerpt)
+首次安装／显式维护：联网安装已锁定的依赖。
+  Applying library.0001_initial... OK
+  Applying library.0002_comment_version_paperrevision_annotationanchor_and_more... OK
+  Applying library.0003_tags_and_category_order... OK
+首次安装已启用常用标签：绿氨、成本模型、敏感性分析、动态仿真、稳态仿真、NMPC、容量优化、代理模型、参数辨识、IDAES、Pyomo、Aspen、Python
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。
+
+legacy-setup.log (actual output excerpt)
+首次安装／显式维护：联网安装已锁定的依赖。
+  No migrations to apply.
+现有词表保持不变：暂无启用标签。管理员可从上传页进入标签管理，选择并启用需要的词条。
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。
+
+fresh-install-repeat-setup.log (actual output excerpt)
+首次安装／显式维护：联网安装已锁定的依赖。
+  No migrations to apply.
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。
+
+legacy-repeat-setup.log (actual output excerpt)
+首次安装／显式维护：联网安装已锁定的依赖。
+  No migrations to apply.
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。

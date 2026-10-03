@@ -1,5 +1,47 @@
 # 重现测试
 
+## 定点修复 v4
+
+实际结果见 [v4 验收](../docs/ROOT_CAUSE_V4_VERIFICATION.md)。后端 67 项、离线 DOM 6 组、纯显示计划 6 组。DOM／纯函数结果不替代真实浏览器验收。始终显式指定隔离数据目录：
+
+```powershell
+$env:PYTHONUTF8 = '1'
+$env:PAPER_LIBRARY_DATA = (Resolve-Path 'test-runs/root-cause-v4/working').Path
+.venv\Scripts\python.exe app/manage.py collectstatic --noinput
+.venv\Scripts\python.exe app/manage.py test library --verbosity 1
+.venv\Scripts\python.exe app/manage.py makemigrations --check --dry-run
+node tools/reader-v2-dom-tests.cjs
+node tools/annotation-display-tests.cjs
+```
+
+本轮 Playwright 使用项目锁定依赖和真实 Edge。`root-cause-*.cjs` 是对本次场景的回放工具，依赖隔离备份、真实示例、动态场景 ID 和私有凭据文件，不能直接填入正式数据。脚本在登录前核对服务器实例；所有凭据、数据库和完整 API 快照均忽略提交。
+
+准备四个独立目录：`working` 从 v3 工作隔离备份恢复；`fresh-install` 从空目录运行正常 `launcher.py setup`；`legacy` 从已应用 0003、13 项停用的旧隔离库恢复再 setup；`old-revision` 从 v3 已完成修订演练的隔离库恢复。`root-cause-fixtures.py fresh-install`／`legacy` 在初始化之后只创建测试账号，并先断言启用标签分别为 13／0，不能用它为词表补数据。网站分别在回环端口 8057／8058／8059／8060 运行。
+
+实际执行顺序：
+
+```text
+node tools/root-cause-before.cjs                         # 修改前的 b224921 上复现一次
+node tools/root-cause-browser.cjs                        # 修改后，两篇 PDF 与 72 组布局
+node tools/root-cause-tags.cjs                           # 真上传、预览、发布、后台启停
+node tools/root-cause-zoom.cjs                           # 独立 Edge 配置，原生 200%，24 组
+.venv/Scripts/python.exe tools/root-cause-regression-data.py
+node tools/root-cause-regression.cjs                     # 真实混合来源、跨页、轮询、来源返回
+node tools/root-cause-pdf-errors.cjs                     # 只临时改隔离 PDF，finally 恢复
+.venv/Scripts/python.exe tools/root-cause-persistence.py before
+```
+
+随后实际停止 fresh-install／legacy 两个实例，分别重复 setup，再重新启动，执行：
+
+```text
+.venv/Scripts/python.exe tools/root-cause-persistence.py after
+node tools/root-cause-restart.cjs
+```
+
+上述脚本会向隔离库创建测试论文和批注，重新完整验收应从新的隔离副本准备，不宣称可无条件重跑。最终另外复跑主浏览器与 DOM 回归。`verify-preservation.py --data-dir <已停机原目录> --archive <维护前备份> --output <私有输出>` 只读比较所有表及论文文件字节；输出仅行数与结果，不导出用户记录。
+
+正式站启动前已完成备份比对；后续只读检查登录页、实例和已加载的静态文件。没有将测试账户、标签操作或模拟评论写入正式库。
+
 ## 可用性修复 v3
 
 当前完整后端套件为 61 项，离线 DOM 为 6 组。所有命令在源码根目录运行，显式指定隔离目录。第一次先 `setup.cmd --data-dir test-runs/usability-v3/fresh-install`；测试使用独立测试数据库，不能将正式数据目录传给测试脚本。

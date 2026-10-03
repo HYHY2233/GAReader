@@ -1,0 +1,29 @@
+{
+  "kind": "pure-function regression; not browser geometry evidence",
+  "checks": [
+    {
+      "name": "Chinese original wins in both projection orders; one display target, no fallback marker",
+      "status": "PASS"
+    },
+    {
+      "name": "Hidden source switches to English fallback while source remains Chinese",
+      "status": "PASS"
+    },
+    {
+      "name": "Partial exact mapping preserves another original segment with only a block",
+      "status": "PASS"
+    },
+    {
+      "name": "One source segment spanning PDF page fragments keeps both pages deterministically",
+      "status": "PASS"
+    },
+    {
+      "name": "PDF selection overlapping multiple HTML units keeps unit coverage, one language per unit",
+      "status": "PASS"
+    },
+    {
+      "name": "Whole objects and stale segments never become an invented exact range",
+      "status": "PASS"
+    }
+  ]
+}

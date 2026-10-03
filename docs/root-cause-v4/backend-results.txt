@@ -1,0 +1,16 @@
+Creating test database for alias 'default'...
+
+................................................................<repo>\.venv\Lib\site-packages\PIL\Image.py:3578: DecompressionBombWarning: Image size (42000000 pixels) exceeds limit of 40000000 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+...
+----------------------------------------------------------------------
+Ran 67 tests in 38.609s
+
+OK
+Destroying test database for alias 'default'...
+
+Found 67 test(s).
+System check identified no issues (0 silenced).
+
+Additional final command: app/manage.py makemigrations --check --dry-run
+No changes detected

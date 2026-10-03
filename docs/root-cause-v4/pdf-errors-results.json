@@ -1,0 +1,91 @@
+{
+  "checks": [
+    {
+      "id": "B05 inaccessible current PDF shows explicit error and retry succeeds after recovery",
+      "status": "PASS",
+      "detail": {
+        "message": "此修订的原版 PDF 文件不可访问，请联系管理员恢复附件。"
+      }
+    },
+    {
+      "id": "B05 fingerprint mismatch never loads old geometry; retry validates recovered bytes",
+      "status": "PASS",
+      "detail": {
+        "message": "原版 PDF 来源校验失败，未加载文件或复用批注坐标。"
+      }
+    },
+    {
+      "id": "B05 actual old revision with missing PDF is explicit and retriable",
+      "status": "PASS",
+      "detail": {
+        "revision": "db9b236f-c8a5-4dd4-af98-e5c8bd05782f",
+        "message": "此修订的原版 PDF 文件不可访问，请联系管理员恢复附件。"
+      }
+    },
+    {
+      "id": "B05 expired login gives 401; reauthentication and retry resume inline reading",
+      "status": "PASS",
+      "detail": {
+        "message": "登录已失效，请重新登录后读取原版 PDF。"
+      }
+    },
+    {
+      "id": "B05 absent PDF disables view and API returns explicit 404; HTML retains attachment sandbox",
+      "status": "PASS",
+      "detail": {
+        "noPdfStatus": 404,
+        "htmlStatus": 200,
+        "htmlDisposition": "attachment; filename=\"original.html\"",
+        "htmlCsp": "sandbox; default-src 'none'; base-uri 'none'"
+      }
+    }
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 404,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 409,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/db9b236f-c8a5-4dd4-af98-e5c8bd05782f/pdf/",
+      "status": 404,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/db9b236f-c8a5-4dd4-af98-e5c8bd05782f/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 401,
+      "type": "application/json"
+    },
+    {
+      "url": "http://127.0.0.1:8060/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/287ddb38-884c-4e88-8f48-e89baf7e0983/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    }
+  ],
+  "downloads": [],
+  "errors": []
+}

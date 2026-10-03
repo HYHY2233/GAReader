@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "id": "A05 genuine multi-source thread retains per-segment exact and block PDF targets",
+      "status": "PASS",
+      "detail": {
+        "thread": 70,
+        "html": [
+          {
+            "segment": 0,
+            "precision": "exact"
+          },
+          {
+            "segment": 1,
+            "precision": "exact"
+          }
+        ],
+        "plans": [
+          {
+            "segment": 0,
+            "precision": "exact",
+            "page": 1
+          },
+          {
+            "segment": 1,
+            "precision": "block",
+            "page": 10
+          }
+        ],
+        "multilineRects": 4
+      }
+    },
+    {
+      "id": "A05 real cross-page PDF source keeps both fragments inside their own pages",
+      "status": "PASS",
+      "detail": {
+        "thread": 6,
+        "plan": [
+          {
+            "segment": 0,
+            "page": 0,
+            "precision": "exact"
+          },
+          {
+            "segment": 1,
+            "page": 1,
+            "precision": "exact"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A05 A06 grouped markers count unique threads; card, highlight and reply cooperate",
+      "status": "PASS",
+      "detail": {
+        "marker": {
+          "text": 3,
+          "ids": [
+            5,
+            65,
+            67
+          ]
+        },
+        "pollStatus": 200
+      }
+    },
+    {
+      "id": "A08 independent search highlights, temporary source focus and position return",
+      "status": "PASS",
+      "detail": {
+        "searchHits": 100,
+        "view": "en",
+        "revision": "dac5cb21-5dfa-446c-a350-3be1605511c8",
+        "unit": "p-nonlinear-model-predictive-control-of-flexible-ammonia-production"
+      }
+    },
+    {
+      "id": "C05 existing real anchors and ratings remain identical after administrator metadata save",
+      "status": "PASS",
+      "detail": {
+        "revision": "db9b236f-c8a5-4dd4-af98-e5c8bd05782f",
+        "pdfSha256": "9263617a09f0a74d08ad724be97821e5b3ced68d14bf884939c70c0a9704cd75",
+        "threads": 31,
+        "anchorSourceUnchanged": true,
+        "fullManifestAndRatingsUnchanged": true
+      }
+    }
+  ],
+  "errors": []
+}

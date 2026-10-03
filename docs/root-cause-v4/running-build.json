@@ -1,0 +1,50 @@
+{
+  "code_commit": "5968a935396f213ff4e8125239d05d183298a924",
+  "formal_url": "http://127.0.0.1:8047/",
+  "original_data_instance_matches": true,
+  "login_http_status": 200,
+  "static": [
+    {
+      "source": "annotation-display.js",
+      "served_path": "/static/annotation-display.6cb49900c842.js",
+      "sha256": "952a13b4f7f60a087b42b638b63d371c9a7f03272765563905723973b4dc0839",
+      "matches_current_source": true
+    },
+    {
+      "source": "reader-geometry.js",
+      "served_path": "/static/reader-geometry.55513c8f9a08.js",
+      "sha256": "8c183976c58e0155e08e9cf3b836bb0e19671aff1e0746b5311185f5f61cef63",
+      "matches_current_source": true
+    },
+    {
+      "source": "reader-annotations.js",
+      "served_path": "/static/reader-annotations.a2c2bc54fc78.js",
+      "sha256": "29b75e8e290fe89edbe54f6a1b7d571ef16d881a6ad31eebb425134941a94743",
+      "matches_current_source": true
+    },
+    {
+      "source": "reader-composer.js",
+      "served_path": "/static/reader-composer.7a943f2882cf.js",
+      "sha256": "3b875ead721bb1c319f7534aa0b4d8a10c9128c7bb38494830905908ceb62790",
+      "matches_current_source": true
+    },
+    {
+      "source": "reader-pdf.js",
+      "served_path": "/static/reader-pdf.e5584910a418.js",
+      "sha256": "166d1364d4fae2973524b058a9d822184e533fdb4cc146a465cab93f0a6413e3",
+      "matches_current_source": true
+    },
+    {
+      "source": "reader.js",
+      "served_path": "/static/reader.c766c9e9f7fc.js",
+      "sha256": "41ee9696c7ed420b909f4a50c2b92bfe832736184c21a625f8e5ea6cc5b8a91b",
+      "matches_current_source": true
+    },
+    {
+      "source": "site.js",
+      "served_path": "/static/site.4695049a6ac3.js",
+      "sha256": "eadc377f98a4d4150bc459e777d4ccb9b52ced39aed56d7802ab5000ba03d5be",
+      "matches_current_source": true
+    }
+  ]
+}

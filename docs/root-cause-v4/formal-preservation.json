@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "databaseAccess": "read-only",
+  "tables": [
+    {
+      "name": "auth_group",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "auth_group_permissions",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "auth_permission",
+      "rows": 52,
+      "status": "PASS"
+    },
+    {
+      "name": "auth_user",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "auth_user_groups",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "auth_user_user_permissions",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "django_admin_log",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "django_content_type",
+      "rows": 13,
+      "status": "PASS"
+    },
+    {
+      "name": "django_migrations",
+      "rows": 21,
+      "status": "PASS"
+    },
+    {
+      "name": "django_session",
+      "rows": 3,
+      "status": "PASS"
+    },
+    {
+      "name": "library_annotationanchor",
+      "rows": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "library_category",
+      "rows": 3,
+      "status": "PASS"
+    },
+    {
+      "name": "library_comment",
+      "rows": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paper",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paper_categories",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paper_tags",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paperrevision",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "library_rating",
+      "rows": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "library_tag",
+      "rows": 13,
+      "status": "PASS"
+    },
+    {
+      "name": "sqlite_sequence",
+      "rows": 10,
+      "status": "PASS"
+    }
+  ],
+  "unchangedPaperFiles": 90
+}

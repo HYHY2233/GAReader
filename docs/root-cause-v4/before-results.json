@@ -1,0 +1,99 @@
+{
+  "build": "b2249219fc6d7fa579763eebd35fffd84c9298c3",
+  "browser": "154.0.4258.53",
+  "viewport": {
+    "width": 2048,
+    "height": 1165
+  },
+  "errors": [],
+  "downloads": [],
+  "pdfResponses": [
+    {
+      "url": "http://127.0.0.1:8057/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/db9b236f-c8a5-4dd4-af98-e5c8bd05782f/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    },
+    {
+      "url": "http://127.0.0.1:8057/api/papers/1472f628-fafd-4fa1-8567-c6d920bad5a1/revisions/dac5cb21-5dfa-446c-a350-3be1605511c8/pdf/",
+      "status": 200,
+      "type": "application/pdf",
+      "disposition": "inline; filename=\"original.pdf\""
+    }
+  ],
+  "geometry": {
+    "source": {
+      "schema_version": 1,
+      "revision_id": "dac5cb21-5dfa-446c-a350-3be1605511c8",
+      "created_view": "both",
+      "source_language": "zh",
+      "kind": "text",
+      "segments": [
+        {
+          "unit_id": "p-p-006",
+          "alignment_group_id": "p-p-006",
+          "representation_id": "p-p-006::zh::0",
+          "quote": "面对可再生能源的间歇性",
+          "raw_quote": "面对可再生能源的间歇性",
+          "prefix": "",
+          "suffix": "，合成氨过程的柔性动态运行是实现绿氨生产的关键因素。本文针对进料流量变化的 Ha",
+          "start": 0,
+          "end": 11,
+          "text_hash": "34905b33c2f3d71e85801061c78590e730909c14caf1beb058398fe82e9dbe89",
+          "normalization_version": "nfc-whitespace-v1"
+        }
+      ],
+      "offset_unit": "unicode_code_point",
+      "normalization_version": "nfc-whitespace-v1"
+    },
+    "projections": [
+      {
+        "precision": "exact",
+        "language": "zh",
+        "unit_id": "p-p-006",
+        "representation_id": "p-p-006::zh::0",
+        "start": 0,
+        "end": 11,
+        "quote": "面对可再生能源的间歇性",
+        "method": "source-text"
+      },
+      {
+        "precision": "block",
+        "language": "en",
+        "unit_id": "p-p-006",
+        "method": "bilingual-unit",
+        "reason": "对应段落；原批注来自中文。"
+      }
+    ],
+    "expected": {
+      "x": 1069,
+      "y": 267.65625
+    },
+    "line": {
+      "x": 828,
+      "y": 926.3125,
+      "mapped": true,
+      "d": "M 828 926.3125 H 844 V 929.3125 H 1562 V 399.046875 H 1574"
+    },
+    "markers": [
+      {
+        "group": "p-p-006:en",
+        "left": "1557px",
+        "top": "243.656px"
+      },
+      {
+        "group": "p-p-006:zh",
+        "left": "1557px",
+        "top": "227.656px"
+      }
+    ]
+  },
+  "pdfClick": {
+    "text": "原版 PDF",
+    "type": "BUTTON",
+    "view": "pdf",
+    "href": null
+  },
+  "topPdfDownloads": 0,
+  "status": "BASELINE_REPRODUCED"
+}

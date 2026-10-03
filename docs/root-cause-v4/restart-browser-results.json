@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "id": "C04 selected tags appear in reader and home after actual restart",
+      "status": "PASS",
+      "tags": [
+        "成本模型",
+        "敏感性分析",
+        "动态仿真",
+        "稳态仿真"
+      ]
+    },
+    {
+      "id": "C02 repeated setup and actual restart preserve selected enabled vocabulary",
+      "status": "PASS"
+    },
+    {
+      "id": "C03 one-tag upload really publishes; forged inactive tag rejected at upload",
+      "status": "PASS"
+    }
+  ]
+}

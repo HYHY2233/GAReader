@@ -11,7 +11,7 @@ async function fixture(){
  Object.defineProperty(w,'crypto',{value:webcrypto});w.TextEncoder=TextEncoder;
  w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
  w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'));};
- w.matchMedia=()=>({matches:false,addEventListener(){}});w.ResizeObserver=class{observe(){}};
+ w.matchMedia=()=>({matches:false,addEventListener(){}});w.ResizeObserver=class{observe(){} unobserve(){}};
  w.CSS={highlights:new Map()};w.Highlight=class{constructor(...ranges){this.ranges=ranges;}};
  w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=function(){};w.confirm=()=>true;
  const rect={left:100,right:320,top:200,bottom:222,width:220,height:22};
@@ -24,7 +24,7 @@ async function fixture(){
   if(options.method==='POST'){if(fail)throw Error('离线，未保存');return {ok:true,json:async()=>({id:7,version:1})};}
   return {ok:true,json:async()=>({threads:[],count:0,cursor:new Date().toISOString()})};};
  w.open=()=>{if(blocked)return null;const p={opener:w,closed:false,close(){},location:{replace(url){assert.equal(p.opener,null);queries.push(url);}}};return p;};
- for(const name of ['reader-text','reader-views','reader','reader-google','reader-annotations'])w.eval(fs.readFileSync(path.join(root,'app/static',name+'.js'),'utf8'));
+ for(const name of ['reader-text','reader-views','reader','reader-google','annotation-presentation','reader-composer','reader-navigation','reader-geometry','reader-annotations'])w.eval(fs.readFileSync(path.join(root,'app/static',name+'.js'),'utf8'));
  await delay(30);
  async function select(text){const p=d.querySelector('#p-p1 .en p');p.textContent=text;const r=d.createRange();r.selectNodeContents(p);
   w.getSelection().removeAllRanges();w.getSelection().addRange(r);d.dispatchEvent(new w.Event('selectionchange'));await delay(130);}
@@ -66,7 +66,7 @@ async function check(name,fn){const f=await fixture();try{await fn(f);assert.equ
   const input=f.d.getElementById('annotation-body');input.value='未提交的草稿';input.dispatchEvent(new f.w.Event('input'));
   f.w.GAReader.setView('zh');f.d.getElementById('annotations-close').click();f.d.getElementById('annotations-toggle').click();assert.equal(input.value,'未提交的草稿');
   const form=f.d.getElementById('annotation-form');form.dispatchEvent(new f.w.Event('submit',{cancelable:true}));form.dispatchEvent(new f.w.Event('submit',{cancelable:true}));await delay(30);
-  assert.equal(f.calls.filter(c=>c.options.method==='POST').length,1);assert.match(f.d.getElementById('annotation-status').textContent,/未保存/);
+  assert.equal(f.calls.filter(c=>c.options.method==='POST').length,1);assert.match(f.d.getElementById('annotation-status').textContent,/未确认保存/);
   assert.equal(JSON.parse(f.w.localStorage.getItem(f.w.GAReaderAnnotations.editor.key)).body,'未提交的草稿');
  });
  await check('Search highlighting is independent of the annotation visibility preference',async f=>{

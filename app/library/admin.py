@@ -30,13 +30,14 @@ class AccountAdmin(UserAdmin):
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display=('name','sort_order')
-    list_editable=('sort_order',)
+    list_per_page=20
     def has_delete_permission(self,request,obj=None): return False
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
     list_display=('name','active','sort_order')
-    list_editable=('active','sort_order')
+    # Edit metadata on the change form; keep action posts within the upload field limit.
+    list_per_page=20
     search_fields=('name','normalized_name')
     list_filter=('active',)
     actions=('enable','disable','merge')
@@ -47,6 +48,8 @@ class TagAdmin(admin.ModelAdmin):
     @admin.action(description='合并所选标签到其中一项')
     def merge(self,request,queryset):
         choices=list(queryset)
+        if len(choices)>20:
+            self.message_user(request,'每次最多合并20个标签，请缩小选择范围。',level='error');return
         if len(choices)<2:
             self.message_user(request,'至少选择两个标签。',level='error');return
         target=request.POST.get('target')

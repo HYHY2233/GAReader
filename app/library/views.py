@@ -213,6 +213,7 @@ def api(view):
     def wrapped(request,*args,**kwargs):
         if not request.user.is_authenticated or not request.user.is_active: return JsonResponse({'error':'请先进入论文库。'},status=401)
         try: return view(request,*args,**kwargs)
+        except Http404: return JsonResponse({'error':'论文或批注来源已不可访问，请返回论文库确认。'},status=404)
         except (ValueError,TypeError,KeyError,json.JSONDecodeError): return JsonResponse({'error':'请求字段或格式不正确。'},status=400)
     return wrapped
 

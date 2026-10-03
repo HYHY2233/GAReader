@@ -13,7 +13,8 @@
  const $=id=>document.getElementById(id);
  const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el;};
  async function api(path,method='GET',data){
-  const res=await fetch(apiBase+path,{method,headers:{'Content-Type':'application/json','X-CSRFToken':reader.dataset.csrf},...(data===undefined?{}:{body:JSON.stringify(data)})});
+  let res;try{res=await fetch(apiBase+path,{method,headers:{'Content-Type':'application/json','X-CSRFToken':reader.dataset.csrf},...(data===undefined?{}:{body:JSON.stringify(data)})});}
+  catch{const error=Error('无法连接网站，请恢复连接后重试。');error.network=true;throw error;}
   let result;try{result=await res.json();}catch{throw Error('请求未保存，请刷新登录状态后重试。');}
   if(!res.ok){const error=Error(result.error||'请求未保存，请稍后重试。');error.status=res.status;throw error;}return result;
  }

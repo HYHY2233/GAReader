@@ -16,7 +16,7 @@ import launcher
 def rows(data):
     with contextlib.closing(sqlite3.connect(data / 'db.sqlite3')) as db:
         return {name: db.execute('SELECT * FROM ' + name + ' ORDER BY 1').fetchall()
-                for name in ['library_comment', 'library_rating', 'library_annotationanchor', 'library_paperrevision']}
+                for name in ['library_comment', 'library_rating', 'library_annotationanchor', 'library_paperrevision', 'library_tag', 'library_paper_tags', 'library_paper_categories']}
 
 
 def main():
@@ -43,7 +43,7 @@ def main():
 
     client = Client(HTTP_HOST='127.0.0.1')
     client.force_login(User.objects.get(username='reader_a'))
-    paper = Paper.objects.get(title_en__icontains='IDAES')
+    paper = Paper.objects.get(title_en__icontains='IDAES',trusted_original=True)
     revision = paper.current_revision
     folder = revision_dir(revision)
     manifest = manifest_for(revision)

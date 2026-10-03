@@ -3,7 +3,7 @@
   const core=window.GAReader;if(!core)return;
   const $=id=>document.getElementById(id);
   const container=$('pdf-reader'),pagesRoot=$('pdf-pages'),reader=core.reader;
-  const pages=new Map();let pdfjs,documentPDF,loading,observer,scale=1,rotation=0,fit='width',generation=0;
+  const pages=new Map();let pdfjs,documentPDF,loading,observer,scale=1,rotation=0,fit='width',generation=0,jumpEpoch=0;
   const base=`/api/papers/${reader.dataset.paper}/revisions/${reader.dataset.revision}/pdf/`;
   function status(text){$('pdf-status').textContent=text;}
   function currentPage(){
@@ -26,8 +26,12 @@
     info.surface.style.setProperty('--scale-factor',scale);
     info.surface.style.setProperty('--scale-round-x','1px');info.surface.style.setProperty('--scale-round-y','1px');
   }
-  async function renderPage(info){
-    if(info.rendered===generation||info.rendering===generation)return;
+  function renderPage(info){
+    if(info.rendered===generation)return Promise.resolve();
+    if(info.rendering===generation&&info.renderPromise)return info.renderPromise;
+    const work=renderPageWork(info);info.renderPromise=work;return work;
+  }
+  async function renderPageWork(info){
     const token=generation;info.rendering=token;
     try {
       if(info.task){info.task.cancel();try{await info.task.promise;}catch{}}
@@ -74,7 +78,7 @@
         section.className='pdf-page';section.dataset.pdfPage=index;
         const header=document.createElement('header');header.className='pdf-page-label';header.dataset.readerControl='true';
         const label=core.manifest?.pdf.pages[index]?.page_label;
-        const name=document.createElement('span');name.textContent=`物理页 ${index+1}`+(label&&label!==String(index+1)?` · 印刷页 ${label}`:'');
+        const name=document.createElement('span');name.textContent=`PDF 文件第 ${index+1} 页`+(label&&label!==String(index+1)?`（文内标签 ${label}）`:'');
         const add=document.createElement('button');add.textContent='＋ 整页批注';add.type='button';
         add.addEventListener('click',()=>document.dispatchEvent(new CustomEvent('gareader:pdf-page-note',{detail:{page_index:index}})));
         header.append(name,add);
@@ -87,14 +91,15 @@
       for(const info of pages.values())observer.observe(info.section);
       $('pdf-page-total').textContent='/ '+documentPDF.numPages;$('pdf-page-number').max=documentPDF.numPages;
       const target=Math.min(documentPDF.numPages-1,core.position.pdf_page||0);
-      await renderPage(pages.get(target));await jump(target,{scroll:target!==0});
+      await renderPage(pages.get(target));$('pdf-page-number').value=target+1;
       status('原版 PDF · '+documentPDF.numPages+' 页');return documentPDF;
     })().catch(error=>{status(error.message||'PDF 加载失败。');loading=null;documentPDF=null;throw error;});
     return loading;
   }
-  async function jump(index,{scroll=true}={}){
+  async function jump(index,{scroll=true,isCurrent=()=>core.view==='pdf'}={}){
+    const epoch=++jumpEpoch;
     const info=pages.get(Math.max(0,Math.min((documentPDF?.numPages||1)-1,index)));if(!info)return;
-    await renderPage(info);$('pdf-page-number').value=info.index+1;
+    await renderPage(info);if(!isCurrent()||epoch!==jumpEpoch)return;$('pdf-page-number').value=info.index+1;
     if(scroll)info.section.scrollIntoView({block:'start',behavior:'instant'});
     core.emitLayout();
   }
@@ -142,16 +147,32 @@
     return {revision_id:reader.dataset.revision,created_view:'pdf',source_language:'en',kind:'pdf_text',
       pdf_sha256:core.manifest.pdf_sha256,coordinate_system:'pdf-user-space',segments};
   }
-  async function locate(projection){
-    await load();await jump(projection.page_index);
+  async function locate(projection,{isCurrent=()=>core.view==='pdf'}={}){
+    await load();if(!isCurrent())return;await jump(projection.page_index,{isCurrent});if(!isCurrent())return;
     const rect=projectedRects(projection)[0];if(!rect)return;
     const bounds=container.getBoundingClientRect();
     if(rect.left<bounds.left||rect.right>bounds.right)container.scrollLeft+=rect.left-bounds.left-45;
     const top=document.querySelector('.readerbar').getBoundingClientRect().bottom;
     window.scrollTo({top:scrollY+rect.top-top-65,behavior:'instant'});core.emitLayout();
   }
-  window.GAReaderPDF={load,currentPage,jump,locate,projectedRects,sourceSelection,get pages(){return pages;},get scale(){return scale;},get rotation(){return rotation;}};
-  document.addEventListener('gareader:view',()=>{if(core.view==='pdf')load().then(()=>{for(const info of pages.values())if(info.section.getBoundingClientRect().top<innerHeight+900)renderPage(info);core.emitLayout();}).catch(()=>{});});
+  function capturePosition(){
+    const page=currentPage(),info=pages.get(page);if(!info)return {page};
+    const bounds=info.surface.getBoundingClientRect(),top=document.querySelector('.readerbar').getBoundingClientRect().bottom+12;
+    return {page,point:info.viewport.convertToPdfPoint(container.getBoundingClientRect().left-bounds.left,top-bounds.top),scale,rotation};
+  }
+  async function restorePosition(saved,{isCurrent=()=>core.view==='pdf'}={}){
+    if(!saved)return;await load();if(!isCurrent())return;
+    const index=Math.max(0,Math.min(pages.size-1,saved.page||0));
+    scale=Math.max(.1,Math.min(3,saved.scale||scale));rotation=[0,90,180,270].includes(saved.rotation)?saved.rotation:rotation;fit=null;generation++;
+    $('pdf-scale').value=Math.round(scale*100);
+    for(const info of pages.values()){info.task?.cancel();info.textTask?.cancel();info.surface.replaceChildren();info.rendered=-1;info.rendering=null;dimensions(info);}
+    await jump(index,{scroll:false,isCurrent});if(!isCurrent())return;
+    const info=pages.get(index),bounds=info.surface.getBoundingClientRect(),point=saved.point?info.viewport.convertToViewportPoint(...saved.point):[0,0];
+    container.scrollLeft+=bounds.left+point[0]-container.getBoundingClientRect().left;
+    window.scrollTo({top:scrollY+bounds.top+point[1]-document.querySelector('.readerbar').getBoundingClientRect().bottom-12,behavior:'instant'});core.emitLayout();
+  }
+  window.GAReaderPDF={load,currentPage,jump,locate,projectedRects,sourceSelection,capturePosition,restorePosition,get pages(){return pages;},get scale(){return scale;},get rotation(){return rotation;}};
+  document.addEventListener('gareader:view',()=>{jumpEpoch++;if(core.view==='pdf')load().then(()=>{if(core.view!=='pdf')return;for(const info of pages.values())if(info.section.getBoundingClientRect().top<innerHeight+900)renderPage(info);core.emitLayout();}).catch(()=>{});});
   $('pdf-page-number').addEventListener('change',e=>{const page=Number(e.target.value);if(!Number.isInteger(page)||page<1||page>(documentPDF?.numPages||1)){status('请输入有效的物理页码。');e.target.value=currentPage()+1;return;}jump(page-1);});
   $('pdf-prev').addEventListener('click',()=>jump(currentPage()-1));$('pdf-next').addEventListener('click',()=>jump(currentPage()+1));
   $('pdf-scale').addEventListener('change',e=>{const n=Number(e.target.value);if(!Number.isFinite(n)){e.target.value=Math.round(scale*100);return;}scale=Math.max(.5,Math.min(3,n/100));e.target.value=Math.round(scale*100);fit=null;rerender();});

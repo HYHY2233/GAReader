@@ -3,11 +3,16 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'pdfjs/text_layer.css' %}">
 <link rel="stylesheet" href="{% static 'reader-four-views.css' %}">
+<link rel="stylesheet" href="{% static 'reader-annotations.css' %}">
 <script src="{% static 'reader-text.js' %}" defer></script>
 <script src="{% static 'reader-views.js' %}" defer></script>
 <script src="{% static 'reader.js' %}" defer></script>
 <script src="{% static 'reader-google.js' %}" defer></script>
 <script src="{% static 'reader-pdf.js' %}" defer></script>
+<script src="{% static 'annotation-presentation.js' %}" defer></script>
+<script src="{% static 'reader-composer.js' %}" defer></script>
+<script src="{% static 'reader-navigation.js' %}" defer></script>
+<script src="{% static 'reader-geometry.js' %}" defer></script>
 <script src="{% static 'reader-annotations.js' %}" defer></script>
 {% endblock %}
 {% block header %}
@@ -26,11 +31,11 @@
         <button id="font-down" type="button" aria-label="减小字号">A−</button><input id="font-size" type="number" min="12" max="40" step="1" value="18" aria-label="正文字号"><span>px</span><button id="font-up" type="button" aria-label="增大字号">A＋</button>
         <input id="font-range" type="range" min="12" max="40" step="1" value="18" aria-label="字号滑杆"><button id="font-reset" type="button" title="恢复 18 px">重置</button>
       </div>
-      <label class="source-check"><input type="checkbox" id="source-toggle" checked>来源</label>
+      <label class="motion-check"><input type="checkbox" id="reduce-motion">减少动效</label><label class="source-check"><input type="checkbox" id="source-toggle" checked>来源</label>
     </div>
     <nav aria-label="阅读工具"><button data-panel="contents">目录</button><button data-panel="search">查找</button><button id="google-button" type="button" title="Google 检索 · Alt+G" aria-keyshortcuts="Alt+g">Google ↗</button><button data-panel="scores">评分</button><button data-panel="comments">全文评论</button><button data-panel="more">更多</button></nav>
   </div>
-  <div class="annotation-toolbar"><button id="inline-toggle" type="button" aria-pressed="true">页内批注：开</button><button id="annotations-toggle" type="button" aria-expanded="false" aria-controls="annotation-panel">批注 <span id="annotation-count">0</span></button><span id="reader-status" role="status" aria-live="polite"></span></div>
+  <div class="annotation-toolbar"><button id="inline-toggle" type="button" aria-pressed="true">页内批注：开</button><button id="annotations-toggle" type="button" aria-expanded="false" aria-controls="annotation-overview">批注汇总 <span id="annotation-count">0</span></button><button id="continue-draft" hidden>继续草稿</button><button id="source-return" hidden>← 返回刚才的阅读位置</button><button id="focus-clear" hidden>结束临时定位</button><span id="reader-status" role="status" aria-live="polite"></span></div>
   <div id="pdf-controls" class="pdf-controls" role="group" aria-label="原版 PDF 控件" hidden>
     <button id="pdf-prev" aria-label="上一页">‹</button><label>页 <input id="pdf-page-number" type="number" min="1" value="1" aria-label="PDF 物理页码"></label><span id="pdf-page-total"></span><button id="pdf-next" aria-label="下一页">›</button>
     <label>缩放 <input id="pdf-scale" type="number" min="50" max="300" step="10" value="100" aria-label="PDF 缩放百分比">%</label>
@@ -47,14 +52,20 @@
     <div class="reading-main"><div id="article" class="article">{{ body|safe }}</div><div id="pdf-reader" hidden><div id="pdf-pages"></div></div></div>
     <aside id="annotation-rail" aria-label="页边批注" hidden></aside>
   </div>
-  <div id="annotation-overlays" aria-hidden="true"></div><div id="annotation-markers"></div>
-  <aside id="annotation-panel" class="annotation-panel" aria-label="共享批注" hidden>
-    <header class="annotation-panel-head"><h2 id="annotation-panel-title">共享批注</h2><button id="annotations-close" type="button" aria-label="收起批注面板">✕</button></header>
-    <section id="annotation-editor" hidden><h3 id="annotation-editor-title">新建批注</h3><p id="annotation-editor-source" class="muted"></p><blockquote id="annotation-quote"></blockquote>
-      <form id="annotation-form"><label for="annotation-body">批注正文</label><textarea id="annotation-body" rows="4" maxlength="5000" required placeholder="写下你的问题或看法…"></textarea><div class="annotation-editor-actions"><button class="primary" id="annotation-save">保存批注</button><button id="annotation-cancel" type="button">收起草稿</button></div></form>
+  <svg id="annotation-connectors" aria-hidden="true"></svg><div id="annotation-overlays" aria-hidden="true"></div><div id="annotation-markers"></div>
+  <aside id="annotation-composer" class="annotation-surface" aria-labelledby="annotation-editor-title" hidden>
+    <header class="annotation-surface-head"><h2 id="annotation-editor-title">新建批注</h2><button id="composer-close" type="button" aria-label="收起当前草稿">✕</button></header>
+    <section id="annotation-editor"><p id="annotation-editor-source" class="muted"></p><details class="composer-reference"><summary>查看批注对象</summary><div id="composer-objects"></div></details>
+      <form id="annotation-form"><label for="annotation-body">批注正文</label><textarea id="annotation-body" rows="5" maxlength="5000" required placeholder="写下你的问题或看法…"></textarea><div class="annotation-editor-actions"><button class="primary" id="annotation-save">保存批注</button><button id="annotation-cancel" type="button">收起保留</button><button id="annotation-discard" type="button">丢弃草稿</button></div></form>
+      <div id="discard-confirm" hidden><p>仅丢弃当前草稿？已发表内容不受影响。</p><button id="discard-yes" type="button">确认丢弃</button><button id="discard-keep" type="button">继续保留</button></div>
+      <p id="annotation-status" role="status" aria-live="polite"></p><button id="annotation-conflict" hidden>查看最新内容</button><section id="conflict-review" hidden><h3>服务器上的最新内容</h3><p id="conflict-content"></p><button id="conflict-apply">我已对照，继续修改草稿</button></section>
     </section>
-    <p id="annotation-status" role="status" aria-live="polite"></p><div id="annotation-list"></div>
   </aside>
+  <aside id="annotation-inline" class="annotation-surface" aria-label="当前批注" hidden><header class="annotation-surface-head"><span>当前讨论</span><button id="inline-close" aria-label="收起当前讨论">✕</button></header><div id="inline-thread"></div></aside>
+  <aside id="annotation-overview" class="annotation-surface" aria-labelledby="annotation-overview-title" hidden>
+    <header class="annotation-surface-head"><h2 id="annotation-overview-title">批注汇总</h2><button id="annotations-close" type="button" aria-label="收起批注汇总">✕</button></header><p class="muted">本文所有可见讨论，包含当前视图未定位的批注。</p><p id="overview-empty" hidden>还没有批注。可在正文选字，或为段落和对象新建。</p><div id="annotation-list"></div>
+  </aside>
+  <div id="annotation-picker" class="annotation-picker" aria-label="选择重叠批注" hidden></div>
   <div id="selection-tools" class="selection-tools" role="toolbar" aria-label="选中文字工具" hidden><button id="selection-annotate" type="button">＋ 批注</button><button id="selection-copy" type="button">复制</button><button id="selection-google" type="button">Google ↗</button></div>
   <button id="object-annotate" type="button" class="object-annotate" hidden aria-label="为当前段落或对象新建批注">＋ 批注</button>
   <button id="to-top" aria-label="回到顶部">↑</button>

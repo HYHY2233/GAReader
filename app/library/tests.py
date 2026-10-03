@@ -14,7 +14,7 @@ from django.contrib.auth.models import User
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.db import IntegrityError,transaction
 from django.test import TestCase,Client,SimpleTestCase,override_settings
-from .models import Paper,Category,Rating,Comment
+from .models import Paper,Category,Tag,Rating,Comment
 from .article import load_article,FormatError,ComplexityGuard
 from .storage import write_bundle,publish,paper_dir
 from .legacy import migrate_importance_rows
@@ -176,8 +176,8 @@ class UploadTests(TestCase):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.override=override_settings(DATA_DIR=Path(self.temp.name));self.override.enable();self.addCleanup(self.override.disable)
         self.user=User.objects.create_user('uploader');self.other=User.objects.create_user('other')
-        self.client.force_login(self.user);self.category=Category.objects.create(name='仿真')
-    def upload(self,text=MINI):return self.client.post('/upload/',{'html':SimpleUploadedFile('paper.html',text.encode(),'text/html'),'categories':[self.category.id]})
+        self.client.force_login(self.user);self.category=Category.objects.create(name='仿真');self.tag=Tag.objects.create(name='验收标签')
+    def upload(self,text=MINI):return self.client.post('/upload/',{'html':SimpleUploadedFile('paper.html',text.encode(),'text/html'),'categories':[self.category.id],'tags':[self.tag.id]})
     def test_upload_preview_publish_duplicate_and_download_auth(self):
         r=self.upload();self.assertEqual(r.status_code,302);url=r['Location']
         self.assertEqual(self.client.get(url).status_code,200);self.assertEqual(Paper.objects.count(),0)
@@ -209,7 +209,7 @@ class UploadTests(TestCase):
                 'html':SimpleUploadedFile(path.name,path.read_bytes(),'text/html'),
                 'pdf':SimpleUploadedFile('original.pdf',(settings.ROOT/ref['original_pdf']).read_bytes(),'application/pdf'),
                 'mapping':SimpleUploadedFile('paragraph_map.json',(path.parent/'paragraph_map.json').read_bytes(),'application/json'),
-                'categories':[self.category.id]})
+                'categories':[self.category.id],'tags':[self.tag.id]})
             self.assertEqual(response.status_code,302)
             preview=self.client.get(response['Location']);self.assertContains(preview,'格式检查通过')
             self.assertEqual(preview.content.count(b'<math '),ref['counts']['mathml_nodes'])

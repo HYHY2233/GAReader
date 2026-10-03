@@ -5,7 +5,9 @@ from django import forms
 from django.db.models import F
 from django.utils import timezone
 from urllib.parse import urlsplit
-from .models import Paper, Category, Comment
+from .models import Paper, Category, Tag, Comment
+from django.db import transaction
+from django.template.response import TemplateResponse
 
 admin.site.site_header='论文库管理'
 admin.site.site_title='论文库管理'
@@ -27,13 +29,50 @@ class AccountAdmin(UserAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display=('name',)
+    list_display=('name','sort_order')
+    list_editable=('sort_order',)
+    def has_delete_permission(self,request,obj=None): return False
+
+@admin.register(Tag)
+class TagAdmin(admin.ModelAdmin):
+    list_display=('name','active','sort_order')
+    list_editable=('active','sort_order')
+    search_fields=('name','normalized_name')
+    list_filter=('active',)
+    actions=('enable','disable','merge')
+    @admin.action(description='启用所选标签（管理员已核对）')
+    def enable(self,request,queryset): queryset.update(active=True)
+    @admin.action(description='停用所选标签（保留论文关联）')
+    def disable(self,request,queryset): queryset.update(active=False)
+    @admin.action(description='合并所选标签到其中一项')
+    def merge(self,request,queryset):
+        choices=list(queryset)
+        if len(choices)<2:
+            self.message_user(request,'至少选择两个标签。',level='error');return
+        target=request.POST.get('target')
+        if request.POST.get('confirm_merge') and target and any(str(t.pk)==target and t.active for t in choices):
+            ids=[t.pk for t in choices if str(t.pk)!=target]
+            with transaction.atomic():
+                through=Paper.tags.through
+                papers=through.objects.filter(tag_id__in=ids).values_list('paper_id',flat=True).distinct()
+                through.objects.bulk_create([through(paper_id=p,tag_id=int(target)) for p in papers],ignore_conflicts=True)
+                through.objects.filter(tag_id__in=ids).delete()
+                Tag.objects.filter(pk__in=ids).update(active=False)
+            self.message_user(request,'标签已合并，原词条已停用；论文内容和批注未改变。');return
+        return TemplateResponse(request,'admin/tag_merge.html',{**self.admin_site.each_context(request),
+            'title':'合并标签','choices':choices,'opts':self.model._meta,'action_checkbox_name':admin.helpers.ACTION_CHECKBOX_NAME})
     def has_delete_permission(self,request,obj=None): return False
 
 class PaperMetadataForm(forms.ModelForm):
     class Meta:
         model=Paper
-        fields=('title_en','title_zh','categories','authors','year','note','source_url','visible')
+        fields=('title_en','title_zh','categories','tags','authors','year','note','source_url','visible')
+    def clean_tags(self):
+        tags=self.cleaned_data['tags']
+        if tags.count()>5: raise forms.ValidationError('最多选择5个标签。')
+        original=set(self.instance.tags.values_list('pk',flat=True)) if self.instance.pk else set()
+        if tags.filter(active=False).exclude(pk__in=original).exists(): raise forms.ValidationError('不能新增停用标签。')
+        return tags
     def clean_source_url(self):
         url=self.cleaned_data['source_url']
         if url and urlsplit(url).scheme not in {'http','https'}:raise forms.ValidationError('仅支持 http / https 来源链接。')
@@ -43,9 +82,9 @@ class PaperMetadataForm(forms.ModelForm):
 class PaperAdmin(admin.ModelAdmin):
     form=PaperMetadataForm
     list_display=('title_zh','visible','created_at')
-    fields=('title_en','title_zh','categories','authors','year','note','source_url','visible','profile','raw_hash','content_hash')
+    fields=('title_en','title_zh','categories','tags','authors','year','note','source_url','visible','profile','raw_hash','content_hash')
     readonly_fields=('profile','raw_hash','content_hash')
-    filter_horizontal=('categories',)
+    filter_horizontal=('categories','tags')
     def has_add_permission(self,request): return False
     def has_delete_permission(self,request,obj=None): return False
 

@@ -1,14 +1,41 @@
 import uuid
+import unicodedata
 from django.conf import settings
 from django.db import models
 from django.db.models import Q
 
 class Category(models.Model):
     name = models.CharField('分类', max_length=60, unique=True)
+    sort_order = models.IntegerField('排列顺序', default=0)
     class Meta:
         verbose_name = '分类'
         verbose_name_plural = '分类'
-        ordering = ['id']
+        ordering = ['sort_order', 'id']
+    def __str__(self): return self.name
+
+def tag_name(value):
+    return ' '.join(unicodedata.normalize('NFKC', value).split())
+
+class Tag(models.Model):
+    name = models.CharField('标签', max_length=60)
+    normalized_name = models.CharField(max_length=180, unique=True, editable=False)
+    active = models.BooleanField('可用于新上传', default=True)
+    sort_order = models.IntegerField('排列顺序', default=0)
+    class Meta:
+        verbose_name = '标签'
+        verbose_name_plural = '标签'
+        ordering = ['sort_order', 'name', 'id']
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        self.name = tag_name(self.name)
+        self.normalized_name = self.name.casefold()
+        if not self.name: raise ValidationError({'name': '标签不能为空。'})
+        if Tag.objects.exclude(pk=self.pk).filter(normalized_name=self.normalized_name).exists():
+            raise ValidationError({'name': '规范化后已有同名标签，请使用或合并原标签。'})
+    def save(self, *args, **kwargs):
+        self.name = tag_name(self.name)
+        self.normalized_name = self.name.casefold()
+        super().save(*args, **kwargs)
     def __str__(self): return self.name
 
 class Paper(models.Model):
@@ -20,6 +47,7 @@ class Paper(models.Model):
     note = models.CharField('分享说明', max_length=500, blank=True)
     source_url = models.URLField('来源链接', max_length=2000, blank=True)
     categories = models.ManyToManyField(Category, verbose_name='分类')
+    tags = models.ManyToManyField(Tag, verbose_name='标签', blank=True)
     submitter = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
     created_at = models.DateTimeField(auto_now_add=True)
     visible = models.BooleanField('公开给成员', default=True)

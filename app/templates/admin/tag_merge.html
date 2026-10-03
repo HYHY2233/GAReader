@@ -1,0 +1,6 @@
+{% extends 'admin/base_site.html' %}{% block content %}<form method="post">{% csrf_token %}
+<p>所选标签的论文关联将合并到目标标签。其余词条停用；论文、评分和内容修订不变。</p>
+{% for tag in choices %}<input type="hidden" name="{{ action_checkbox_name }}" value="{{ tag.pk }}">{% endfor %}
+<input type="hidden" name="action" value="merge"><input type="hidden" name="confirm_merge" value="1">
+<label>保留的标签 <select name="target" required>{% for tag in choices %}{% if tag.active %}<option value="{{ tag.pk }}">{{ tag.name }}</option>{% endif %}{% endfor %}</select></label>
+<input type="submit" value="确认合并"><a href="../tag/">取消</a></form>{% endblock %}

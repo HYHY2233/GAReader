@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% block content %}<main class="form-sheet"><a href="{{ back }}">← 返回{% if staged %}预览{% else %}论文{% endif %}</a>
+<h1>{% if staged %}修改发布信息{% else %}修改论文信息{% endif %}</h1>
+<p class="muted">{% if staged %}文件已保留，无需重新上传。{% else %}修改分类和标签不会改变论文内容或已有批注。{% endif %}</p>
+<form method="post">{% csrf_token %}{{ form.non_field_errors }}
+<fieldset><legend>{{ form.categories.label }}</legend>{{ form.categories }}{{ form.categories.errors }}</fieldset>
+{% include 'library/tag_field.html' %}
+{% for field in form %}{% if field.name != 'categories' and field.name != 'tags' %}<p>{{ field.label_tag }}{{ field }}{{ field.errors }}</p>{% endif %}{% endfor %}
+<button class="primary">保存{% if staged %}并返回预览{% endif %}</button></form></main>{% endblock %}

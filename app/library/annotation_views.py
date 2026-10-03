@@ -16,6 +16,7 @@ from .article import digest
 from .models import AnnotationAnchor, Comment, PaperRevision
 from .revisions import file_hash, manifest_for, pdf_for, read_json, revision_dir
 from .views import api, comment_json, serve_file, visible_paper
+from .discussion import visible_threads
 
 
 def get_revision(request, paper, revision_id=None):
@@ -30,6 +31,16 @@ def get_revision(request, paper, revision_id=None):
 @require_GET
 def revision_reader(request,pk,revision_id=None):
     paper=visible_paper(request,pk);revision=get_revision(request,paper,revision_id)
+    requested=request.GET.get('thread')
+    if requested:
+        if not requested.isdecimal(): raise Http404('批注来源无效。')
+        anchor=get_object_or_404(AnnotationAnchor,comment_id=int(requested),revision=revision,comment__paper=paper,
+                          comment__hidden=False,comment__in=visible_threads())
+        segment=request.GET.get('segment','0')
+        if not segment.isdecimal() or int(segment)>=len(anchor.source['segments']): raise Http404('来源片段不存在。')
+    if request.GET.get('view')=='pdf' and (not revision.pdf_sha256 or not (revision_dir(revision)/'original.pdf').is_file()):
+        raise Http404('此内容修订的原版 PDF 不可用。')
+    if not (revision_dir(revision)/'reader.html').is_file(): raise Http404('此内容修订的阅读快照不可用。')
     folder=revision_dir(revision);manifest=manifest_for(revision)
     if manifest.get('reader_sha256') and file_hash(folder/'reader.html')!=manifest['reader_sha256']:
         raise ValueError('阅读快照校验失败。')
@@ -115,12 +126,19 @@ def annotations(request,pk):
     if view not in {'both','zh','en','pdf'}: raise ValueError()
     cursor=timezone.now()
     all_anchors=AnnotationAnchor.objects.filter(comment__paper=paper).select_related('revision','comment','comment__user')
-    count=all_anchors.count();anchors=all_anchors
+    visible_ids=visible_threads(Comment.objects.filter(paper=paper,annotation__isnull=False)).values('pk')
+    count=all_anchors.filter(comment_id__in=visible_ids).count();anchors=all_anchors
     since=request.GET.get('since')
     if since:
         timestamp=parse_datetime(since)
         if not timestamp or timezone.is_naive(timestamp): raise ValueError()
         anchors=anchors.filter(Q(comment__updated_at__gte=timestamp)|Q(comment__replies__updated_at__gte=timestamp)).distinct()
+    requested=request.GET.get('thread')
+    if requested:
+        if not requested.isdecimal(): raise ValueError('批注编号无效。')
+        anchors=anchors.filter(comment_id=int(requested))
+    removed_ids=list(anchors.exclude(comment_id__in=visible_ids).values_list('comment_id',flat=True))
+    anchors=anchors.filter(comment_id__in=visible_ids)
     current_manifest=manifest_for(revision);pdf=pdf_for(revision)
     cache={revision.id:current_manifest};threads=[]
     root_ids=list(anchors.values_list('comment_id',flat=True))
@@ -133,7 +151,7 @@ def annotations(request,pk):
         item['replies']=replies.get(root.id,[])
         item['source_url']=reverse('revision-reader',args=[pk,anchor.revision_id])+'?view='+anchor.source['created_view']+'&thread='+str(root.id)
         if root.hidden:
-            item['source']=None;item['projections']=[]
+            item['source']=None;item['source_url']=None;item['projections']=[]
         else:
             old=cache.get(anchor.revision_id)
             if old is None:
@@ -141,4 +159,4 @@ def annotations(request,pk):
             item['source']=anchor.source
             item['projections']=project(anchor.source,old,current_manifest,pdf,view)
         threads.append(item)
-    return JsonResponse({'threads':threads,'count':count,'cursor':cursor.isoformat(),'revision_id':str(revision.id),'view':view})
+    return JsonResponse({'threads':threads,'removed_ids':removed_ids,'count':count,'cursor':cursor.isoformat(),'revision_id':str(revision.id),'view':view})

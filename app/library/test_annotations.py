@@ -286,3 +286,29 @@ class AnnotationTests(TestCase):
         self.assertEqual(project(source,self.manifest,manifest,self.pdf,'both')[0]['precision'],'stale')
         manifest['units'].pop('p-p1')
         self.assertEqual(project(source,self.manifest,manifest,self.pdf,'both')[0]['precision'],'stale')
+
+    def test_deleted_and_hidden_thread_count_projection_and_source_access(self):
+        from .views import aggregates
+        first=self.send(body='删除根线程').json()['id']
+        root=Comment.objects.get(pk=first);root.deleted=True;root.body='';root.save()
+        result=self.threads();self.assertEqual(result['count'],0);self.assertIn(first,result['removed_ids'])
+        self.assertEqual(aggregates(Paper.objects.filter(pk=self.p.pk)).get().annotation_count,0)
+        self.assertEqual(self.ca.get(f'/papers/{self.p.pk}/revisions/{self.rev.pk}/?thread={first}&view=zh').status_code,404)
+        Comment.objects.create(paper=self.p,user=self.b,parent=root,body='仍然可见的回复',request_key=uuid.uuid4(),request_hash='b'*64)
+        result=self.threads();self.assertEqual(result['count'],1);self.assertIsNone(result['threads'][0]['body'])
+        self.assertIsNotNone(result['threads'][0]['source'])
+        root.hidden=True;root.save();result=self.threads()['threads'][0]
+        self.assertIsNone(result['source']);self.assertIsNone(result['source_url']);self.assertEqual(result['projections'],[])
+        self.assertEqual(self.ca.get(f'/papers/{self.p.pk}/revisions/{self.rev.pk}/?thread={first}&view=zh').status_code,404)
+
+    def test_source_segment_cross_paper_missing_pdf_and_incremental_removal(self):
+        created=self.send().json()['id'];before=self.threads()
+        url=before['threads'][0]['source_url']
+        self.assertEqual(self.ca.get(url+'&segment=55').status_code,404)
+        self.assertEqual(self.ca.get(url.replace(str(self.p.pk),str(self.q.pk))).status_code,404)
+        self.assertEqual(self.ca.get(f'/papers/{self.q.pk}/?view=pdf').status_code,404)
+        root=Comment.objects.get(pk=created);root.hidden=True;root.save()
+        result=self.ca.get(self.base+'annotations/',{'view':'zh','since':before['cursor']}).json()
+        self.assertEqual(result['removed_ids'],[created]);self.assertEqual(result['threads'],[])
+        response=self.ca.post(self.base+'comments/',json.dumps({'body':'reply','parent':created,'request_key':str(uuid.uuid4())}),content_type='application/json')
+        self.assertEqual(response.status_code,403)

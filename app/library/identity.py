@@ -22,7 +22,7 @@ def is_anonymous_reader(user):
 
 
 def reader_identity(request):
-    return {'anonymous_reader': is_anonymous_reader(request.user)}
+    return {'anonymous_reader': is_anonymous_reader(request.user),'reader_instance':settings.CONFIG['instance_id']}
 
 
 COOKIE_SALT = 'paper-library.anonymous-identity.v1'

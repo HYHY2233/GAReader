@@ -20,7 +20,7 @@ def write_bundle(folder, article, raw, pdf=None, mapping=None):
     if pdf is not None: (folder/'original.pdf').write_bytes(pdf)
     if mapping is not None: (folder/'paragraph_map.json').write_bytes(mapping)
 
-def publish(folder, article, metadata, categories, user=None, trusted=False):
+def publish(folder, article, metadata, categories, user=None, trusted=False, tags=None):
     if Paper.objects.filter(raw_hash=article['raw_hash']).exists():
         raise FormatError('FMT_DUPLICATE','该 HTML 已在库中（包括隐藏论文）。')
     paper = Paper(id=uuid.uuid4(), submitter=user, trusted_original=trusted,
@@ -30,7 +30,12 @@ def publish(folder, article, metadata, categories, user=None, trusted=False):
     dest = paper_dir(paper); dest.parent.mkdir(parents=True,exist_ok=True)
     try:
         with transaction.atomic():
+            if tags is not None:
+                from .forms import MetadataForm
+                check=MetadataForm({**metadata,'categories':categories,'tags':tags})
+                if not check.is_valid(): raise FormatError('FMT_METADATA','分类或标签已失效，请返回修改元信息。')
             paper.save(force_insert=True); paper.categories.set(categories)
+            if tags is not None: paper.tags.set(check.cleaned_data['tags'])
             folder.rename(dest)
             from .revisions import ensure_revision
             ensure_revision(paper)

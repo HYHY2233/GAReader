@@ -20,9 +20,10 @@ from django.views.decorators.http import require_http_methods, require_GET
 from django.utils import timezone
 
 from .article import load_article, FormatError, digest
-from .forms import UploadForm
-from .models import Paper, Category, Rating, Comment
+from .forms import UploadForm, MetadataForm
+from .models import Paper, Category, Tag, Rating, Comment
 from .storage import paper_dir, write_bundle, publish, cleanup_staging, rendered_body
+from .discussion import visible_threads
 
 DIMENSIONS = {'interesting':'有意思', 'importance':'重要性'}
 
@@ -36,24 +37,37 @@ def aggregates(qs):
         qs=qs.annotate(**{dim+'_avg':Subquery(votes.annotate(v=Avg('value')).values('v'),output_field=FloatField()),
                           dim+'_count':Coalesce(Subquery(votes.annotate(v=Count('id')).values('v'),output_field=IntegerField()),0)})
     comments=Comment.objects.filter(paper_id=OuterRef('pk'),hidden=False,deleted=False,annotation__isnull=True,parent__annotation__isnull=True).values('paper_id').annotate(v=Count('id')).values('v')
-    annotations=Comment.objects.filter(paper_id=OuterRef('pk'),annotation__isnull=False).values('paper_id').annotate(v=Count('id')).values('v')
+    annotations=visible_threads(Comment.objects.filter(paper_id=OuterRef('pk'),annotation__isnull=False)).values('paper_id').annotate(v=Count('id')).values('v')
     return qs.annotate(comment_count=Coalesce(Subquery(comments,output_field=IntegerField()),0),annotation_count=Coalesce(Subquery(annotations,output_field=IntegerField()),0))
 
 @login_required
 @require_GET
 def home(request):
     papers=Paper.objects.filter(visible=True)
+    total=papers.count()
     query=request.GET.get('q','').strip()[:200]
     category=request.GET.get('category','')
-    if query: papers=papers.filter(Q(title_en__icontains=query)|Q(title_zh__icontains=query)|Q(authors__icontains=query)|Q(note__icontains=query))
-    if category.isdecimal(): papers=papers.filter(categories=category)
-    papers=aggregates(papers.distinct()).prefetch_related('categories')
+    tag=request.GET.get('tag','')
     sort=request.GET.get('sort','new')
+    filtered=any(k in request.GET for k in ('q','category','tag','sort','page'))
+    if query: papers=papers.filter(Q(title_en__icontains=query)|Q(title_zh__icontains=query)|Q(authors__icontains=query)|Q(note__icontains=query))
+    if category: papers=papers.filter(categories=category) if category.isdecimal() else papers.none()
+    if tag: papers=papers.filter(tags=tag) if tag.isdecimal() else papers.none()
+    papers=aggregates(papers.distinct()).prefetch_related('categories','tags')
     if sort in DIMENSIONS: papers=papers.order_by(F(sort+'_avg').desc(nulls_last=True),'-'+sort+'_count','-created_at','id')
     else: papers=papers.order_by('-created_at','id')
-    page=Paginator(papers,20).get_page(request.GET.get('page'))
-    return render(request,'library/home.html',{'page':page,'categories':Category.objects.all(),'query':query,
-                  'category':category,'sort':sort,'filters':urlencode({'q':query,'category':category,'sort':sort})})
+    categories=list(Category.objects.all())
+    sections=[]
+    if not filtered:
+        counts=dict(Paper.categories.through.objects.filter(paper__visible=True).values('category_id').annotate(n=Count('paper_id',distinct=True)).values_list('category_id','n'))
+        for item in categories:
+            sections.append({'category':item,'count':counts.get(item.id,0),'papers':papers.filter(categories=item)[:5]})
+    return render(request,'library/home.html',{'page':Paginator(papers,20).get_page(request.GET.get('page')) if filtered else None,
+        'recent':papers[:6] if not filtered else [],'sections':sections,'total':total,'filtered':filtered,
+        'categories':categories,'tags':Tag.objects.filter(active=True),'query':query,'category':category,'tag':tag,'sort':sort,
+        'selected_category':next((c for c in categories if str(c.id)==category),None),
+        'selected_tag':Tag.objects.filter(pk=tag).first() if tag.isdecimal() else None,
+        'filters':urlencode({'q':query,'category':category,'tag':tag,'sort':sort})})
 
 @login_required
 @require_GET
@@ -96,7 +110,7 @@ def upload(request):
                 folder=settings.DATA_DIR/'staging'/str(request.user.id)/str(token)
                 write_bundle(folder,article,raw,pdf,mapping)
                 summary={k:v for k,v in article.items() if k not in {'body','images','nav'}}
-                (folder/'staging.json').write_text(json.dumps({'article':summary,'metadata':metadata,'categories':[c.id for c in data['categories']]},ensure_ascii=False),encoding='utf-8')
+                (folder/'staging.json').write_text(json.dumps({'article':summary,'metadata':metadata,'categories':[c.id for c in data['categories']],'tags':[t.id for t in data['tags']]},ensure_ascii=False),encoding='utf-8')
                 return redirect('preview',token=token)
             except (FormatError,OSError) as exc:
                 if folder and folder.exists(): shutil.rmtree(folder)
@@ -112,7 +126,9 @@ def preview(request,token):
         if request.POST.get('confirm')!='yes': error='请先确认检查过预览。'
         else:
             try:
-                paper=publish(folder,info['article'],info['metadata'],info['categories'],request.user)
+                check=MetadataForm({**info['metadata'],'categories':info['categories'],'tags':info.get('tags',[])})
+                if not check.is_valid(): raise FormatError('FMT_METADATA','分类或标签无效：'+ ' '.join(str(e) for errors in check.errors.values() for e in errors))
+                paper=publish(folder,info['article'],info['metadata'],info['categories'],request.user,tags=info.get('tags',[]))
                 return redirect('reader',pk=paper.id)
             except FormatError as exc: error=str(exc)
             except (OSError,DatabaseError):
@@ -126,7 +142,43 @@ def preview(request,token):
         difflib.SequenceMatcher(None,normalize(p.title_zh),normalize(metadata['title_zh'])).ratio()>=0.9
         for p in candidates.only('title_en','title_zh','source_url'))
     return render(request,'library/preview.html',{'token':token,'info':info,'error':error,'similarity':similarity,
+                  'selected_categories':Category.objects.filter(pk__in=info['categories']),'selected_tags':Tag.objects.filter(pk__in=info.get('tags',[])),
                   'body':rendered_body(folder,lambda name:reverse('stage-file',args=[token,name]))})
+
+@login_required
+@require_http_methods(['GET','POST'])
+def stage_metadata(request, token):
+    folder=stage_folder(request,token); path=folder/'staging.json'
+    info=json.loads(path.read_text(encoding='utf-8'))
+    form=MetadataForm(request.POST or None,initial={**info['metadata'],'categories':info['categories'],'tags':info.get('tags',[])})
+    if request.method=='POST' and form.is_valid():
+        data=form.cleaned_data
+        info['metadata']={k:data[k] for k in ('title_en','title_zh','authors','year','note','source_url')}
+        for field in ('title_en','title_zh'): info['metadata'][field]=data[field] or info['article'][field]
+        info['categories']=[c.pk for c in data['categories']];info['tags']=[t.pk for t in data['tags']]
+        path.write_text(json.dumps(info,ensure_ascii=False),encoding='utf-8')
+        return redirect('preview',token=token)
+    return render(request,'library/metadata.html',{'form':form,'back':reverse('preview',args=[token]),'staged':True})
+
+@login_required
+@require_http_methods(['GET','POST'])
+def paper_metadata(request,pk):
+    paper=visible_paper(request,pk)
+    if not (request.user.is_staff or paper.submitter_id==request.user.id): raise Http404()
+    fields=('title_en','title_zh','authors','year','note','source_url')
+    initial={k:getattr(paper,k) for k in fields}
+    initial.update(categories=list(paper.categories.values_list('pk',flat=True)),tags=list(paper.tags.filter(active=True).values_list('pk',flat=True)))
+    form=MetadataForm(request.POST or None,initial=initial)
+    if request.method=='POST' and form.is_valid():
+        data=form.cleaned_data
+        with transaction.atomic():
+            for field in fields:
+                if field.startswith('title_') and not data[field]: continue
+                setattr(paper,field,data[field])
+            paper.save(update_fields=fields)
+            paper.categories.set(data['categories']);paper.tags.set(data['tags'])
+        return redirect('reader',pk=pk)
+    return render(request,'library/metadata.html',{'form':form,'back':reverse('reader',args=[pk]),'paper':paper})
 
 def serve_file(folder,name,original_allowed=False):
     if re.fullmatch(r'image-\d+\.(png|jpeg|webp)',name):
@@ -202,6 +254,7 @@ def comment_json(c,user):
     return {'id':c.id,'parent':c.parent_id,'body':None if unavailable else c.body,
             'placeholder':('评论已删除' if c.deleted else '评论已隐藏') if unavailable else '',
             'author':c.user.first_name or c.user.username,'created_at':timezone.localtime(c.created_at).strftime('%Y-%m-%d %H:%M'),
+            'created_at_iso':c.created_at.isoformat(),'updated_at':c.updated_at.isoformat(),'deleted':c.deleted,
             'edited':c.edited,'version':c.version,'can_edit':not unavailable and c.user_id==user.id,
             'can_hide':user.is_staff and not c.deleted,'hidden':c.hidden}
 
@@ -224,6 +277,9 @@ def comments(request,pk):
             root=None
             if parent is not None:
                 root=get_object_or_404(Comment,pk=parent,paper=paper,parent=None)
+                if root.hidden: return JsonResponse({'error':'这条讨论已隐藏，不能继续回复。'},status=403)
+                if hasattr(root,'annotation') and not visible_threads(Comment.objects.filter(pk=root.pk)).exists():
+                    return JsonResponse({'error':'这条讨论已删除，不能继续回复。'},status=403)
             c=Comment.objects.create(paper=paper,user=request.user,body=body,parent=root,request_key=key,request_hash=rhash)
         return JsonResponse(comment_json(c,request.user),status=201)
     rows=Comment.objects.filter(paper=paper,annotation__isnull=True).exclude(parent__annotation__isnull=False).select_related('user').order_by('created_at','id')

@@ -4,9 +4,6 @@
  history.scrollRestoration='manual';
  const article=document.getElementById('article'), panel=document.getElementById('panel');
  const apiBase=`/api/papers/${reader.dataset.paper}/`;
- const storageKey=`paper-reader:v1:${reader.dataset.user}:${reader.dataset.paper}:${reader.dataset.revision}`;
- let saved={}; try{saved=JSON.parse(localStorage.getItem(storageKey)||'{}');}catch{}
- const persist=()=>{try{localStorage.setItem(storageKey,JSON.stringify(saved));}catch{}};
  const titles={scores:'两项评分',comments:'全文评论',contents:'阅读目录',search:'文内查找',more:'论文信息'};
  const toolbar=document.querySelector('.readerbar');
  function measureToolbar(){document.documentElement.style.setProperty('--readerbar-height',Math.ceil(toolbar.getBoundingClientRect().height)+'px');}
@@ -18,7 +15,7 @@
  async function api(path,method='GET',data){
   const res=await fetch(apiBase+path,{method,headers:{'Content-Type':'application/json','X-CSRFToken':reader.dataset.csrf},...(data===undefined?{}:{body:JSON.stringify(data)})});
   let result;try{result=await res.json();}catch{throw Error('请求未保存，请刷新登录状态后重试。');}
-  if(!res.ok)throw Error(result.error||'请求未保存，请稍后重试。');return result;
+  if(!res.ok){const error=Error(result.error||'请求未保存，请稍后重试。');error.status=res.status;throw error;}return result;
  }
  function closePanel(){panel.close();if(opener)opener.focus({preventScroll:true});}
  async function openPanel(kind,button){
@@ -34,19 +31,7 @@
  panel.querySelector('[data-close]').addEventListener('click',closePanel);
  panel.addEventListener('click',e=>{if(e.target===panel&&e.clientX<panel.getBoundingClientRect().left)closePanel();});
  panel.addEventListener('close',()=>{if(opener)opener.focus({preventScroll:true});});
- const systemTheme=matchMedia('(prefers-color-scheme: dark)');
- function applySettings(){
-  const theme=saved.theme||'auto', font=String(saved.font||18);
-  document.documentElement.classList.toggle('dark',theme==='dark'||theme==='auto'&&systemTheme.matches);
-  document.documentElement.classList.toggle('sepia',theme==='sepia');
-  for(const size of [16,18,20,22])document.body.classList.toggle(`font-${size}`,font===String(size));
-  document.body.classList.toggle('hide-sources',saved.sources===false);
-  $('theme').value=theme;$('font-size').value=font;$('source-toggle').checked=saved.sources!==false;
- }
- applySettings();systemTheme.addEventListener('change',applySettings);
- $('theme').addEventListener('change',e=>{saved.theme=e.target.value;applySettings();persist();});
- $('font-size').addEventListener('change',e=>{saved.font=Number(e.target.value);applySettings();persist();});
- $('source-toggle').addEventListener('change',e=>{saved.sources=e.target.checked;applySettings();persist();});
+ if(window.GAReader){window.GAReader.api=api;window.GAReader.node=node;}
  // Tables scroll locally even when the original markup did not provide a wrapper.
  article.querySelectorAll('table').forEach(t=>{const wrapper=node('div',undefined,'table-viewport');t.before(wrapper);wrapper.append(t);});
  // Keep the source's full front matter, collapsed by default.
@@ -78,7 +63,7 @@
  function highlight(){if(CSS.highlights){CSS.highlights.set('search-results',new Highlight(...ranges));CSS.highlights.set('search-active',new Highlight(...(hit>=0?[ranges[hit]]:[])));}}
  function find(){
   ranges=[];hit=-1;const query=$('in-paper-search').value.trim().toLocaleLowerCase();
-  if(query){const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('annotation,script,style,summary')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});let text;
+  if(query){const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('annotation,script,style,summary,[data-reader-control]')||!n.parentElement.getClientRects().length?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});let text;
    while((text=walker.nextNode())){const content=text.textContent.toLocaleLowerCase();let start=0,idx;while((idx=content.indexOf(query,start))>=0){const range=new Range();range.setStart(text,idx);range.setEnd(text,idx+query.length);ranges.push(range);start=idx+query.length;if(ranges.length>=3000)break;}if(ranges.length>=3000)break;}}
   highlight();$('search-status').textContent=query?`找到 ${ranges.length} 处${ranges.length===3000?'（最多显示 3000 处）':''}`:'输入关键词后按 Enter 定位。';
  }
@@ -101,9 +86,9 @@
  }
  async function loadRatings(){try{const state=await api('ratings/');for(const dim of Object.keys(ratingHints)){if(!ratingBusy.has(dim)){ratingState[dim]=state[dim];paintRating(dim);}}}catch(e){$('rating-status').textContent=e.message||'加载失败，请重新打开评分。';}}
  async function saveRating(dim,value){if(ratingBusy.has(dim))return;ratingBusy.add(dim);paintRating(dim);$('rating-status').textContent='正在保存…';try{const res=await api(`ratings/${dim}/`,value===null?'DELETE':'PUT',value===null?{}:{value});ratingState[dim]=res[dim];$('rating-status').textContent='已保存';}catch(e){$('rating-status').textContent=e.message||'连接失败，未保存。';}finally{ratingBusy.delete(dim);paintRating(dim);}}
- let commentMode={parent:null,edit:null},requestKey=null,requestSignature='',commentRows=[];
+ let commentMode={parent:null,edit:null,version:null},requestKey=null,requestSignature='',commentRows=[];
  function resetComment(){commentMode={parent:null,edit:null};$('comment-body').value='';$('reply-state').textContent='';$('cancel-comment').hidden=true;requestKey=null;requestSignature='';$('comment-form').querySelector('.primary').textContent='发表评论';}
- function editComment(c,reply){commentMode={parent:reply?c.id:null,edit:reply?null:c.id};$('comment-body').value=reply?'':c.body;$('reply-state').textContent=reply?'回复 '+c.author:'编辑自己的评论';$('cancel-comment').hidden=false;$('comment-form').querySelector('.primary').textContent=reply?'发表回复':'保存修改';$('comment-body').focus();}
+ function editComment(c,reply){commentMode={parent:reply?c.id:null,edit:reply?null:c.id,version:c.version};$('comment-body').value=reply?'':c.body;$('reply-state').textContent=reply?'回复 '+c.author:'编辑自己的评论';$('cancel-comment').hidden=false;$('comment-form').querySelector('.primary').textContent=reply?'发表回复':'保存修改';$('comment-body').focus();}
  async function loadComments(){try{const result=await api('comments/');commentRows=result.comments;$('comment-count').textContent=`${result.count} 条评论与回复`;$('comment-list').replaceChildren();for(const c of commentRows.filter(c=>!c.parent)){paintComment(c);for(const reply of commentRows.filter(r=>r.parent===c.id))paintComment(reply);}}catch(e){$('comment-status').textContent=e.message||'加载评论失败。';}}
  function paintComment(c){
   const block=node('article',undefined,'comment'+(c.parent?' reply':''));block.dataset.id=c.id;
@@ -111,15 +96,13 @@
   const actions=node('div',undefined,'actions');
   function action(text,fn){const b=node('button',text);b.addEventListener('click',async()=>{b.disabled=true;try{await fn();}catch(e){$('comment-status').textContent=e.message||'未保存，请稍后重试。';}finally{b.disabled=false;}});actions.append(b);}
   if(!c.parent&&c.body!==null)action('回复',()=>editComment(c,true));
-  if(c.can_edit){action('编辑',()=>editComment(c,false));action('删除',async()=>{if(!confirm('删除这条评论？已有回复会保留。'))return;await api(`comments/${c.id}/`,'DELETE',{});await loadComments();});}
-  if(c.can_hide)action(c.hidden?'恢复显示':'隐藏',async()=>{await api(`comments/${c.id}/hide/`,'POST',{hidden:!c.hidden});await loadComments();});
+  if(c.can_edit){action('编辑',()=>editComment(c,false));action('删除',async()=>{if(!confirm('删除这条评论？已有回复会保留。'))return;await api(`comments/${c.id}/`,'DELETE',{version:c.version});await loadComments();});}
+  if(c.can_hide)action(c.hidden?'恢复显示':'隐藏',async()=>{await api(`comments/${c.id}/hide/`,'POST',{hidden:!c.hidden,version:c.version});await loadComments();});
   block.append(actions);$('comment-list').append(block);
  }
  $('cancel-comment').addEventListener('click',resetComment);
  $('comment-form').addEventListener('submit',async e=>{e.preventDefault();const body=$('comment-body').value.trim();if(!body||body.length>5000)return;const button=e.target.querySelector('.primary');if(button.disabled)return;button.disabled=true;$('comment-status').textContent='正在保存…';
-  try{if(commentMode.edit)await api(`comments/${commentMode.edit}/`,'PATCH',{body});else{const signature=JSON.stringify([commentMode.parent,body]);if(signature!==requestSignature){requestSignature=signature;requestKey=crypto.randomUUID();}await api('comments/','POST',{body,parent:commentMode.parent,request_key:requestKey});}resetComment();$('comment-status').textContent='已保存';await loadComments();}catch(err){$('comment-status').textContent=err.message||'连接失败，未保存。可重试，不会重复发布。';}finally{button.disabled=false;}});
- let positionTimer;
- function remember(){saved.y=Math.round(window.scrollY);persist();}
- window.addEventListener('scroll',()=>{clearTimeout(positionTimer);positionTimer=setTimeout(remember,350);},{passive:true});window.addEventListener('pagehide',remember);
- window.addEventListener('load',()=>{if(location.hash==='#comments')openPanel('comments');else if(location.hash){document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();}else if(saved.y)window.scrollTo(0,saved.y);});
+  try{if(commentMode.edit)await api(`comments/${commentMode.edit}/`,'PATCH',{body,version:commentMode.version});else{const signature=JSON.stringify([commentMode.parent,body]);if(signature!==requestSignature){requestSignature=signature;requestKey=crypto.randomUUID();}await api('comments/','POST',{body,parent:commentMode.parent,request_key:requestKey});}resetComment();$('comment-status').textContent='已保存';await loadComments();}catch(err){$('comment-status').textContent=err.message||'连接失败，未保存。可重试，不会重复发布。';}finally{button.disabled=false;}});
+ document.addEventListener('gareader:view',()=>{if($('in-paper-search').value)find();});
+ window.addEventListener('load',()=>{if(location.hash==='#comments')openPanel('comments');});
 })();

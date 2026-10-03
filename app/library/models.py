@@ -30,6 +30,7 @@ class Paper(models.Model):
     has_map = models.BooleanField(default=False)
     trusted_original = models.BooleanField(default=False)
     validation = models.JSONField(default=dict)
+    current_revision = models.ForeignKey('PaperRevision', null=True, blank=True, on_delete=models.PROTECT, related_name='+')
     class Meta:
         verbose_name = '论文'
         verbose_name_plural = '论文'
@@ -58,7 +59,31 @@ class Comment(models.Model):
     hidden = models.BooleanField('已隐藏', default=False)
     request_key = models.UUIDField()
     request_hash = models.CharField(max_length=64)
+    version = models.PositiveIntegerField(default=1)
     class Meta:
         constraints = [models.UniqueConstraint(fields=['user', 'request_key'], name='comment_idempotency_key')]
         verbose_name = '评论'
         verbose_name_plural = '评论'
+
+
+class PaperRevision(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    paper = models.ForeignKey(Paper, on_delete=models.CASCADE, related_name='revisions')
+    identity = models.CharField(max_length=64)
+    content_hash = models.CharField(max_length=64)
+    pdf_sha256 = models.CharField(max_length=64, blank=True)
+    manifest_sha256 = models.CharField(max_length=64)
+    created_at = models.DateTimeField(auto_now_add=True)
+    title_en = models.CharField(max_length=1000)
+    title_zh = models.CharField(max_length=1000)
+
+    class Meta:
+        constraints = [models.UniqueConstraint(fields=['paper', 'identity'], name='paper_revision_identity')]
+        ordering = ['created_at', 'id']
+
+
+class AnnotationAnchor(models.Model):
+    comment = models.OneToOneField(Comment, on_delete=models.CASCADE, primary_key=True, related_name='annotation')
+    revision = models.ForeignKey(PaperRevision, on_delete=models.PROTECT, related_name='anchors')
+    source = models.JSONField()
+    schema_version = models.PositiveSmallIntegerField(default=1)

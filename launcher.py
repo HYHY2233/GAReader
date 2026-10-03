@@ -69,12 +69,34 @@ def verify_data(data):
             folder=data/'papers'/str(uuid.UUID(pk))
             for name in ['original.html','body.html','nav.json','validation.json']:
                 if not (folder/name).is_file():raise RuntimeError('论文文件引用缺失：'+name)
-            if sha(folder/'original.html')!=raw_hash or sha(folder/'body.html')!=content_hash:raise RuntimeError('论文内容哈希不符。')
+            current=None
+            columns={row[1] for row in conn.execute('PRAGMA table_info(library_paper)')}
+            if 'current_revision_id' in columns:
+                current=conn.execute('SELECT current_revision_id FROM library_paper WHERE id=?',(pk,)).fetchone()[0]
+            if sha(folder/'original.html')!=raw_hash or not current and sha(folder/'body.html')!=content_hash:raise RuntimeError('论文内容哈希不符。')
             if has_pdf and not (folder/'original.pdf').is_file():raise RuntimeError('PDF 缺失。')
             if has_map and not (folder/'paragraph_map.json').is_file():raise RuntimeError('映射缺失。')
             import re
             for i in re.findall(r'@@IMAGE:(\d+)@@',(folder/'body.html').read_text(encoding='utf-8')):
                 if len(list(folder.glob('image-'+i+'.*')))!=1:raise RuntimeError('图片缺失。')
+        if conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='library_paperrevision'").fetchone():
+            for rid,pid,content_hash,pdf_sha,manifest_sha in conn.execute('SELECT id,paper_id,content_hash,pdf_sha256,manifest_sha256 FROM library_paperrevision'):
+                folder=data/'papers'/str(uuid.UUID(pid))/'revisions'/str(uuid.UUID(rid))
+                for name in ['body.html','original.html','reader.html','nav.json','representation-manifest.json','alignment.json']:
+                    if not (folder/name).is_file():raise RuntimeError('内容快照文件缺失：'+name)
+                if sha(folder/'body.html')!=content_hash or sha(folder/'representation-manifest.json')!=manifest_sha:raise RuntimeError('内容快照哈希不符。')
+                manifest=json.loads((folder/'representation-manifest.json').read_text(encoding='utf-8'))
+                for name,expected in manifest.get('assets',{}).items():
+                    if Path(name).name!=name or not (folder/name).is_file() or sha(folder/name)!=expected:raise RuntimeError('快照资产不一致：'+name)
+                for name,field in [('original.html','raw_hash'),('reader.html','reader_sha256'),('pdf-index.json','pdf_index_sha256')]:
+                    if manifest.get(field) and sha(folder/name)!=manifest[field]:raise RuntimeError('快照资产哈希不符：'+name)
+                if pdf_sha and (not (folder/'original.pdf').exists() or sha(folder/'original.pdf')!=pdf_sha):raise RuntimeError('快照 PDF 哈希不符。')
+                for i in re.findall(r'@@IMAGE:(\d+)@@',(folder/'body.html').read_text(encoding='utf-8')):
+                    if len(list(folder.glob('image-'+i+'.*')))!=1:raise RuntimeError('快照图片缺失。')
+            bad=conn.execute('SELECT COUNT(*) FROM library_paper p LEFT JOIN library_paperrevision r ON p.current_revision_id=r.id WHERE p.current_revision_id IS NOT NULL AND (r.id IS NULL OR r.paper_id!=p.id OR r.content_hash!=p.content_hash)').fetchone()[0]
+            if bad:raise RuntimeError('当前修订关联不一致。')
+            bad=conn.execute('SELECT COUNT(*) FROM library_annotationanchor a JOIN library_comment c ON c.id=a.comment_id JOIN library_paperrevision r ON r.id=a.revision_id WHERE c.paper_id!=r.paper_id OR c.parent_id IS NOT NULL').fetchone()[0]
+            if bad:raise RuntimeError('批注所属文章／修订不一致。')
 
 def backup_data(data, output=None):
     # Caller holds the same OS file lock as the WSGI service.
@@ -198,6 +220,8 @@ def setup(data):
         call_command('migrate',interactive=False)
         call_command('collectstatic',interactive=False,verbosity=0)
         import_references()
+        from library.revisions import initialize_revisions
+        initialize_revisions()
         call_command('check')
         verify_data(data)
     subprocess.run([sys.executable,'-m','pip','check'],check=True)
@@ -252,12 +276,39 @@ def manage_account(data):
         validate_password(password,user);user.set_password(password);user.save()
         print('账户已保存。可以启动网站登录。')
 
+
+def revise(data, paper_id, html, pdf=None, mapping=None, without_pdf=False):
+    """Validate an explicit correction; preserve every previously published snapshot."""
+    if not paper_id or not html: raise RuntimeError('修订需要 --paper 论文 ID 和 --html 新双语 HTML。')
+    with exclusive(data):
+        init_django(data)
+        from library.models import Paper
+        from library.article import load_article
+        from library.storage import write_bundle
+        from library.revisions import ensure_revision, revision_dir
+        paper=Paper.objects.get(pk=paper_id)
+        current=revision_dir(paper.current_revision) if paper.current_revision_id else data/'papers'/str(paper.id)
+        raw=html.read_bytes()
+        pdf_bytes=None if without_pdf else pdf.read_bytes() if pdf else (current/'original.pdf').read_bytes() if (current/'original.pdf').exists() else None
+        map_bytes=mapping.read_bytes() if mapping else None
+        article=load_article(raw,html.name,map_bytes,pdf_bytes)
+        # A validation failure above never mutates the database or published assets.
+        print('修订前备份：'+str(backup_data(data)),flush=True)
+        with tempfile.TemporaryDirectory(prefix='revision-',dir=data/'staging') as temporary:
+            folder=Path(temporary)/'validated'
+            write_bundle(folder,article,raw,pdf_bytes,map_bytes)
+            revision=ensure_revision(paper,folder)
+        verify_data(data)
+        print('当前内容修订：'+str(revision.id)+'；旧版批注和快照已保留。')
+
 def main():
     parser=argparse.ArgumentParser(description='论文库本机运行与维护')
-    parser.add_argument('action',choices=['setup','start','backup','restore','account','check'])
+    parser.add_argument('action',choices=['setup','start','backup','restore','account','check','revise'])
     parser.add_argument('--data-dir',type=Path,default=Path(os.environ.get('PAPER_LIBRARY_DATA',ROOT/'var')))
     parser.add_argument('--port',type=int,default=8000)
     parser.add_argument('--archive',type=Path);parser.add_argument('--target',type=Path);parser.add_argument('--output',type=Path)
+    parser.add_argument('--paper');parser.add_argument('--html',type=Path);parser.add_argument('--pdf',type=Path)
+    parser.add_argument('--mapping',type=Path);parser.add_argument('--without-pdf',action='store_true')
     args=parser.parse_args();data=args.data_dir.resolve()
     # SQLite must stay off known network/synchronization locations.
     if str(data).startswith('\\\\') or any(s.lower() in {'onedrive','dropbox','google drive'} or s.lower().startswith('onedrive - ') for s in data.parts):
@@ -265,6 +316,7 @@ def main():
     if args.action=='setup':setup(data)
     elif args.action=='start':start(data,args.port)
     elif args.action=='account':manage_account(data)
+    elif args.action=='revise':revise(data,args.paper,args.html,args.pdf,args.mapping,args.without_pdf)
     elif args.action=='backup':
         with exclusive(data):print('备份完成（含账户密码哈希，按敏感资料保管）：'+str(backup_data(data,args.output)))
     elif args.action=='restore':

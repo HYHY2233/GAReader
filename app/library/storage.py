@@ -32,6 +32,8 @@ def publish(folder, article, metadata, categories, user=None, trusted=False):
         with transaction.atomic():
             paper.save(force_insert=True); paper.categories.set(categories)
             folder.rename(dest)
+            from .revisions import ensure_revision
+            ensure_revision(paper)
     except Exception:
         # Only this unpublished UUID's directory can be removed on rollback.
         if dest.exists(): shutil.rmtree(dest)

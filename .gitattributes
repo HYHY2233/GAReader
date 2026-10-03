@@ -1,4 +1,6 @@
 * text=auto eol=lf
 *.cmd -text
 examples/** -text -diff linguist-vendored
+app/static/pdfjs/** -text -diff linguist-vendored
+*.jpg binary
 *.pdf binary

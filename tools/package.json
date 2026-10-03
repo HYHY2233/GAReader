@@ -4,10 +4,11 @@
   "description": "Development-only browser verification. Not used for everyday startup.",
   "devDependencies": {
     "jsdom": "30.1.1",
+    "pdfjs-dist": "6.3.289",
     "playwright": "1.62.1"
   },
   "scripts": {
-    "test:reader": "node reader-dom-tests.cjs",
+    "test:reader": "node reader-v2-dom-tests.cjs",
     "test:browser": "node browser-tests.cjs",
     "test:restore": "node restore-browser-tests.cjs"
   }

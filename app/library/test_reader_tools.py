@@ -8,6 +8,7 @@ from django.test import TestCase, override_settings
 
 from .article import load_article
 from .storage import write_bundle
+from .revisions import ensure_revision
 from .tests import MINI, make_paper
 
 
@@ -17,6 +18,7 @@ class ReaderToolsTests(TestCase):
         paper = make_paper('Interface fixture')
         with tempfile.TemporaryDirectory() as directory, override_settings(DATA_DIR=Path(directory)):
             write_bundle(Path(directory) / 'papers' / str(paper.pk), load_article(MINI.encode()), MINI.encode())
+            ensure_revision(paper)
             response = self.client.get(f'/papers/{paper.pk}/')
         self.assertEqual(response.status_code, 200)
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -26,7 +28,7 @@ class ReaderToolsTests(TestCase):
             self.assertIsNotNone(matches[0].find_parent('header', class_='readerbar'))
             self.assertIsNone(matches[0].find_parent('dialog'))
         self.assertIsNone(soup.select_one('[data-panel=settings]'))
-        self.assertTrue(soup.select_one('#selection-google').has_attr('hidden'))
+        self.assertTrue(soup.select_one('#selection-tools').has_attr('hidden'))
         self.assertFalse(soup.select_one('#google-dialog').has_attr('open'))
         self.assertIsNone(soup.select_one('iframe'))
         self.assertTrue(all(not tag['src'].startswith('http') for tag in soup.select('script[src], img[src]')))

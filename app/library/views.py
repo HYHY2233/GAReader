@@ -35,8 +35,9 @@ def aggregates(qs):
         votes=Rating.objects.filter(paper_id=OuterRef('pk'),dimension=dim).values('paper_id')
         qs=qs.annotate(**{dim+'_avg':Subquery(votes.annotate(v=Avg('value')).values('v'),output_field=FloatField()),
                           dim+'_count':Coalesce(Subquery(votes.annotate(v=Count('id')).values('v'),output_field=IntegerField()),0)})
-    comments=Comment.objects.filter(paper_id=OuterRef('pk'),hidden=False,deleted=False).values('paper_id').annotate(v=Count('id')).values('v')
-    return qs.annotate(comment_count=Coalesce(Subquery(comments,output_field=IntegerField()),0))
+    comments=Comment.objects.filter(paper_id=OuterRef('pk'),hidden=False,deleted=False,annotation__isnull=True,parent__annotation__isnull=True).values('paper_id').annotate(v=Count('id')).values('v')
+    annotations=Comment.objects.filter(paper_id=OuterRef('pk'),annotation__isnull=False).values('paper_id').annotate(v=Count('id')).values('v')
+    return qs.annotate(comment_count=Coalesce(Subquery(comments,output_field=IntegerField()),0),annotation_count=Coalesce(Subquery(annotations,output_field=IntegerField()),0))
 
 @login_required
 @require_GET
@@ -58,6 +59,9 @@ def home(request):
 @require_GET
 def reader(request,pk):
     paper=visible_paper(request,pk); folder=paper_dir(paper)
+    if paper.current_revision_id:
+        from .annotation_views import revision_reader
+        return revision_reader(request,pk)
     body=rendered_body(folder,lambda name:reverse('paper-file',args=[pk,name]))
     return render(request,'library/reader.html',{'paper':paper,'body':body,'nav':json.loads((folder/'nav.json').read_text(encoding='utf-8'))})
 
@@ -141,6 +145,9 @@ def serve_file(folder,name,original_allowed=False):
 @require_GET
 def paper_file(request,pk,name):
     paper=visible_paper(request,pk)
+    if paper.current_revision_id:
+        from .annotation_views import revision_file
+        return revision_file(request,pk,paper.current_revision_id,name)
     return serve_file(paper_dir(paper),name,paper.trusted_original or request.user.is_staff)
 
 @login_required
@@ -195,7 +202,7 @@ def comment_json(c,user):
     return {'id':c.id,'parent':c.parent_id,'body':None if unavailable else c.body,
             'placeholder':('评论已删除' if c.deleted else '评论已隐藏') if unavailable else '',
             'author':c.user.first_name or c.user.username,'created_at':timezone.localtime(c.created_at).strftime('%Y-%m-%d %H:%M'),
-            'edited':c.edited,'can_edit':not unavailable and c.user_id==user.id,
+            'edited':c.edited,'version':c.version,'can_edit':not unavailable and c.user_id==user.id,
             'can_hide':user.is_staff and not c.deleted,'hidden':c.hidden}
 
 @api
@@ -219,7 +226,7 @@ def comments(request,pk):
                 root=get_object_or_404(Comment,pk=parent,paper=paper,parent=None)
             c=Comment.objects.create(paper=paper,user=request.user,body=body,parent=root,request_key=key,request_hash=rhash)
         return JsonResponse(comment_json(c,request.user),status=201)
-    rows=Comment.objects.filter(paper=paper).select_related('user').order_by('created_at','id')
+    rows=Comment.objects.filter(paper=paper,annotation__isnull=True).exclude(parent__annotation__isnull=False).select_related('user').order_by('created_at','id')
     return JsonResponse({'comments':[comment_json(c,request.user) for c in rows],
                          'count':rows.filter(hidden=False,deleted=False).count()})
 
@@ -228,13 +235,18 @@ def comments(request,pk):
 def comment_detail(request,pk,comment_id):
     paper=visible_paper(request,pk); c=get_object_or_404(Comment,pk=comment_id,paper=paper)
     if c.user_id!=request.user.id or c.hidden or c.deleted: return JsonResponse({'error':'只能改删自己可见的评论。'},status=403)
-    data=payload(request,['body'] if request.method=='PATCH' else [])
+    data=payload(request,['body','version'] if request.method=='PATCH' else ['version'])
+    if type(data.get('version'))!=int: return JsonResponse({'error':'缺少编辑版本，请刷新后重试。'},status=400)
+    if data['version']!=c.version: return JsonResponse({'error':'这条内容已被修改；你的草稿仍保留，请先查看新版本。'},status=409)
     if request.method=='DELETE': c.deleted=True; c.body=''
     else:
         body=data.get('body')
         if not isinstance(body,str) or not 1<=len(body.strip())<=5000: raise ValueError()
         c.body=body.strip(); c.edited=True
-    c.save(update_fields=['body','edited','deleted','updated_at'])
+    changed=Comment.objects.filter(pk=c.pk,version=data['version'],hidden=False,deleted=False).update(
+        body=c.body,edited=c.edited,deleted=c.deleted,updated_at=timezone.now(),version=F('version')+1)
+    if not changed: return JsonResponse({'error':'这条内容已被修改，请刷新后重试。'},status=409)
+    c.refresh_from_db()
     return JsonResponse(comment_json(c,request.user))
 
 @api
@@ -242,9 +254,14 @@ def comment_detail(request,pk,comment_id):
 def comment_hide(request,pk,comment_id):
     paper=visible_paper(request,pk)
     if not request.user.is_staff: return JsonResponse({'error':'仅管理员可隐藏评论。'},status=403)
-    data=payload(request,['hidden'])
+    data=payload(request,['hidden','version'])
     if type(data.get('hidden'))!=bool: raise ValueError()
-    c=get_object_or_404(Comment,pk=comment_id,paper=paper); c.hidden=data['hidden']; c.save(update_fields=['hidden'])
+    c=get_object_or_404(Comment,pk=comment_id,paper=paper)
+    version=data.get('version')
+    if type(version)!=int: return JsonResponse({'error':'缺少编辑版本，请刷新后重试。'},status=400)
+    changed=Comment.objects.filter(pk=c.pk,version=version).update(hidden=data['hidden'],updated_at=timezone.now(),version=F('version')+1)
+    if not changed: return JsonResponse({'error':'这条内容已被修改，请刷新后重试。'},status=409)
+    c.refresh_from_db()
     return JsonResponse(comment_json(c,request.user))
 
 @require_GET

@@ -1,5 +1,7 @@
 # 公开包验证记录
 
+此页保留原公开包的历史结果。四视图与共享批注的新结果、限制和证据以 [本轮验收记录](docs/FOUR_VIEWS_VERIFICATION.md) 为准，不把旧测试记录当成新版浏览器验收。
+
 日期：2026-10-03。验证在独立源码副本与新建数据目录中进行，没有复制或改写原运行站点的数据库、密钥、评分或评论。
 
 环境：Windows 11、Python 3.12.14、Django 5.2.17、Node.js 24.19.0、jsdom 30.1.1。程序依赖与测试依赖分别锁定于 `requirements.lock`、`tools/package-lock.json`。

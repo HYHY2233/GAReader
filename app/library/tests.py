@@ -99,8 +99,8 @@ class CollaborationTests(TestCase):
         self.assertEqual(self.post(self.cb,parent=root,paper=self.q.id).status_code,404)
         path=self.base+f'comments/{root}/'
         self.assertEqual(self.cb.patch(path,data='{"body":"steal"}',content_type='application/json').status_code,403)
-        self.assertEqual(self.ca.patch(path,data='{"body":"edited"}',content_type='application/json').status_code,200)
-        self.ca.delete(path,data='{}',content_type='application/json')
+        self.assertEqual(self.ca.patch(path,data='{"body":"edited","version":1}',content_type='application/json').status_code,200)
+        self.ca.delete(path,data='{"version":2}',content_type='application/json')
         result=self.cb.get(self.base+'comments/').json()
         self.assertEqual(result['count'],1);self.assertIsNone(result['comments'][0]['body']);self.assertEqual(len(result['comments']),2)
         for b in [' ','x'*5001,None,5]:self.assertEqual(self.post(self.ca,b).status_code,400)
@@ -108,7 +108,7 @@ class CollaborationTests(TestCase):
         root=self.post(self.ca,'secret hidden body').json()['id'];self.post(self.cb,parent=root)
         c=Client();c.force_login(self.admin)
         self.assertEqual(c.patch(self.base+f'comments/{root}/',data='{"body":"replacement"}',content_type='application/json').status_code,403)
-        c.post(self.base+f'comments/{root}/hide/',data='{"hidden":true}',content_type='application/json')
+        c.post(self.base+f'comments/{root}/hide/',data='{"hidden":true,"version":1}',content_type='application/json')
         response=self.cb.get(self.base+'comments/')
         self.assertNotContains(response,'secret hidden body');self.assertEqual(response.json()['count'],1)
     def test_D08_D09_hidden_paper_and_inactive(self):

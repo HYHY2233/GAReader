@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "id": "D4 D5 controlled vocabulary, no-tag form and preview revalidation without reupload",
+      "status": "PASS",
+      "detail": {
+        "createdPaper": "df927b33-09a3-4df7-a298-66c67b2b2e35",
+        "noReupload": true,
+        "hiddenAfterTest": true
+      }
+    },
+    {
+      "id": "D1 D3 D7 D8 metadata labels, multi-category home, flat filters and scroll return",
+      "status": "PASS"
+    },
+    {
+      "id": "E1 E2 C4 remove ghosts, keep visible replies, revoke hidden quotes and preserve draft",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

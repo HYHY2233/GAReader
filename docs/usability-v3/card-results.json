@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "id": "B1 direct zh body first and real footer",
+      "status": "PASS"
+    },
+    {
+      "id": "B1 direct en body first and real footer",
+      "status": "PASS"
+    },
+    {
+      "id": "B1 direct pdf body first and real footer",
+      "status": "PASS"
+    },
+    {
+      "id": "B1 direct object body first and real footer",
+      "status": "PASS"
+    }
+  ]
+}

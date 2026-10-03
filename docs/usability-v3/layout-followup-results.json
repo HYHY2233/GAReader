@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "id": "A3 A6 create directly from open overview; preserve other paper draft",
+      "status": "PASS"
+    },
+    {
+      "id": "B4 actual image reload, reply expansion, scroll and resize real SVG endpoint",
+      "status": "PASS"
+    },
+    {
+      "id": "E4 E6 PDF at all required viewports and themes, no horizontal page overflow",
+      "status": "PASS"
+    }
+  ],
+  "pdfViewportCases": 16
+}

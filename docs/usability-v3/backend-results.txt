@@ -1,0 +1,26 @@
+2026-10-03 / Windows / isolated test database
+
+Command: .venv/Scripts/python.exe app/manage.py test library --verbosity 1
+PAPER_LIBRARY_DATA=test-runs/usability-v3/working
+
+Creating test database for alias 'default'...
+
+..........................................................[source-root]\.venv\Lib\site-packages\PIL\Image.py:3578: DecompressionBombWarning: Image size (42000000 pixels) exceeds limit of 40000000 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+...
+----------------------------------------------------------------------
+Ran 61 tests in 30.278s
+
+OK
+Destroying test database for alias 'default'...
+
+Found 61 test(s).
+System check identified no issues (0 silenced).
+
+Command: .venv/Scripts/python.exe app/manage.py makemigrations --check --dry-run
+No changes detected
+
+JavaScript syntax: 17 changed/new files passed node --check.
+DOM suite: 6 PASS; see reader-dom-results.json.
+
+The PIL image-size warning is produced by the intentionally oversized-image security test.

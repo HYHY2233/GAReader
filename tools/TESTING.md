@@ -1,5 +1,57 @@
 # 重现测试
 
+## 可用性修复 v3
+
+当前完整后端套件为 61 项，离线 DOM 为 6 组。所有命令在源码根目录运行，显式指定隔离目录。第一次先 `setup.cmd --data-dir test-runs/usability-v3/fresh-install`；测试使用独立测试数据库，不能将正式数据目录传给测试脚本。
+
+```powershell
+$env:PYTHONUTF8 = '1'
+$env:PAPER_LIBRARY_DATA = (Resolve-Path 'test-runs/usability-v3/fresh-install').Path
+.venv\Scripts\python.exe app/manage.py test library --verbosity 1
+.venv\Scripts\python.exe app/manage.py makemigrations --check --dry-run
+```
+
+上述测试生成脱敏的 DOM fixture。在 `tools/` 执行 `npm ci --ignore-scripts` 后回源码根目录：
+
+```text
+node tools/reader-v2-dom-tests.cjs
+```
+
+最终输出和截图见 [v3 验收](../docs/USABILITY_V3_VERIFICATION.md)。61 项包含标签规范化、前后端上传校验、预览再校验、元信息与修订隔离、统计去重及隐藏／删除后的有效线程口径。图像超限安全用例会出现 PIL 的 DecompressionBombWarning，套件最终为 OK；不能将它删除而跳过安全检查。
+
+### 本轮真实浏览器脚本
+
+以下是针对本次隔离迁移副本的回放工具，**不是不带数据的通用一键测试**。它们使用 `test-runs/four-views/credentials.json`、含原有批注和跨页锚点的隔离备份及 fixture ID；这些敏感资料不随源码分发。需要先准备具有相同场景的隔离测试库和随机凭据，或按验收表逐项操作。不能把正式备份、真实账号填入测试配置。
+
+本次实际数据准备：从四视图隔离备份恢复到全新的 `test-runs/usability-v3/working`，运行 setup 后，在添加任何测试记录之前执行 `tools/usability-data.py` 比较旧表与全部原文件；它只接受该固定隔离目录，并设置隔离管理员的测试密码。原始隔离备份文件名记录在脚本内，重新准备时应指向自己的隔离备份，不得复用正式目录。所有真实浏览器脚本在登录前核对 `/healthz/` 的实例标识，不一致立即拒绝。
+
+本轮工作实例启动及执行顺序：
+
+```text
+start.cmd --data-dir test-runs/usability-v3/working --port 8047
+node tools/usability-browser.cjs
+node tools/usability-zoom.cjs
+node tools/usability-library.cjs
+node tools/usability-pdf.cjs
+```
+
+主脚本包含 192 组 HTML 布局、20 条密集批注、真实 25 秒轮询、断网与幂等、冲突和来源跳转。zoom 脚本使用独立 Edge 配置的原生 200%，不更改日常浏览器设置。library 脚本在隔离库发布无 PDF 的真实标准译稿副本，并在验证后隐藏它。重跑前需准备新的场景副本，脚本不会清空或重置已有数据。
+
+停止工作实例后制作备份，再运行：
+
+```text
+backup.cmd --data-dir test-runs/usability-v3/working --output test-runs/usability-v3/backups
+.venv\Scripts\python.exe tools/revision_rehearsal.py --archive "本轮隔离备份.zip" --source test-runs/usability-v3/working --target test-runs/usability-v3/restored-verified
+start.cmd --data-dir test-runs/usability-v3/restored-verified --port 8048
+node tools/usability-restored.cjs
+node tools/usability-layout.cjs
+node tools/usability-cards.cjs
+```
+
+修订演练逐行比较评论、评分、锚点、修订、标签及两类关联共 7 张表；只在恢复副本中修改译文／删除公式来验证 stale 与旧快照来源，不改只读示例。停止并重新启动同一 8048 实例后，在 PowerShell 设置 `$env:GA_RESTART='1'`，再执行 `node tools/usability-restored.cjs` 比较重启前后 API 与会话，结束后 `Remove-Item Env:GA_RESTART`。
+
+脚本报告写入忽略目录 `evidence/usability-v3/`；浏览器会话、完整 API 快照和测试数据库写入 `test-runs/`。对外只复制经过筛选的截图和脱敏结果。`docs/usability-v3/` 是本次实际完成的验收证据，不能以其中旧 PASS 替代新的运行结果。
+
 ## 四视图与共享批注版本
 
 所有命令从源码根目录运行，始终显式指定隔离数据目录。浏览器 UI 需要由当前环境允许的浏览器工具或操作者执行；DOM 测试没有浏览器截图、网络隔离或缩放证明力。

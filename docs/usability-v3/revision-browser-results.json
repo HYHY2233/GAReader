@@ -1,0 +1,8 @@
+{
+  "checks": [
+    {
+      "id": "B2 C1 C4 real old revision source navigation and return, stale has no false line",
+      "status": "PASS"
+    }
+  ]
+}

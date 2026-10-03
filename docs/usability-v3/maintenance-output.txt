@@ -1,0 +1,24 @@
+Repeated setup actual output (fresh-install data directory):
+迁移前备份：[source-root]\backups\paper-library-20261003-174713-10234a.zip
+No broken requirements found.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, library, sessions
+Running migrations:
+  No migrations to apply.
+已存在，保留原状态：idaes
+已存在，保留原状态：ammonia
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。
+
+Existing formal data upgrade actual output:
+迁移前备份：[source-root]\backups\paper-library-20261003-175529-40f3d6.zip
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, library, sessions
+Running migrations:
+  Applying library.0002_comment_version_paperrevision_annotationanchor_and_more... OK
+  Applying library.0003_tags_and_category_order...No broken requirements found.
+ OK
+已存在，保留原状态：idaes
+已存在，保留原状态：ammonia
+System check identified no issues (0 silenced).
+安装完成。双击 start.cmd，打开网站登录、注册或选择匿名登录；管理账户可用 manage-account.cmd 设置。

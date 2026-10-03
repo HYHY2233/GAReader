@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "backup_sha256": "560c53903aefdf4c2f47b5500ef31fa956bf0b09bed2c4e2fe21627eea87d474",
+  "source_data": "test-runs/usability-v3/working",
+  "restored_data": "test-runs/usability-v3/restored-verified",
+  "restored_rows_identical": true,
+  "restored_counts": {
+    "library_comment": 64,
+    "library_rating": 4,
+    "library_annotationanchor": 54,
+    "library_paperrevision": 3,
+    "library_tag": 13,
+    "library_paper_tags": 2,
+    "library_paper_categories": 4
+  },
+  "css_only_no_revision": "PASS",
+  "text_correction_new_snapshot": "PASS",
+  "unchanged_english_exact": "PASS",
+  "changed_chinese_stale": "PASS",
+  "removed_formula_stale": "PASS",
+  "original_source_anchors_unchanged": "PASS",
+  "old_snapshot_bytes_unchanged": "PASS",
+  "old_source_urls_accessible": "PASS",
+  "pdf_crosspage_independent_fragments": "PASS",
+  "note": "Only isolated copies were modified. Browser acceptance is recorded separately."
+}

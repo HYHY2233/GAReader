@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "name": "library_paper",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paper_categories",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "library_comment",
+      "rows": 8,
+      "status": "PASS"
+    },
+    {
+      "name": "library_rating",
+      "rows": 4,
+      "status": "PASS"
+    },
+    {
+      "name": "library_annotationanchor",
+      "rows": 5,
+      "status": "PASS"
+    },
+    {
+      "name": "library_paperrevision",
+      "rows": 2,
+      "status": "PASS"
+    },
+    {
+      "name": "all original paper and revision bytes",
+      "files": 90,
+      "status": "PASS"
+    },
+    {
+      "name": "13 suggested tags inactive; zero automatic paper labels",
+      "status": "PASS",
+      "count": 13
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "checks": [
+    {
+      "id": "E7 actual restart retains session, notes, ratings, revision and tags",
+      "status": "PASS"
+    }
+  ]
+}

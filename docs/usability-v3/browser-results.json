@@ -1,0 +1,148 @@
+{
+  "time": "2026-10-03T09:31:20.734Z",
+  "checks": [
+    {
+      "id": "D1-D2 home expanded sections, original paper count and no tabs",
+      "status": "PASS",
+      "detail": {
+        "sections": 4
+      }
+    },
+    {
+      "id": "A1 A3 compose alone preserves scroll and overview lifecycle",
+      "status": "PASS"
+    },
+    {
+      "id": "A2 A4 A6 isolated editor, IME, offline retry, refresh and idempotency",
+      "status": "PASS"
+    },
+    {
+      "id": "A4 E2 keyed polling focus, replies and real 409 reconciliation",
+      "status": "PASS"
+    },
+    {
+      "id": "A4 A6 duplicated tab drafts have independent ownership",
+      "status": "PASS"
+    },
+    {
+      "id": "B2 B3 B4 B5 cross representation semantics and real connector endpoint",
+      "status": "PASS"
+    },
+    {
+      "id": "C1 C2 A5 direct source visit, logical return, browser history and inline-off",
+      "status": "PASS"
+    },
+    {
+      "id": "B6 twenty overlapping threads collapse to accessible picker without empty tail",
+      "status": "PASS"
+    },
+    {
+      "id": "B7 C3 PDF multi-segment, transforms, exact versus HTML and async cancellation",
+      "status": "PASS",
+      "detail": {
+        "transforms": [
+          {
+            "zoom": 50,
+            "rotation": 0
+          },
+          {
+            "zoom": 50,
+            "rotation": 90
+          },
+          {
+            "zoom": 50,
+            "rotation": 180
+          },
+          {
+            "zoom": 50,
+            "rotation": 270
+          },
+          {
+            "zoom": 100,
+            "rotation": 270
+          },
+          {
+            "zoom": 100,
+            "rotation": 0
+          },
+          {
+            "zoom": 100,
+            "rotation": 90
+          },
+          {
+            "zoom": 100,
+            "rotation": 180
+          },
+          {
+            "zoom": 300,
+            "rotation": 180
+          },
+          {
+            "zoom": 300,
+            "rotation": 270
+          },
+          {
+            "zoom": 300,
+            "rotation": 0
+          },
+          {
+            "zoom": 300,
+            "rotation": 90
+          }
+        ]
+      }
+    },
+    {
+      "id": "B8 mobile one-editor interaction and no automatic overview",
+      "status": "PASS"
+    },
+    {
+      "id": "E4 real HTML viewport/theme/font matrix",
+      "status": "PASS",
+      "detail": {
+        "cases": 192
+      }
+    },
+    {
+      "id": "E5 reduced motion system/application and server rendered home",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "screenshots": [
+    "home-sections-1366.png",
+    "compose-only.png",
+    "inline-same-source.png",
+    "inline-foreign-source.png",
+    "source-return.png",
+    "dense-twenty.png",
+    "pdf-crosspage.png",
+    "mobile-compose.png",
+    "large-font-40.png",
+    "reduced-motion.png"
+  ],
+  "browser": "154.0.4258.53",
+  "failedRequests": [
+    {
+      "path": "/api/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/annotations/",
+      "error": "net::ERR_INTERNET_DISCONNECTED"
+    },
+    {
+      "path": "/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/db9b236f-c8a5-4dd4-af98-e5c8bd05782f/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "path": "/papers/6034ef0a-0ba0-4b96-8073-87bed4a787b1/revisions/db9b236f-c8a5-4dd4-af98-e5c8bd05782f/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "path": "/papers/1472f628-fafd-4fa1-8567-c6d920bad5a1/revisions/dac5cb21-5dfa-446c-a350-3be1605511c8/",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "path": "/papers/1472f628-fafd-4fa1-8567-c6d920bad5a1/revisions/dac5cb21-5dfa-446c-a350-3be1605511c8/",
+      "error": "net::ERR_ABORTED"
+    }
+  ]
+}

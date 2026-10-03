@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "id": "E4 native 200 percent, dark 40px and composer",
+      "status": "PASS"
+    }
+  ],
+  "browser": "154.0.4258.53",
+  "nativeZoom": 2,
+  "metrics": {
+    "inner": 668,
+    "outer": 1366,
+    "dpr": 2,
+    "height": 336,
+    "overflow": 668,
+    "bar": 222,
+    "font": "40px"
+  }
+}

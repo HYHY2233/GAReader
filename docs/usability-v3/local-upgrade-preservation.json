@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "table": "auth_user",
+      "unchanged_rows": 2,
+      "status": "PASS"
+    },
+    {
+      "table": "library_paper",
+      "unchanged_rows": 2,
+      "status": "PASS"
+    },
+    {
+      "table": "library_comment",
+      "unchanged_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "table": "library_rating",
+      "unchanged_rows": 0,
+      "status": "PASS"
+    },
+    {
+      "table": "library_paper_categories",
+      "unchanged_rows": 2,
+      "status": "PASS"
+    },
+    {
+      "old_paper_files": "unchanged",
+      "status": "PASS"
+    }
+  ]
+}

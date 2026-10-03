@@ -1,8 +1,8 @@
 {
   "format": "gareader-source-manifest-v1",
   "created_on": "2026-10-03",
-  "code_commit": "f8d5b3b92cf866de8bdae4df4e03c06f600ab7b8",
-  "note": "Runtime data and this manifest itself are excluded. Selected redacted verification artifacts are included.",
+  "code_commit": "5c39cfe979034326cc9f65cda5073dc1a40482ee",
+  "note": "Runtime data and this manifest itself are excluded. Selected redacted actual-application verification artifacts are included. code_commit identifies the functional code; documentation is included in the final delivery commit.",
   "files": [
     {
       "path": ".env.example",
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12789,
-      "sha256": "175f2853fcc0e5e4f6cc0df900f03ba5f554e31b64f15b1b6b9cca43eb97ea12"
+      "bytes": 13923,
+      "sha256": "93f1aa4f3ba7b75a88c53d4b7d596b00f20b407667f27ee52bfc4136b2ef8ada"
     },
     {
       "path": "SOURCES.md",
@@ -51,8 +51,8 @@
     },
     {
       "path": "app/config/urls.py",
-      "bytes": 1946,
-      "sha256": "631af4bba6bf88b5127131f08b500da89a39636f073ed1d0a49ddbd5205045dd"
+      "bytes": 2110,
+      "sha256": "502d023bb5f4e3c245c35bf74544fc057a69d92e8279bb92831640ea75da805f"
     },
     {
       "path": "app/config/wsgi.py",
@@ -71,8 +71,8 @@
     },
     {
       "path": "app/library/admin.py",
-      "bytes": 2841,
-      "sha256": "9ac1805181455e8ca2586196690ea8586070f3e16ad43624b3181c17e7aedc2f"
+      "bytes": 5497,
+      "sha256": "6911b012a1f36c18acc0bd1be5500878573f531f2f2f2e8eb31778b491c3dbab"
     },
     {
       "path": "app/library/anchors.py",
@@ -81,8 +81,8 @@
     },
     {
       "path": "app/library/annotation_views.py",
-      "bytes": 7600,
-      "sha256": "933524ef653e2001dedc4c824e1a3c26c2e1cf98fbfcb0115388faa02b199f51"
+      "bytes": 9002,
+      "sha256": "70e40994858dee774284699c9a3e2ac1c7688934827233e9e69e0d1eae2d6612"
     },
     {
       "path": "app/library/article.py",
@@ -90,14 +90,19 @@
       "sha256": "9b62c141062a34aa9c997029c5d3d3bbccecb403c5b1ff5347eb706b8201f8e7"
     },
     {
+      "path": "app/library/discussion.py",
+      "bytes": 523,
+      "sha256": "363609e34ba577b5579fcb8cc9067091745fb3560ef70d77230936a558706151"
+    },
+    {
       "path": "app/library/forms.py",
-      "bytes": 3001,
-      "sha256": "2f637ee97be19702f2ce0e784935b2f5e5b6a5010a7a3cd59ee5ed1345260ec1"
+      "bytes": 3553,
+      "sha256": "14d8e7a51a0e1a05f3c8c4302892bfa4c700137737386b2896356a18343513b6"
     },
     {
       "path": "app/library/identity.py",
-      "bytes": 3351,
-      "sha256": "acb32e0efc19f5a367e414bae8f49516755b771adb8ab18af10ab2e39b3be4f9"
+      "bytes": 3400,
+      "sha256": "1ebda6cbf89c6a3ee9b39eca1e24610558f15085c24c7779bfa8efdea8157014"
     },
     {
       "path": "app/library/legacy.py",
@@ -125,14 +130,19 @@
       "sha256": "5a4182e495887b3cd2538e21f76187b54b9ecacdcbdd8d14d3f9690f6677733a"
     },
     {
+      "path": "app/library/migrations/0003_tags_and_category_order.py",
+      "bytes": 2083,
+      "sha256": "435bad1065e0075317d20093e719b88a4c516f8f31796d8e94156d4051b0438b"
+    },
+    {
       "path": "app/library/migrations/__init__.py",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "app/library/models.py",
-      "bytes": 4633,
-      "sha256": "6bdcf791ce4e0ace56fa003da37433f3e3084ed0ad1222a5ec054ea7dff33ef9"
+      "bytes": 5994,
+      "sha256": "32523785a5d25b773e8da032a308f82669d4f3b71f045de0d6f447c2af6c214d"
     },
     {
       "path": "app/library/pdf_index.py",
@@ -146,8 +156,8 @@
     },
     {
       "path": "app/library/storage.py",
-      "bytes": 2531,
-      "sha256": "686ee853cfd2197f20564abf04b2ecfc7482373188cae7156f176a03d70f3a88"
+      "bytes": 2916,
+      "sha256": "108c92cb59ead06f8e6df49c661cbb6a735f318966527200e4af594155061f0d"
     },
     {
       "path": "app/library/test_accounts.py",
@@ -156,8 +166,8 @@
     },
     {
       "path": "app/library/test_annotations.py",
-      "bytes": 20888,
-      "sha256": "7c1c2823e7d5e78bf3522f2b1788d8535e5a13cf7c265cdfc46b1140e3d312f9"
+      "bytes": 23069,
+      "sha256": "e27d69fa1dbd891082c44f07475d353cc9dbb510c1093ed2154d29bedea245ef"
     },
     {
       "path": "app/library/test_anonymous.py",
@@ -170,9 +180,14 @@
       "sha256": "02a6016024e9256cf6e2c50a358abc8176ef87b1d2a281059e42da53fec42427"
     },
     {
+      "path": "app/library/test_usability.py",
+      "bytes": 5686,
+      "sha256": "5b648f5ce7b758b5f42a8c58a987b5e973b08267052f75c38f01e1b68964808c"
+    },
+    {
       "path": "app/library/tests.py",
-      "bytes": 18472,
-      "sha256": "b59e4e0338eec34b59e00cecc661c4d69b62bf7b539c27601f1251595e2bc2d0"
+      "bytes": 18567,
+      "sha256": "2bd472bd9b5904a224edcaf048872dfe9467a636edc4ebf5ef6b1374eee4d355"
     },
     {
       "path": "app/library/upload_limits.py",
@@ -181,8 +196,8 @@
     },
     {
       "path": "app/library/views.py",
-      "bytes": 15538,
-      "sha256": "1e1f1b48e79eb830940679bac2f82f53e5c497316eab9ff9abdc070af3e5833d"
+      "bytes": 19813,
+      "sha256": "2da27bf3d6019e9f93e3a753d6999e4ab433844e63c2ad7482f7250576d128aa"
     },
     {
       "path": "app/manage.py",
@@ -190,9 +205,14 @@
       "sha256": "f40123f9f06fdafa8faf8e887a862b42d7f931f66237392b800c239eaa5e4c73"
     },
     {
+      "path": "app/static/annotation-presentation.js",
+      "bytes": 2193,
+      "sha256": "048a196b85a86c4fe1a3c0490fc778117cbc30ae0e744200406551d072b6a392"
+    },
+    {
       "path": "app/static/aurora.css",
-      "bytes": 1605,
-      "sha256": "b43acd2f6d33b6cd5f03ab94c10a8fb338eed77206eafd14ecea55a3d0a9b4fc"
+      "bytes": 5413,
+      "sha256": "f6c1881074bcf77d1e3583d06b6b1edc89af38ed68628b0048da507f78a9327e"
     },
     {
       "path": "app/static/pdfjs/LICENSE",
@@ -1200,14 +1220,29 @@
       "sha256": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e"
     },
     {
+      "path": "app/static/reader-annotations.css",
+      "bytes": 6682,
+      "sha256": "5801364a594bb1d28a4bb0ef18669ee461e4a794f48c344e0b844d23493447f5"
+    },
+    {
       "path": "app/static/reader-annotations.js",
-      "bytes": 24805,
-      "sha256": "665c3a09a6dd66718322127cfad4f397df3616b0458dc89ca9a9c03d9d9fd81c"
+      "bytes": 24461,
+      "sha256": "e1c7fcdeb72a5b0581589186a6695cef08c185b333df22ed305eef56b8a4796b"
+    },
+    {
+      "path": "app/static/reader-composer.js",
+      "bytes": 8683,
+      "sha256": "690401778ec92810f8274a546c3281410f6b716d52f1b57348b295e095ace8aa"
     },
     {
       "path": "app/static/reader-four-views.css",
-      "bytes": 13820,
-      "sha256": "5bafc3946a207ea2305599a0c778a1d34fdfd6627b97e1a54ba844605770706a"
+      "bytes": 9346,
+      "sha256": "1a4d94f02c212007785394f131ec66ee76b5bea784767f01cd5f4723a03ae361"
+    },
+    {
+      "path": "app/static/reader-geometry.js",
+      "bytes": 8867,
+      "sha256": "a58ed76972f473877df88135727cdf12ecf6666de26fa3bd62ccdcf423c7e6e1"
     },
     {
       "path": "app/static/reader-google.js",
@@ -1215,9 +1250,14 @@
       "sha256": "5dd774d32b72c39d3224a8fa49c35cc42d60e8572cb15772e65b5eddbe4d57b0"
     },
     {
+      "path": "app/static/reader-navigation.js",
+      "bytes": 6321,
+      "sha256": "2104e169a35ba26a83d8afbde727f07844111e81b2cd3df60f6d95658e3de374"
+    },
+    {
       "path": "app/static/reader-pdf.js",
-      "bytes": 12668,
-      "sha256": "86fc01f803268ac6c0ea04843662979ea1afba02039a5e4c95190c3dfb92ef4d"
+      "bytes": 14567,
+      "sha256": "deeba2fce6ce6379bd3727a75c8c4dfb417db5388eb806aea455ee11cdcecc31"
     },
     {
       "path": "app/static/reader-text.js",
@@ -1226,13 +1266,13 @@
     },
     {
       "path": "app/static/reader-views.js",
-      "bytes": 5701,
-      "sha256": "b713a0c5de9aea62d5a1d3434a1cbc12f2d8cb448c1e4f868cdf380a32108a95"
+      "bytes": 7660,
+      "sha256": "529ce4bd5bb6d2d8631d541a7762657584c66a627a35cf9a894c4255661b4cbe"
     },
     {
       "path": "app/static/reader.js",
-      "bytes": 12559,
-      "sha256": "e58444147d28701a0f285382373074c42a7e41606e6d2eb6c5dab99bc1a51ee3"
+      "bytes": 12677,
+      "sha256": "c8fb640092536bfae93238807492cced743b82dc27a835d7f19b2ad55bde2a24"
     },
     {
       "path": "app/static/site.css",
@@ -1241,38 +1281,63 @@
     },
     {
       "path": "app/static/site.js",
-      "bytes": 840,
-      "sha256": "96682eac475be9d172ce57be172f88f4b8833a2f78bf74f2fdac4277ac20df9f"
+      "bytes": 4605,
+      "sha256": "c7940f1a77b7e3c55b5aed26126e4ad41322118494ec899432bfef35906e97b2"
+    },
+    {
+      "path": "app/templates/404.html",
+      "bytes": 393,
+      "sha256": "5e3954823014eee2cbb37bfa2dd26862779272a6bdb88fa443eba55adf3dae01"
+    },
+    {
+      "path": "app/templates/admin/tag_merge.html",
+      "bytes": 711,
+      "sha256": "3e6e0e3eb3ab7e463a8d6f99e3da48701df647035c4534187c5d44c1ba88efc8"
     },
     {
       "path": "app/templates/base.html",
-      "bytes": 1705,
-      "sha256": "7f4cd5afb68a6b95f39643c694e461c5e74580b400c537f872fb83c2a5fb9183"
+      "bytes": 1750,
+      "sha256": "c142c2246ff763001fc37b1280d521216db0aa66162b7ba3e8986f8ad337e09a"
     },
     {
       "path": "app/templates/library/home.html",
-      "bytes": 2889,
-      "sha256": "0eb7acce5fad25617abc6449a7e819ba96b9bb735908582f3b0ccf70fd155f76"
+      "bytes": 3923,
+      "sha256": "19f644f1239363f154c7d79c42174790251dde06f3103e985df7dfbe5b6d9828"
+    },
+    {
+      "path": "app/templates/library/metadata.html",
+      "bytes": 886,
+      "sha256": "7394cab3f53a3eca5206acf9296681a88ed253f72c766d118564acb5dd1c8088"
+    },
+    {
+      "path": "app/templates/library/paper_row.html",
+      "bytes": 1286,
+      "sha256": "1a06d3e0cc58797c57ddfcb19ec8b10781ef00c4aa3944afff493a6638251c28"
     },
     {
       "path": "app/templates/library/preview.html",
-      "bytes": 1125,
-      "sha256": "848659dafe17c01eb6417e477bd274c7d75797c2ad729c530cf4a1aa6de5c94f"
+      "bytes": 1386,
+      "sha256": "d75bbe3ea08e3b987c660a75f9458a66a374d57db569df24c14d5c4a70244682"
     },
     {
       "path": "app/templates/library/reader-panels.html",
-      "bytes": 3136,
-      "sha256": "5051d5e782777180660992a5a0c35cbbf09f3ec67d16c4f17f5ab4460a598ba8"
+      "bytes": 3355,
+      "sha256": "f9b8424079ab1bb6d89d0b7195d78aeb144bc36bf3a5868bb7548c25dda50fa0"
     },
     {
       "path": "app/templates/library/reader.html",
-      "bytes": 7497,
-      "sha256": "284d630ed2cef1d154e00d864fee78b0f7110e4942049fc3374dabd78a9abf03"
+      "bytes": 9642,
+      "sha256": "c27d1805e363fe5d2d3a73ba938d6a2da45b7fec3c35d70897663e76644a1383"
+    },
+    {
+      "path": "app/templates/library/tag_field.html",
+      "bytes": 432,
+      "sha256": "abdf2a39cfd5792e041b1453d56a270dfbbe3a171f233abdded296269c54d7ec"
     },
     {
       "path": "app/templates/library/upload.html",
-      "bytes": 1255,
-      "sha256": "1bf80cd791b61f82dac7adf8fad3ed7577ff2dbf4823bafef82b5ca1fa3c8f95"
+      "bytes": 1319,
+      "sha256": "43df7f20e68fcc797a7dd664183707dc1b98f3eaf1c6339ad542ff449ad01537"
     },
     {
       "path": "app/templates/registration/account_login.html",
@@ -1328,6 +1393,176 @@
       "path": "docs/FOUR_VIEWS_VERIFICATION.md",
       "bytes": 8244,
       "sha256": "0f5827d52fc8714e080ca1a1d3f137a71e3550dbba7898cbaf9282a3b90a8817"
+    },
+    {
+      "path": "docs/USABILITY_V3_UPGRADE.md",
+      "bytes": 4692,
+      "sha256": "b0958e02e0bb5f5af90421fa5656a832b63197c259dc7a572d0b0dfcf65db648"
+    },
+    {
+      "path": "docs/USABILITY_V3_VERIFICATION.md",
+      "bytes": 12226,
+      "sha256": "313b27862776eb8f163af3302f284c46df02e7136d921e189bf649d4ffdf9e1b"
+    },
+    {
+      "path": "docs/usability-v3/backend-results.txt",
+      "bytes": 1003,
+      "sha256": "d33cf72731640e29f005ce7b01afef8b5583238e1ac234d3db9cc437fe054347"
+    },
+    {
+      "path": "docs/usability-v3/browser-results.json",
+      "bytes": 3677,
+      "sha256": "61648effbfaaef60a741e75af77c64c01c1854503b4a7903d9605b9607863537"
+    },
+    {
+      "path": "docs/usability-v3/card-results.json",
+      "bytes": 390,
+      "sha256": "19c28f2ad6ae589dc04ead599ab50dfc8dda7ed2161b3d738df17300092adc0b"
+    },
+    {
+      "path": "docs/usability-v3/compose-native-200.png",
+      "bytes": 98123,
+      "sha256": "4348eb69070251bd44c5eefde1f21bccd663853e5ed43eda2bf70df445bf1915"
+    },
+    {
+      "path": "docs/usability-v3/compose-only.png",
+      "bytes": 127961,
+      "sha256": "975e8ae4e06bdd1bc289e6be6aed7cc008b5c60f70c77a60ef7c27ee2f467a7a"
+    },
+    {
+      "path": "docs/usability-v3/dense-twenty.png",
+      "bytes": 121863,
+      "sha256": "d2c49f489ff8c1bbce1eab512226d710b53b85bd8c2060f8c811ed9f2936a5e6"
+    },
+    {
+      "path": "docs/usability-v3/hidden-source-draft.png",
+      "bytes": 90557,
+      "sha256": "67ed44e2d8a5fe78e2ec8995bd4003cb2c8469ddc8db88f53c377204d7ea6dc7"
+    },
+    {
+      "path": "docs/usability-v3/home-native-200.png",
+      "bytes": 96356,
+      "sha256": "419704e09fa68a2b54460eeebb67eabad627ffc73518095c1e5c97fd17f09ce0"
+    },
+    {
+      "path": "docs/usability-v3/home-search-tags.png",
+      "bytes": 137555,
+      "sha256": "f1a38fd07789176661811bb3ba93f7d77f8c487c01adc128b1cf3b43e8d0147f"
+    },
+    {
+      "path": "docs/usability-v3/home-sections-1366.png",
+      "bytes": 106972,
+      "sha256": "25c1967d6100c7f144e17931f46b8a08e87f545c119828a60904b2dfc69a27d3"
+    },
+    {
+      "path": "docs/usability-v3/inline-foreign-source.png",
+      "bytes": 110264,
+      "sha256": "5ac596d47e01422fb7ad6c338a5c61ad9df337466834bfb3d61e1c6b4ebdfbed"
+    },
+    {
+      "path": "docs/usability-v3/inline-same-source.png",
+      "bytes": 120912,
+      "sha256": "033fe1a044952444cfaaa258fe66c92456e2619bcaebaa272ab5b7d8009eb58b"
+    },
+    {
+      "path": "docs/usability-v3/large-font-40.png",
+      "bytes": 56345,
+      "sha256": "c8de571eb8ba8384d361a8d6931d40480bd958d5aded156dc9bb926dd4bb8008"
+    },
+    {
+      "path": "docs/usability-v3/layout-followup-results.json",
+      "bytes": 422,
+      "sha256": "15987105a59d5a23c5f5a73c9dd04a2ecf75d91d5000db3b7a42973c9d98f22e"
+    },
+    {
+      "path": "docs/usability-v3/library-results.json",
+      "bytes": 591,
+      "sha256": "9907b00d98cc67d391b58a6ecb2bd6eed1218f231de67931d04eede9a9f5f43f"
+    },
+    {
+      "path": "docs/usability-v3/local-upgrade-preservation.json",
+      "bytes": 580,
+      "sha256": "d80fab6733f9d8c5bbc94cf07163b35f3cb3fc85db4510c49166caa56dc2224d"
+    },
+    {
+      "path": "docs/usability-v3/maintenance-output.txt",
+      "bytes": 1228,
+      "sha256": "bb05106bc31d7fa897ded7b088e342ba4f6b8b25ed41329cac598e22a28b662c"
+    },
+    {
+      "path": "docs/usability-v3/maintenance.json",
+      "bytes": 946,
+      "sha256": "d89437ef0351aa4769052b4c587e479163ab5177cc0d8a194c27701d91b5d67c"
+    },
+    {
+      "path": "docs/usability-v3/migration-preservation.json",
+      "bytes": 796,
+      "sha256": "37bba24d7989ba7115a7a239ab5103ba37f99e826383fdd4826cf8fa2767a5d9"
+    },
+    {
+      "path": "docs/usability-v3/mobile-compose.png",
+      "bytes": 51567,
+      "sha256": "082e15d5a4a7e200d908bde8f4ec32a888b3db481df1f8b4c9a54a6a55685d12"
+    },
+    {
+      "path": "docs/usability-v3/native-zoom-results.json",
+      "bytes": 313,
+      "sha256": "337dda27cf2f3a2c3008610f366d3eeb81214ce47e61a7efb8eb137b86f9cc5a"
+    },
+    {
+      "path": "docs/usability-v3/old-revision-overview.png",
+      "bytes": 108152,
+      "sha256": "934316cdfdb694298e531c15e7fe5c70c28e7f757619ab18b454c0832ad64d25"
+    },
+    {
+      "path": "docs/usability-v3/old-revision-source.png",
+      "bytes": 116251,
+      "sha256": "13b3eb1077c5eb4565f099e3896df65094f7c55c620b309527cdf344bdd9fa5a"
+    },
+    {
+      "path": "docs/usability-v3/pdf-crosspage.png",
+      "bytes": 273084,
+      "sha256": "6396aba395ecc0006068cc5912c415b00b15b6831a8a0217003e8b9e21650f55"
+    },
+    {
+      "path": "docs/usability-v3/pdf-results.json",
+      "bytes": 2543,
+      "sha256": "a08eac02da64105bf0f500715a44259d445f28b92d0998b5b73e1780b72f0f31"
+    },
+    {
+      "path": "docs/usability-v3/pdf-transform-alignment.png",
+      "bytes": 352464,
+      "sha256": "a40c32a2742b2f9829fd229cf52e4cdbe0e0c2f0e4fd71eb8a61f10b24977e37"
+    },
+    {
+      "path": "docs/usability-v3/reader-dom-results.json",
+      "bytes": 876,
+      "sha256": "7d1f9c2061da4f6cdb1c5005d7e222a56c354713c1ae3bf705c88fe22dfbcf88"
+    },
+    {
+      "path": "docs/usability-v3/reader-native-200-font40.png",
+      "bytes": 112622,
+      "sha256": "6ef6261dc5a7df7865b2ac094a8fa0a97e5ad67ffea54824b028252faddd225f"
+    },
+    {
+      "path": "docs/usability-v3/reduced-motion.png",
+      "bytes": 55974,
+      "sha256": "26fd64562fe4fcb5bc1db246305a6b66055ddc70b1c3db4f87864de1153eaeff"
+    },
+    {
+      "path": "docs/usability-v3/restart-results.json",
+      "bytes": 141,
+      "sha256": "093f5ed706fbcb402c7eeb327d1402a85781f09e8d0b86e5be11d1d002c1393b"
+    },
+    {
+      "path": "docs/usability-v3/revision-browser-results.json",
+      "bytes": 153,
+      "sha256": "b3777273535f90b9d6f8fa829801648f2e12bc7434f09e15bedd6b8d9fec39cc"
+    },
+    {
+      "path": "docs/usability-v3/source-return.png",
+      "bytes": 124993,
+      "sha256": "9b1c499230c9bc39fb4af3fabf4bb4d65ecb7a73e6ada61733882e570fad4390"
     },
     {
       "path": "docs/verification/four-views/ammonia-coverage.csv",
@@ -1536,8 +1771,8 @@
     },
     {
       "path": "tools/TESTING.md",
-      "bytes": 5831,
-      "sha256": "4fb6d55bda2115f21d8852cf24cc1b2e6f95b690c118e8eb0ddf357ff959c6d7"
+      "bytes": 9766,
+      "sha256": "800ed4ac6e7d79a255f42eef59a2343cd590fffe6f2b4abdd015a19502af41a7"
     },
     {
       "path": "tools/browser-tests.cjs",
@@ -1581,8 +1816,8 @@
     },
     {
       "path": "tools/reader-v2-dom-tests.cjs",
-      "bytes": 8148,
-      "sha256": "c0b6b9002f4e9b83bb7a3737134c232d1228fdf138e3e71fe392229820905b3b"
+      "bytes": 8250,
+      "sha256": "b42997bb2b75d4a080f4df51bcfd1195a6d326128e0cf4473e4ec15a3cf4e9cc"
     },
     {
       "path": "tools/restart-checks.py",
@@ -1596,13 +1831,58 @@
     },
     {
       "path": "tools/revision_rehearsal.py",
-      "bytes": 6458,
-      "sha256": "758041985e23a89be2914206289108ef82e466e54129429ad094db5baca8310b"
+      "bytes": 6545,
+      "sha256": "503a4a9c111d2e12b0f22a5a3173d3526952b7d960ddea3d5b6a0da6f1dcad2a"
     },
     {
       "path": "tools/runtime-checks.py",
       "bytes": 2411,
       "sha256": "b4a617c24b068759e4805ea0f859d6f9255c4e08d62718af43adfc4cfaea125f"
+    },
+    {
+      "path": "tools/usability-browser.cjs",
+      "bytes": 24568,
+      "sha256": "a52522fe46d5ebe77fba118a621d0c52254c847747b4b4aa585886da097c0221"
+    },
+    {
+      "path": "tools/usability-cards.cjs",
+      "bytes": 2232,
+      "sha256": "5eedf746288740c9e79efd340f8b798f7b1fce190b344f07714ba3606f0039f5"
+    },
+    {
+      "path": "tools/usability-data.py",
+      "bytes": 2684,
+      "sha256": "e2ecf97cbf585ccfde46824700e7f4136655f5162486d1ad46f627936d2cb9cf"
+    },
+    {
+      "path": "tools/usability-guard.cjs",
+      "bytes": 761,
+      "sha256": "770cf54611dfd3c090bbca840a3bbf3f687bfb7c856157940379cede13356175"
+    },
+    {
+      "path": "tools/usability-layout.cjs",
+      "bytes": 5503,
+      "sha256": "e095abee39332be1ea81a64d32e65e11c1300db4b28f14e5f8da4ec05c1e4404"
+    },
+    {
+      "path": "tools/usability-library.cjs",
+      "bytes": 9978,
+      "sha256": "9b03dc2d159247ab1be8abb40edf282ef87e97ada9b1b8d825bffba3d72b92cd"
+    },
+    {
+      "path": "tools/usability-pdf.cjs",
+      "bytes": 3625,
+      "sha256": "344fe3c719a48287a9426d7f2e7a7adafe7253bd5452b1d87c04b6a85bd8634e"
+    },
+    {
+      "path": "tools/usability-restored.cjs",
+      "bytes": 4089,
+      "sha256": "ec216ffeb3fe55bfa9b3d5bde3d6ea3e69b96de04ff618acc473aee708717e0a"
+    },
+    {
+      "path": "tools/usability-zoom.cjs",
+      "bytes": 4237,
+      "sha256": "d370c7d7c0eca9a51364a3666cfb5609b82c7fc0aadab5d3aa6e451908ac192d"
     },
     {
       "path": "tools/vendor_pdfjs.py",
